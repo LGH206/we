@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    
+
+    <!-- ===================== MAIN ===================== -->
+    <main>
+        <div class="page-body">
+
+            <!-- ---- ARTICLE COLUMN ---- -->
+            <div class="article-main">
+
+                <!-- Category -->
+                <span class="article-category-tag">Tiêu hóa</span>
+
+                <!-- Title -->
+                <h1 class="article-title">
+                    Cách bảo vệ và cải thiện sức khỏe hệ tiêu hóa: Những nguyên tắc quan trọng nhất
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="article-subtitle">
+                    Hệ tiêu hóa khỏe mạnh giúp hấp thu dưỡng chất tốt hơn, tăng cường miễn dịch và giảm nguy cơ nhiều bệnh mãn tính. Khoa học chứng minh chế độ ăn và thói quen sinh hoạt đóng vai trò quyết định.
+                </p>
+
+                <!-- Meta -->
+                <div class="article-meta-row">
+                    
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>                        15 tháng 6, 2025
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 9 phút đọc
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 5.1k lượt xem
+                    </div>
+                </div>
+
+                <!-- Hero image -->
+                <div class="article-hero">
+                    <img src="../Image/hetieuhoavoiraucu.png" alt=" Hệ tiêu hóa khỏe mạnh với rau củ tươi " loading="lazy " />
+                </div>
+                <p class="article-hero-caption ">
+                    Chế độ ăn giàu chất xơ và probiotic giúp hệ tiêu hóa hoạt động hiệu quả – Ảnh: Unsplash
+                </p>
+
+                <!-- Body -->
+                <div class="article-body ">
+                    <p>
+                        Hệ tiêu hóa đóng vai trò quan trọng trong việc hấp thu dưỡng chất và duy trì hệ miễn dịch. Theo Tổ chức Y tế Thế giới (WHO), hơn 70% hệ miễn dịch của cơ thể nằm ở ruột. Việc chăm sóc hệ tiêu hóa không chỉ giúp giảm các bệnh như viêm loét dạ dày, trào
+                        ngược, hội chứng ruột kích thích mà còn cải thiện sức khỏe tổng thể.
+                    </p>
+
+                    <h2>1. Nguyên tắc vàng để bảo vệ hệ tiêu hóa</h2>
+                    <p>
+                        Một hệ tiêu hóa khỏe mạnh cần sự cân bằng giữa chế độ ăn, thói quen sinh hoạt và vi sinh đường ruột.
+                    </p>
+
+                    <div class="callout-box ">
+                        <div class="callout-icon ">💡</div>
+                        <div class="callout-text ">
+                            <strong>Nguyên tắc 3T:</strong> Thực phẩm giàu chất xơ – Thói quen ăn uống đúng giờ – Tăng cường probiotic (men vi sinh).
+                        </div>
+                    </div>
+
+                    <h3>Các nhóm thực phẩm quan trọng cho hệ tiêu hóa</h3>
+                    <ul>
+                        <li><strong>Chất xơ hòa tan & không hòa tan:</strong> Rau củ quả, ngũ cốc nguyên hạt, đậu – giúp phân mềm, ngừa táo bón.</li>
+                        <li><strong>Probiotic tự nhiên:</strong> Sữa chua, kefir, kimchi, dưa muối – bổ sung lợi khuẩn đường ruột.</li>
+                        <li><strong>Prebiotic:</strong> Tỏi, hành tây, chuối, yến mạch – làm “thức ăn” cho lợi khuẩn.</li>
+                        <li><strong>Protein dễ tiêu:</strong> Cá, trứng, thịt nạc, đậu phụ.</li>
+                        <li><strong>Chất béo lành mạnh:</strong> Bơ, dầu oliu, hạt – hỗ trợ hấp thu vitamin.</li>
+                    </ul>
+
+                    <h2>2. Thói quen hàng ngày giúp hệ tiêu hóa khỏe mạnh</h2>
+                    <p>
+                        Bên cạnh chế độ ăn, các thói quen sinh hoạt cũng ảnh hưởng rất lớn đến hệ tiêu hóa.
+                    </p>
+
+                    <h3>Lịch sinh hoạt tham khảo</h3>
+                    <ul>
+                        <li><strong>Bữa sáng:</strong> Yến mạch + chuối + sữa chua không đường.</li>
+                        <li><strong>Bữa trưa & tối:</strong> Nhiều rau xanh, giảm đồ chiên xào, cay nóng.</li>
+                        <li><strong>Uống nước:</strong> Ít nhất 2 – 2.5 lít/ngày, uống ấm vào buổi sáng.</li>
+                        <li><strong>Ăn đúng giờ:</strong> Không bỏ bữa, không ăn khuya.</li>
+                        <li><strong>Vận động:</strong> Đi bộ 30 phút sau bữa ăn giúp kích thích nhu động ruột.</li>
+                    </ul>
+
+                    <div class="warning-box ">
+                        <div class="callout-icon ">⚠️</div>
+                        <div class="callout-text ">
+                            <strong>Lưu ý:</strong> Tránh lạm dụng thuốc giảm đau, kháng sinh kéo dài vì chúng dễ làm loạn khuẩn đường ruột. Nếu có dấu hiệu đau bụng kéo dài, tiêu chảy/máu trong phân, hãy đến gặp bác sĩ tiêu hóa ngay.
+                        </div>
+                    </div>
+
+                    <h2>3. Những thực phẩm nên hạn chế</h2>
+                    <ul>
+                        <li>Đồ ăn cay nóng, nhiều dầu mỡ, đồ chiên rán.</li>
+                        <li>Thực phẩm chế biến sẵn, đồ hộp chứa nhiều chất bảo quản.</li>
+                        <li>Đồ uống có gas, cà phê và rượu bia (đặc biệt khi đang có vấn đề tiêu hóa).</li>
+                        <li>Đường tinh luyện và đồ ngọt quá mức.</li>
+                    </ul>
+
+                    <p>
+                        Việc duy trì một hệ tiêu hóa khỏe mạnh đòi hỏi sự kiên trì và nhất quán. Ngay hôm nay, bạn có thể bắt đầu bằng việc tăng rau củ và giảm đồ ăn nhanh.
+                    </p>
+                </div>
+
+                <!-- Tags -->
+                <div class="article-tags ">
+                    <span class="tag-label ">Từ khoá:</span>
+                    <a class="tag-item " href="# ">tiêu hóa</a>
+                    <a class="tag-item " href="# ">viêm dạ dày</a>
+                    <a class="tag-item " href="# ">hội chứng ruột kích thích</a>
+                    <a class="tag-item " href="# ">chất xơ</a>
+                    <a class="tag-item " href="# ">probiotic</a>
+                    <a class="tag-item " href="# ">trào ngược dạ dày</a>
+                </div>
+
+                <!-- ============ COMMENTS ============ -->
+                <section class="comments-section">
+                    <h2 class="section-heading">
+                        Bình luận
+                        <span class="count-badge">14</span>
+                    </h2>
+                    <p class="section-desc">Chia sẻ câu hỏi hoặc kinh nghiệm của bạn về chủ đề này</p>
+
+                    <!-- Form -->
+                    <div class="comment-form-card">
+                        <h3>✍️ Để lại bình luận</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-name">Họ và tên</label>
+                                <input id="c-name" type="text" placeholder="Nguyễn Văn A" />
+                            </div>
+                            <div class="form-group">
+                                <label for="c-email">Email (không hiển thị)</label>
+                                <input id="c-email" type="email" placeholder="email@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-text">Nội dung bình luận</label>
+                            <textarea id="c-text" placeholder="Bạn có câu hỏi hoặc muốn chia sẻ kinh nghiệm của mình?"></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <p class="form-note">* Email của bạn sẽ không được hiển thị công khai.</p>
+                            <button class="btn-submit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                Gửi bình luận
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="comments-sort-bar">
+                        <span class="sort-label">Sắp xếp theo:</span>
+                        <button class="sort-btn active">Mới nhất</button>
+                        <button class="sort-btn">Cũ nhất</button>
+                        <button class="sort-btn">Nhiều lượt thích nhất</button>
+                    </div>
+
+                    <!-- List -->
+                    <div class="comment-list">
+
+                        <!-- Comment 1 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">LH</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">
+                                        Lê Thị Hương
+                                        <span class="verified-badge">✓ Đã xác minh</span>
+                                    </div>
+                                    <div class="comment-time">2 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Bài viết rất hữu ích! Mình đã áp dụng mô hình đĩa thức ăn này được 3 tháng rồi và cảm thấy sức khoẻ cải thiện rõ rệt, đặc biệt là giảm được cảm giác mệt mỏi vào buổi chiều. Cảm ơn bác sĩ đã chia sẻ.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                        <!-- Comment 2 with reply -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-amber">NV</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Nguyễn Văn Bình</div>
+                                    <div class="comment-time">5 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Cho mình hỏi với người bị tiểu đường type 2 thì có cần điều chỉnh gì khác không ạ? Mình đang phân vân giữa việc ăn gạo lứt hay hoàn toàn kiêng tinh bột.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+
+                            <!-- Reply -->
+                            <div class="reply-thread">
+                                <div class="comment-card is-reply">
+                                    <div class="comment-header">
+                                        <div class="comment-avatar avatar-green">BS</div>
+                                        <div class="comment-meta">
+                                            <div class="comment-author">
+                                                BS. Nguyễn Minh Tuấn
+                                                <span class="verified-badge">✓ Tác giả</span>
+                                            </div>
+                                            <div class="comment-time">3 giờ trước</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-text">
+                                        Chào bạn! Với người tiểu đường type 2, không cần kiêng hoàn toàn tinh bột mà nên chọn tinh bột có chỉ số GI thấp như gạo lứt, yến mạch, khoai lang. Điều quan trọng là kiểm soát khẩu phần và kết hợp với rau xanh để làm chậm hấp thu đường. Bạn nên gặp bác
+                                        sĩ chuyên khoa nội tiết để được tư vấn cụ thể theo tình trạng của mình nhé.
+                                    </div>
+                                    <div class="comment-actions">
+                                        <button class="action-btn liked">
+                                            <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 3 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">TM</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Trần Minh Khoa</div>
+                                    <div class="comment-time">1 ngày trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Phần về bữa tối giảm tinh bột rất đúng với kinh nghiệm của mình. Từ khi chuyển sang ăn nhiều rau và cá vào buổi tối, giấc ngủ của mình cải thiện hẳn, không còn cảm giác nặng bụng khó ngủ nữa.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="comments-pagination">
+                        <button class="page-btn wide">‹ Trước</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span>…</span>
+                        <button class="page-btn">8</button>
+                        <button class="page-btn wide">Tiếp ›</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- =============================================FOOTER============================================= -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

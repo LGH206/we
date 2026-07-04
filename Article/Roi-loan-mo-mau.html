@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+   
+
+    <!-- ===================== MAIN ===================== -->
+    <main>
+        <div class="page-body">
+
+            <!-- ---- ARTICLE COLUMN ---- -->
+            <div class="article-main">
+
+                <!-- Category -->
+                <span class="article-category-tag">Nội tiết & chuyển hoá</span>
+
+                <!-- Title -->
+                <h1 class="article-title">
+                    Rối loạn mỡ máu: Nguyên nhân, triệu chứng và chiến lược điều trị toàn diện
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="article-subtitle">
+                    Rối loạn mỡ máu là một trong những yếu tố nguy cơ hàng đầu gây xơ vữa động mạch, nhồi máu cơ tim và đột quỵ. Kiểm soát lipid máu hiệu quả giúp giảm nguy cơ tim mạch và kéo dài tuổi thọ.
+                </p>
+
+                <!-- Meta -->
+                <div class="article-meta-row">
+                    
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>                        28 tháng 6, 2025
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11 phút đọc
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 14.5k lượt xem
+                    </div>
+                </div>
+
+                <!-- Hero image -->
+                <div class="article-hero">
+                    <img src="../Image/roiloanmomau.png" alt="Rối loạn mỡ máu và sức khỏe tim mạch " loading="lazy " />
+                </div>
+                <p class="article-hero-caption ">
+                    Rối loạn mỡ máu là nguyên nhân hàng đầu gây xơ vữa động mạch – Ảnh: Unsplash
+                </p>
+
+                <!-- Body -->
+                <div class="article-body ">
+                    <p>
+                        Rối loạn mỡ máu (còn gọi là rối loạn lipid máu hoặc tăng mỡ máu) là tình trạng bất thường của các thành phần lipid trong máu. Theo <strong>Tổ chức Y tế Thế giới (WHO)</strong>, mỗi năm có hơn 17.9 triệu người tử vong do các bệnh
+                        tim mạch, trong đó rối loạn mỡ máu là một trong những nguyên nhân chính. Phát hiện và điều trị kịp thời có thể giảm nguy cơ biến cố tim mạch lên đến 30-40%.
+                    </p>
+
+                    <h2>1. Các loại rối loạn mỡ máu</h2>
+                    <p>
+                        Rối loạn mỡ máu bao gồm nhiều loại khác nhau, mỗi loại có đặc điểm và ảnh hưởng riêng đến sức khỏe. Hiểu rõ từng loại giúp có chiến lược điều trị phù hợp.
+                    </p>
+
+                    <div class="callout-box ">
+                        <div class="callout-icon ">📊</div>
+                        <div class="callout-text ">
+                            <strong>Các chỉ số lipid máu quan trọng:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800); ">
+                                <li><strong>Cholesterol toàn phần:</strong> &lt; 200 mg/dL (5.2 mmol/L)</li>
+                                <li><strong>LDL-Cholesterol (Cholesterol xấu):</strong> &lt; 100 mg/dL (2.6 mmol/L) – lý tưởng &lt; 70 mg/dL cho người có nguy cơ cao</li>
+                                <li><strong>HDL-Cholesterol (Cholesterol tốt):</strong> ≥ 40 mg/dL (1.0 mmol/L) với nam, ≥ 50 mg/dL (1.3 mmol/L) với nữ</li>
+                                <li><strong>Triglyceride:</strong> &lt; 150 mg/dL (1.7 mmol/L)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>Các dạng rối loạn mỡ máu thường gặp</h3>
+                    <ul>
+                        <li><strong>Tăng Cholesterol toàn phần:</strong> Tăng cả LDL và HDL, thường do di truyền hoặc chế độ ăn nhiều chất béo bão hòa.</li>
+                        <li><strong>Tăng LDL-Cholesterol (Cholesterol xấu):</strong> Dạng nguy hiểm nhất, gây xơ vữa động mạch, đặc biệt nguy cơ cao ở người có tăng LDL di truyền (familial hypercholesterolemia).</li>
+                        <li><strong>Giảm HDL-Cholesterol (Cholesterol tốt):</strong> Làm tăng nguy cơ xơ vữa động mạch, thường gặp ở người ít vận động, hút thuốc, béo phì.</li>
+                        <li><strong>Tăng Triglyceride:</strong> Thường kèm hội chứng chuyển hóa, tăng nguy cơ viêm tụy và bệnh tim mạch.</li>
+                        <li><strong>Rối loạn hỗn hợp:</strong> Tăng cả LDL và Triglyceride, thường gặp ở bệnh nhân đái tháo đường, béo phì.</li>
+                    </ul>
+
+                    <h2>2. Nguyên nhân và yếu tố nguy cơ</h2>
+                    <p>
+                        Rối loạn mỡ máu có thể do nhiều nguyên nhân, từ yếu tố di truyền đến lối sống. Đa số các trường hợp là sự kết hợp của các yếu tố này.
+                    </p>
+
+                    <div class="callout-box ">
+                        <div class="callout-icon ">⚠️</div>
+                        <div class="callout-text ">
+                            <strong>Nguyên nhân và yếu tố nguy cơ chính:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800); ">
+                                <li><strong>Yếu tố di truyền:</strong> Tiền sử gia đình có rối loạn mỡ máu hoặc bệnh tim mạch sớm.</li>
+                                <li><strong>Chế độ ăn không lành mạnh:</strong> Nhiều chất béo bão hòa (thịt đỏ, bơ, dầu cọ), chất béo trans (thức ăn nhanh, bánh kẹo công nghiệp).</li>
+                                <li><strong>Lối sống ít vận động:</strong> Ngồi nhiều, không tập thể dục thường xuyên.</li>
+                                <li><strong>Thừa cân/béo phì:</strong> Đặc biệt là béo bụng (vòng bụng ≥90cm ở nam, ≥80cm ở nữ).</li>
+                                <li><strong>Bệnh lý kèm theo:</strong> Đái tháo đường type 2, suy giáp, bệnh thận mạn tính.</li>
+                                <li><strong>Thuốc:</strong> Corticosteroid, thuốc lợi tiểu thiazide, thuốc chẹn beta, thuốc kháng virus.</li>
+                                <li><strong>Hút thuốc và uống rượu:</strong> Làm giảm HDL và tăng triglyceride.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>3. Triệu chứng và dấu hiệu nhận biết</h2>
+                    <p>
+                        Rối loạn mỡ máu thường không có triệu chứng rõ ràng, chỉ được phát hiện qua xét nghiệm máu định kỳ. Tuy nhiên, khi kéo dài có thể gây ra các biểu hiện sau:
+                    </p>
+
+                    <ul>
+                        <li><strong>U vàng (xanthomas):</strong> Mảng màu vàng trên da, thường ở mí mắt, khuỷu tay, đầu gối, gót chân.</li>
+                        <li><strong>Vòng giác mạc (arcus cornealis):</strong> Vòng trắng/xám ở rìa giác mạc, thường ở người trẻ tuổi gợi ý rối loạn mỡ máu di truyền.</li>
+                        <li><strong>Các biểu hiện muộn:</strong> Đau ngực (đau thắt ngực), khó thở, mệt mỏi do bệnh mạch vành, hoặc đau cách hồi (bệnh động mạch ngoại vi).</li>
+                        <li><strong>Viêm tụy cấp:</strong> Đau bụng dữ dội khi triglyceride tăng rất cao >1000 mg/dL.</li>
+                    </ul>
+
+                    <div class="warning-box ">
+                        <div class="callout-icon ">🚨</div>
+                        <div class="callout-text ">
+                            <strong>Khi nào cần tầm soát mỡ máu:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800); ">
+                                <li>Tất cả người trưởng thành trên 20 tuổi nên kiểm tra mỡ máu ít nhất 4-6 năm/lần.</li>
+                                <li>Người có yếu tố nguy cơ (béo phì, tiểu đường, tăng huyết áp, tiền sử gia đình) cần kiểm tra thường xuyên hơn.</li>
+                                <li>Nam giới trên 45 tuổi và nữ giới trên 55 tuổi nên kiểm tra hàng năm.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>4. Chiến lược điều trị và kiểm soát</h2>
+                    <p>
+                        Điều trị rối loạn mỡ máu cần kết hợp thay đổi lối sống và sử dụng thuốc khi cần thiết, với mục tiêu giảm nguy cơ tim mạch lâu dài.
+                    </p>
+
+                    <h3>4.1 Thay đổi lối sống (Nền tảng quan trọng nhất)</h3>
+                    <ul>
+                        <li><strong>Chế độ ăn lành mạnh:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700); ">
+                                <li>Tăng cường rau xanh, trái cây, ngũ cốc nguyên hạt (yến mạch, gạo lứt).</li>
+                                <li>Chọn chất béo lành mạnh: Dầu ô-liu, dầu canola, bơ, các loại hạt, cá béo (cá hồi, cá thu).</li>
+                                <li>Hạn chế chất béo bão hòa (&lt;7% tổng calo) và chất béo trans (&lt;1% tổng calo).</li>
+                                <li>Ăn thực phẩm giàu chất xơ hòa tan (yến mạch, đậu, lúa mạch) giúp giảm LDL.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Tăng cường hoạt động thể lực:</strong> Tập thể dục 30-45 phút/ngày, ít nhất 5 ngày/tuần. Kết hợp bài tập aerobic (đi bộ nhanh, bơi, đạp xe) và kháng lực (tạ nhẹ).</li>
+                        <li><strong>Duy trì cân nặng hợp lý:</strong> Giảm 5-10% trọng lượng cơ thể nếu thừa cân/béo phì giúp cải thiện đáng kể các chỉ số mỡ máu.</li>
+                        <li><strong>Bỏ thuốc lá và hạn chế rượu bia:</strong> Hút thuốc làm giảm HDL, uống rượu nhiều làm tăng triglyceride.</li>
+                    </ul>
+
+                    <div class="callout-box ">
+                        <div class="callout-icon ">🏃</div>
+                        <div class="callout-text ">
+                            <strong>Hiệu quả của thay đổi lối sống:</strong> Nghiên cứu cho thấy thay đổi lối sống có thể giảm LDL-Cholesterol 10-20%, giảm Triglyceride 15-30% và tăng HDL-Cholesterol 5-10% trong vòng 3-6 tháng.
+                        </div>
+                    </div>
+
+                    <h3>4.2 Điều trị bằng thuốc</h3>
+                    <ul>
+                        <li><strong>Statin:</strong> Thuốc nền tảng hàng đầu. Giảm LDL-Cholesterol hiệu quả (30-50%). Ví dụ: Atorvastatin, Rosuvastatin, Simvastatin.</li>
+                        <li><strong>Fibrates:</strong> Giảm Triglyceride hiệu quả, tăng HDL. Ví dụ: Fenofibrate, Gemfibrozil.</li>
+                        <li><strong>Niacin:</strong> Giảm LDL và Triglyceride, tăng HDL mạnh. Tuy nhiên ít được sử dụng do tác dụng phụ.</li>
+                        <li><strong>Ezetimibe:</strong> Giảm hấp thu cholesterol ở ruột, thường phối hợp với statin.</li>
+                        <li><strong>PCSK9 inhibitors (thuốc tiêm):</strong> Thế hệ mới, giảm LDL rất mạnh (>50%), dùng cho người nguy cơ cao hoặc kháng statin.</li>
+                    </ul>
+
+                    <div class="warning-box ">
+                        <div class="callout-icon ">⚠️</div>
+                        <div class="callout-text ">
+                            <strong>Lưu ý về thuốc Statin:</strong> Hiệu quả và an toàn, nhưng cần theo dõi men gan (ALT/AST) và CK (creatine kinase) định kỳ. Một số bệnh nhân có thể bị đau cơ, mệt mỏi, nên báo cho bác sĩ nếu gặp tác dụng phụ. Không tự
+                            ý dùng thuốc, bỏ thuốc hoặc thay đổi liều.
+                        </div>
+                    </div>
+
+                    <h2>5. Biến chứng của rối loạn mỡ máu</h2>
+                    <p>
+                        Rối loạn mỡ máu kéo dài không được kiểm soát là nguyên nhân hàng đầu của các bệnh tim mạch và mạch máu não.
+                    </p>
+                    <ul>
+                        <li><strong>Xơ vữa động mạch:</strong> LDL cholesterol tích tụ trong thành mạch tạo mảng xơ vữa, làm hẹp lòng mạch.</li>
+                        <li><strong>Bệnh động mạch vành:</strong> Nhồi máu cơ tim, đau thắt ngực, suy tim.</li>
+                        <li><strong>Bệnh mạch máu não:</strong> Đột quỵ thiếu máu não, nhồi máu não.</li>
+                        <li><strong>Bệnh động mạch ngoại vi:</strong> Đau chân khi đi bộ, hoại tử, cắt cụt chi.</li>
+                        <li><strong>Viêm tụy cấp:</strong> Khi triglyceride tăng rất cao (>1000 mg/dL).</li>
+                        <li><strong>Huyết áp cao:</strong> Mối quan hệ hai chiều với rối loạn mỡ máu.</li>
+                    </ul>
+
+                    <div class="callout-box ">
+                        <div class="callout-icon ">📌</div>
+                        <div class="callout-text ">
+                            <strong>Mục tiêu điều trị theo nguy cơ:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800); ">
+                                <li><strong>Nguy cơ thấp/trung bình:</strong> LDL-C
+                                    < 100 mg/dL</li>
+                                        <li><strong>Nguy cơ cao (tiểu đường, bệnh thận):</strong> LDL-C
+                                            < 70 mg/dL</li>
+                                                <li><strong>Nguy cơ rất cao (bệnh tim mạch hiện có):</strong> LDL-C
+                                                    < 55 mg/dL</li>
+                                                        <li><strong>Mục tiêu thứ phát:</strong> Non-HDL-C
+                                                            < 100-130 mg/dL, Triglyceride < 150 mg/dL, HDL-C ≥ 40-50 mg/dL</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p>
+                        Rối loạn mỡ máu là bệnh lý mạn tính có thể kiểm soát tốt với sự kết hợp của thay đổi lối sống và thuốc điều trị. Điều quan trọng là người bệnh cần tuân thủ phác đồ, tái khám định kỳ và hợp tác chặt chẽ với bác sĩ để đạt mục tiêu điều trị, ngăn ngừa biến
+                        cố tim mạch và kéo dài tuổi thọ.
+                    </p>
+                </div>
+
+                <!-- Tags -->
+                <div class="article-tags ">
+                    <span class="tag-label ">Từ khoá:</span>
+                    <a class="tag-item " href="# ">rối loạn mỡ máu</a>
+                    <a class="tag-item " href="# ">lipid máu</a>
+                    <a class="tag-item " href="# ">cholesterol xấu</a>
+                    <a class="tag-item " href="# ">LDL</a>
+                    <a class="tag-item " href="# ">HDL</a>
+                    <a class="tag-item " href="# ">triglyceride</a>
+                    <a class="tag-item " href="# ">statin</a>
+                    <a class="tag-item " href="# ">xơ vữa động mạch</a>
+                </div>
+
+                <!-- ============ COMMENTS ============ -->
+                <section class="comments-section">
+                    <h2 class="section-heading">
+                        Bình luận
+                        <span class="count-badge">14</span>
+                    </h2>
+                    <p class="section-desc">Chia sẻ câu hỏi hoặc kinh nghiệm của bạn về chủ đề này</p>
+
+                    <!-- Form -->
+                    <div class="comment-form-card">
+                        <h3>✍️ Để lại bình luận</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-name">Họ và tên</label>
+                                <input id="c-name" type="text" placeholder="Nguyễn Văn A" />
+                            </div>
+                            <div class="form-group">
+                                <label for="c-email">Email (không hiển thị)</label>
+                                <input id="c-email" type="email" placeholder="email@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-text">Nội dung bình luận</label>
+                            <textarea id="c-text" placeholder="Bạn có câu hỏi hoặc muốn chia sẻ kinh nghiệm của mình?"></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <p class="form-note">* Email của bạn sẽ không được hiển thị công khai.</p>
+                            <button class="btn-submit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                Gửi bình luận
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="comments-sort-bar">
+                        <span class="sort-label">Sắp xếp theo:</span>
+                        <button class="sort-btn active">Mới nhất</button>
+                        <button class="sort-btn">Cũ nhất</button>
+                        <button class="sort-btn">Nhiều lượt thích nhất</button>
+                    </div>
+
+                    <!-- List -->
+                    <div class="comment-list">
+
+                        <!-- Comment 1 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">LH</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">
+                                        Lê Thị Hương
+                                        <span class="verified-badge">✓ Đã xác minh</span>
+                                    </div>
+                                    <div class="comment-time">2 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Bài viết rất hữu ích! Mình đã áp dụng mô hình đĩa thức ăn này được 3 tháng rồi và cảm thấy sức khoẻ cải thiện rõ rệt, đặc biệt là giảm được cảm giác mệt mỏi vào buổi chiều. Cảm ơn bác sĩ đã chia sẻ.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                        <!-- Comment 2 with reply -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-amber">NV</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Nguyễn Văn Bình</div>
+                                    <div class="comment-time">5 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Cho mình hỏi với người bị tiểu đường type 2 thì có cần điều chỉnh gì khác không ạ? Mình đang phân vân giữa việc ăn gạo lứt hay hoàn toàn kiêng tinh bột.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+
+                            <!-- Reply -->
+                            <div class="reply-thread">
+                                <div class="comment-card is-reply">
+                                    <div class="comment-header">
+                                        <div class="comment-avatar avatar-green">BS</div>
+                                        <div class="comment-meta">
+                                            <div class="comment-author">
+                                                BS. Nguyễn Minh Tuấn
+                                                <span class="verified-badge">✓ Tác giả</span>
+                                            </div>
+                                            <div class="comment-time">3 giờ trước</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-text">
+                                        Chào bạn! Với người tiểu đường type 2, không cần kiêng hoàn toàn tinh bột mà nên chọn tinh bột có chỉ số GI thấp như gạo lứt, yến mạch, khoai lang. Điều quan trọng là kiểm soát khẩu phần và kết hợp với rau xanh để làm chậm hấp thu đường. Bạn nên gặp bác
+                                        sĩ chuyên khoa nội tiết để được tư vấn cụ thể theo tình trạng của mình nhé.
+                                    </div>
+                                    <div class="comment-actions">
+                                        <button class="action-btn liked">
+                                            <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 3 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">TM</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Trần Minh Khoa</div>
+                                    <div class="comment-time">1 ngày trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Phần về bữa tối giảm tinh bột rất đúng với kinh nghiệm của mình. Từ khi chuyển sang ăn nhiều rau và cá vào buổi tối, giấc ngủ của mình cải thiện hẳn, không còn cảm giác nặng bụng khó ngủ nữa.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="comments-pagination">
+                        <button class="page-btn wide">‹ Trước</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span>…</span>
+                        <button class="page-btn">8</button>
+                        <button class="page-btn wide">Tiếp ›</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    
+    <!-- =============================================
+        FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

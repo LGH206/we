@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- ===================== MAIN ===================== -->
+    <main>
+        <div class="page-body">
+
+            <!-- ---- ARTICLE COLUMN ---- -->
+            <div class="article-main">
+
+                <!-- Category -->
+                <span class="article-category-tag">Thần kinh</span>
+
+                <!-- Title -->
+                <h1 class="article-title">
+                    Bệnh Parkinson: Nguyên nhân, triệu chứng và chiến lược điều trị toàn diện
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="article-subtitle">
+                    Bệnh Parkinson là bệnh thoái hóa thần kinh mạn tính, ảnh hưởng đến khoảng 10 triệu người trên toàn cầu. Phát hiện sớm và điều trị kịp thời giúp kiểm soát triệu chứng, cải thiện chất lượng cuộc sống và kéo dài tuổi thọ cho người bệnh.
+                </p>
+
+                <!-- Meta -->
+                <div class="article-meta-row">
+                    <div class="author-info">
+                       
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>                        9 tháng 7, 2025
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11 phút đọc
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 16.7k lượt xem
+                    </div>
+                </div>
+
+                <!-- Hero image -->
+                <div class="article-hero">
+                    <img src="../Image/parkinson.png" alt="Bệnh Parkinson" loading="lazy" />
+                </div>
+                <p class="article-hero-caption">
+                    Bệnh Parkinson là bệnh thoái hóa thần kinh tiến triển, cần được phát hiện sớm và quản lý toàn diện – Ảnh: Unsplash
+                </p>
+
+                <!-- Body -->
+                <div class="article-body">
+                    <p>
+                        Bệnh Parkinson (Parkinson's disease) là bệnh thoái hóa thần kinh mạn tính, tiến triển chậm, ảnh hưởng đến khả năng kiểm soát vận động do mất dần các tế bào thần kinh sản xuất dopamine ở vùng chất đen (substantia nigra) của não. Theo <strong>Tổ chức Y tế Thế giới (WHO)</strong>,
+                        tỷ lệ mắc bệnh Parkinson tăng theo tuổi, ảnh hưởng đến khoảng 1-2% dân số trên 65 tuổi và 4-5% trên 85 tuổi, với khoảng 10 triệu người đang sống chung với bệnh trên toàn cầu.
+                    </p>
+
+                    <h2>1. Bệnh Parkinson là gì?</h2>
+                    <p>
+                        Parkinson là bệnh thoái hóa thần kinh do mất tế bào sản xuất dopamine ở não. Dopamine là chất dẫn truyền thần kinh quan trọng điều khiển chuyển động, sự phối hợp và kiểm soát cơ bắp. Khi dopamine giảm, các triệu chứng vận động và không vận động xuất hiện,
+                        tiến triển dần theo thời gian.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">🧬</div>
+                        <div class="callout-text">
+                            <strong>Các giai đoạn của bệnh Parkinson:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Giai đoạn 1 (sớm):</strong> Triệu chứng nhẹ, thường run ở một bên tay, chưa ảnh hưởng sinh hoạt.</li>
+                                <li><strong>Giai đoạn 2:</strong> Triệu chứng cả hai bên, có thể ảnh hưởng đến đi lại, nhưng vẫn tự lập.</li>
+                                <li><strong>Giai đoạn 3 (vừa):</strong> Mất thăng bằng, giảm khả năng phản xạ, cần hỗ trợ nhẹ.</li>
+                                <li><strong>Giai đoạn 4:</strong> Triệu chứng nặng, cần trợ giúp đáng kể trong sinh hoạt.</li>
+                                <li><strong>Giai đoạn 5 (muộn):</strong> Không thể tự đi lại, cần xe lăn hoặc nằm giường, cần hỗ trợ toàn diện.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>2. Triệu chứng và dấu hiệu nhận biết</h2>
+                    <p>
+                        Triệu chứng của bệnh Parkinson rất đa dạng, bao gồm triệu chứng vận động (motor) và không vận động (non-motor). Bệnh tiến triển từ từ, các triệu chứng thường xuất hiện một bên cơ thể trước.
+                    </p>
+
+                    <h3>Triệu chứng vận động chính</h3>
+                    <ul>
+                        <li><strong>Run khi nghỉ (Resting tremor):</strong> Run 4-6 Hz khi nghỉ, giảm khi vận động, đặc trưng nhất của bệnh Parkinson (run "đếm tiền" hoặc "vê thuốc").</li>
+                        <li><strong>Cứng cơ (Rigidity):</strong> Cứng đờ, tăng trương lực cơ, cảm giác "bánh răng" khi vận động thụ động.</li>
+                        <li><strong>Chậm vận động (Bradykinesia):</strong> Cử động chậm chạp, giảm phối hợp, khó thực hiện các động tác tinh vi.</li>
+                        <li><strong>Mất thăng bằng (Postural instability):</strong> Dễ ngã, khó giữ thăng bằng, thường xuất hiện muộn.</li>
+                        <li><strong>Dáng đi:</strong> Đi bước nhỏ, lê bước, dáng gập về trước, khó quay đầu.</li>
+                        <li><strong>Giảm nét mặt (Hypomimia):</strong> Mặt "mặt nạ", ít nháy mắt, ít biểu cảm.</li>
+                    </ul>
+
+                    <h3>Triệu chứng không vận động (non-motor)</h3>
+                    <ul>
+                        <li><strong>Rối loạn tự chủ:</strong> Táo bón, tiểu nhiều/tiểu gấp, hạ huyết áp tư thế.</li>
+                        <li><strong>Rối loạn tâm thần:</strong> Trầm cảm, lo âu, ảo giác, mất trí nhớ.</li>
+                        <li><strong>Rối loạn giấc ngủ:</strong> Mất ngủ, ngủ nhiều giấc mơ, cử động bất thường trong giấc ngủ REM.</li>
+                        <li><strong>Rối loạn khứu giác:</strong> Giảm hoặc mất mùi (dấu hiệu sớm, xuất hiện trước triệu chứng vận động nhiều năm).</li>
+                        <li><strong>Đau và rối loạn cảm giác:</strong> Đau nhức, tê bì, dị cảm.</li>
+                        <li><strong>Mệt mỏi và suy giảm nhận thức:</strong> Mất tập trung, khó ra quyết định, suy giảm trí nhớ nhẹ.</li>
+                    </ul>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">🔍</div>
+                        <div class="callout-text">
+                            <strong>Dấu hiệu sớm của Parkinson cần lưu ý:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li>Run một bên tay khi nghỉ, đặc biệt ở ngón cái và ngón trỏ.</li>
+                                <li>Chữ viết nhỏ dần, thu hẹp (micrographia).</li>
+                                <li>Bước đi thay đổi: bước ngắn hơn, đu đưa tay giảm.</li>
+                                <li>Khuôn mặt ít biểu cảm, mất nụ cười tự nhiên.</li>
+                                <li>Giọng nói nhỏ, đều, khàn, ít ngữ điệu.</li>
+                                <li>Táo bón kéo dài, mất khứu giác không rõ nguyên nhân.</li>
+                                <li>Mất ngủ, cử động mạnh trong giấc ngủ (đá chân, nói mớ).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>3. Nguyên nhân và yếu tố nguy cơ</h2>
+                    <p>
+                        Nguyên nhân chính xác của bệnh Parkinson vẫn chưa được biết rõ, nhưng có sự kết hợp của yếu tố di truyền, môi trường và quá trình lão hóa.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-text">
+                            <strong>Nguyên nhân và yếu tố nguy cơ:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Yếu tố di truyền:</strong> 5-10% trường hợp có liên quan đến gen (LRRK2, SNCA, Parkin, DJ-1, PINK1).</li>
+                                <li><strong>Tuổi:</strong> Nguy cơ tăng theo tuổi, thường khởi phát sau 60 tuổi (trường hợp khởi phát sớm 50 tuổi khoảng 10%).</li>
+                                <li><strong>Giới tính:</strong> Nam giới có nguy cơ cao hơn nữ giới 1.5 lần.</li>
+                                <li><strong>Yếu tố môi trường:</strong> Tiếp xúc với thuốc trừ sâu, chất diệt cỏ, kim loại nặng (mangan, chì), dung môi công nghiệp.</li>
+                                <li><strong>Yếu tố bảo vệ:</strong> Hút thuốc lá (nicotine), uống cà phê có thể làm giảm nguy cơ (không khuyến nghị sử dụng).</li>
+                                <li><strong>Chấn thương đầu:</strong> Có thể làm tăng nguy cơ.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>4. Điều trị và kiểm soát bệnh Parkinson</h2>
+                    <p>
+                        Hiện chưa có thuốc chữa khỏi bệnh Parkinson, nhưng có nhiều phương pháp giúp kiểm soát triệu chứng, cải thiện chất lượng cuộc sống và làm chậm tiến triển bệnh.
+                    </p>
+
+                    <h3>4.1 Điều trị bằng thuốc</h3>
+                    <ul>
+                        <li><strong>Levodopa (L-DOPA):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Thuốc quan trọng nhất, được chuyển thành dopamine trong não.</li>
+                                <li>Kết hợp với Carbidopa (Sinemet) hoặc Benserazide (Madopar).</li>
+                                <li>Tác dụng tốt nhưng có thể gây biến động vận động và rối loạn tâm thần.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Chất chủ vận dopamine (Dopamine agonists):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Pramipexole, Ropinirole, Rotigotine (miếng dán).</li>
+                                <li>Ít gây biến động hơn Levodopa nhưng có thể gây buồn ngủ, rối loạn kiểm soát xung động.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Ức chế MAO-B:</strong> Selegiline, Rasagiline - làm chậm phân hủy dopamine.</li>
+                        <li><strong>Ức chế COMT:</strong> Entacapone - kéo dài tác dụng của Levodopa.</li>
+                        <li><strong>Thuốc kháng cholinergic:</strong> Trihexyphenidyl - giảm run nhưng hạn chế tác dụng phụ.</li>
+                        <li><strong>Amantadine:</strong> Giảm triệu chứng vận động, đặc biệt rối loạn vận động do Levodopa.</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-text">
+                            <strong>Lưu ý khi sử dụng Levodopa:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Uống lúc đói</strong> (30-60 phút trước bữa ăn) để tăng hấp thu.</li>
+                                <li><strong>Tránh protein</strong> nặng (thịt, cá) nếu ảnh hưởng đến hiệu quả.</li>
+                                <li><strong>Biến động vận động</strong> (on/off) có thể xảy ra sau 3-5 năm sử dụng.</li>
+                                <li><strong>Không tự ý thay đổi liều</strong> mà không có chỉ định bác sĩ.</li>
+                                <li><strong>Theo dõi tác dụng phụ:</strong> Buồn nôn, hạ huyết áp, ảo giác, rối loạn vận động.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>4.2 Điều trị ngoại khoa</h3>
+                    <ul>
+                        <li><strong>Kích thích não sâu (Deep Brain Stimulation - DBS):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Đặt điện cực vào não (nhân dưới đồi thị hoặc nhân bụng giữa) và máy tạo xung ở ngực.</li>
+                                <li>Giúp giảm run, cứng cơ, chậm vận động ở bệnh nhân đáp ứng kém với thuốc.</li>
+                                <li>Hiệu quả lâu dài, có thể giảm liều thuốc 30-50%.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Các phẫu thuật khác:</strong> Cắt đồi thị, cắt nhân nhợt nhạt (hiện ít được sử dụng).</li>
+                    </ul>
+
+                    <h3>4.3 Phục hồi chức năng và lối sống</h3>
+                    <ul>
+                        <li><strong>Vật lý trị liệu:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Tập thăng bằng, đi lại, tư thế, cải thiện dáng đi.</li>
+                                <li>Tập đứng lên-ngồi xuống, xoay người.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Hoạt động trị liệu:</strong> Tập các kỹ năng sinh hoạt hàng ngày (mặc quần áo, ăn uống, viết).</li>
+                        <li><strong>Ngôn ngữ trị liệu:</strong> Cải thiện giọng nói, khả năng nuốt.</li>
+                        <li><strong>Tập thể dục thường xuyên:</strong> Đi bộ, đạp xe, bơi lội, yoga, Thái cực quyền.</li>
+                        <li><strong>Dinh dưỡng:</strong> Chế độ ăn giàu chất xơ, uống đủ nước, bổ sung vitamin D, canxi.</li>
+                        <li><strong>Hỗ trợ tâm lý:</strong> Tư vấn tâm lý, tham gia nhóm hỗ trợ bệnh nhân.</li>
+                    </ul>
+
+                    <h2>5. Chăm sóc và hỗ trợ người bệnh Parkinson</h2>
+                    <p>
+                        Người bệnh Parkinson cần sự chăm sóc toàn diện từ gia đình và cộng đồng. Dưới đây là một số lưu ý quan trọng:
+                    </p>
+                    <ul>
+                        <li><strong>Môi trường sống an toàn:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Dỡ bỏ thảm trải sàn để tránh vấp ngã.</li>
+                                <li>Lắp tay vịn, thanh nắm trong nhà tắm và cầu thang.</li>
+                                <li>Đảm bảo ánh sáng đầy đủ, nhất là ban đêm.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Hỗ trợ sinh hoạt:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Dụng cụ hỗ trợ: gậy, xe tập đi, đũa chống run.</li>
+                                <li>Mặc quần áo dễ mặc (có dây kéo, nút bấm thay vì khuy).</li>
+                                <li>Giày dép vừa chân, đế thấp, chống trơn trượt.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Hỗ trợ dinh dưỡng:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Chia nhỏ bữa ăn nếu khó nuốt.</li>
+                                <li>Thức ăn mềm, dễ nhai, giàu chất xơ.</li>
+                                <li>Theo dõi cân nặng và tình trạng dinh dưỡng.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Hỗ trợ tinh thần:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Lắng nghe và thấu hiểu người bệnh.</li>
+                                <li>Động viên tham gia các hoạt động xã hội phù hợp.</li>
+                                <li>Tạo không gian thoải mái, ít căng thẳng.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">💡</div>
+                        <div class="callout-text">
+                            <strong>Lời khuyên cho người bệnh Parkinson:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Hãy lạc quan:</strong> Parkinson không phải là bản án chung thân, nhiều người vẫn sống tích cực nhiều thập kỷ.</li>
+                                <li><strong>Duy trì hoạt động:</strong> Vận động càng nhiều, càng chậm tiến triển bệnh.</li>
+                                <li><strong>Tuân thủ điều trị:</strong> Uống thuốc đúng giờ, tái khám định kỳ.</li>
+                                <li><strong>Kết nối cộng đồng:</strong> Tham gia hội bệnh nhân Parkinson để chia sẻ kinh nghiệm.</li>
+                                <li><strong>Chăm sóc sức khỏe tinh thần:</strong> Tập thiền, yoga, tìm niềm vui trong cuộc sống.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p>
+                        Bệnh Parkinson là một thách thức lớn cho người bệnh và gia đình, nhưng với sự hiểu biết đầy đủ, điều trị phù hợp và sự hỗ trợ tận tình, người bệnh vẫn có thể sống một cuộc sống chất lượng, ý nghĩa và trọn vẹn. Những tiến bộ trong nghiên cứu điều trị,
+                        đặc biệt là kích thích não sâu và các liệu pháp tế bào gốc, đang mở ra hy vọng mới cho bệnh nhân Parkinson trên toàn thế giới.
+                    </p>
+                </div>
+
+                <!-- Tags -->
+                <div class="article-tags">
+                    <span class="tag-label">Từ khoá:</span>
+                    <a class="tag-item" href="#">bệnh Parkinson</a>
+                    <a class="tag-item" href="#">Parkinson</a>
+                    <a class="tag-item" href="#">thoái hóa thần kinh</a>
+                    <a class="tag-item" href="#">run tay</a>
+                    <a class="tag-item" href="#">levodopa</a>
+                    <a class="tag-item" href="#">DBS</a>
+
+                    <!-- ============ COMMENTS ============ -->
+                    <section class="comments-section">
+                    <h2 class="section-heading">
+                        Bình luận
+                        <span class="count-badge">14</span>
+                    </h2>
+                    <p class="section-desc">Chia sẻ câu hỏi hoặc kinh nghiệm của bạn về chủ đề này</p>
+
+                    <!-- Form -->
+                    <div class="comment-form-card">
+                        <h3>✍️ Để lại bình luận</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-name">Họ và tên</label>
+                                <input id="c-name" type="text" placeholder="Nguyễn Văn A" />
+                            </div>
+                            <div class="form-group">
+                                <label for="c-email">Email (không hiển thị)</label>
+                                <input id="c-email" type="email" placeholder="email@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-text">Nội dung bình luận</label>
+                            <textarea id="c-text" placeholder="Bạn có câu hỏi hoặc muốn chia sẻ kinh nghiệm của mình?"></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <p class="form-note">* Email của bạn sẽ không được hiển thị công khai.</p>
+                            <button class="btn-submit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                Gửi bình luận
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="comments-sort-bar">
+                        <span class="sort-label">Sắp xếp theo:</span>
+                        <button class="sort-btn active">Mới nhất</button>
+                        <button class="sort-btn">Cũ nhất</button>
+                        <button class="sort-btn">Nhiều lượt thích nhất</button>
+                    </div>
+
+                    <!-- List -->
+                    <div class="comment-list">
+
+                        <!-- Comment 1 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">LH</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">
+                                        Lê Thị Hương
+                                        <span class="verified-badge">✓ Đã xác minh</span>
+                                    </div>
+                                    <div class="comment-time">2 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Bài viết rất hữu ích! Mình đã áp dụng mô hình đĩa thức ăn này được 3 tháng rồi và cảm thấy sức khoẻ cải thiện rõ rệt, đặc biệt là giảm được cảm giác mệt mỏi vào buổi chiều. Cảm ơn bác sĩ đã chia sẻ.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                        <!-- Comment 2 with reply -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-amber">NV</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Nguyễn Văn Bình</div>
+                                    <div class="comment-time">5 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Cho mình hỏi với người bị tiểu đường type 2 thì có cần điều chỉnh gì khác không ạ? Mình đang phân vân giữa việc ăn gạo lứt hay hoàn toàn kiêng tinh bột.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+
+                            <!-- Reply -->
+                            <div class="reply-thread">
+                                <div class="comment-card is-reply">
+                                    <div class="comment-header">
+                                        <div class="comment-avatar avatar-green">BS</div>
+                                        <div class="comment-meta">
+                                            <div class="comment-author">
+                                                BS. Nguyễn Minh Tuấn
+                                                <span class="verified-badge">✓ Tác giả</span>
+                                            </div>
+                                            <div class="comment-time">3 giờ trước</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-text">
+                                        Chào bạn! Với người tiểu đường type 2, không cần kiêng hoàn toàn tinh bột mà nên chọn tinh bột có chỉ số GI thấp như gạo lứt, yến mạch, khoai lang. Điều quan trọng là kiểm soát khẩu phần và kết hợp với rau xanh để làm chậm hấp thu đường. Bạn nên gặp bác
+                                        sĩ chuyên khoa nội tiết để được tư vấn cụ thể theo tình trạng của mình nhé.
+                                    </div>
+                                    <div class="comment-actions">
+                                        <button class="action-btn liked">
+                                            <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 3 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">TM</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Trần Minh Khoa</div>
+                                    <div class="comment-time">1 ngày trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Phần về bữa tối giảm tinh bột rất đúng với kinh nghiệm của mình. Từ khi chuyển sang ăn nhiều rau và cá vào buổi tối, giấc ngủ của mình cải thiện hẳn, không còn cảm giác nặng bụng khó ngủ nữa.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="comments-pagination">
+                        <button class="page-btn wide">‹ Trước</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span>…</span>
+                        <button class="page-btn">8</button>
+                        <button class="page-btn wide">Tiếp ›</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    
+    <!-- =============================================
+        FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

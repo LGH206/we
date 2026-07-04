@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-body">
+
+            <div class="article-main">
+                <span class="article-category-tag">Tin tức y tế</span>
+
+                <h1 class="article-title">
+                    Chuyên gia Dinh dưỡng lâm sàng Bệnh viện Chợ Rẫy khuyến nghị lượng Protein chuẩn cho người Việt
+                </h1>
+
+                <p class="article-subtitle">
+                    Thực trạng thiếu hụt hoặc mất cân bằng đạm trong bữa ăn hằng ngày của người Việt đang ở mức đáng báo động. Thấu hiểu điều đó, các chuyên gia hàng đầu đã đưa ra những con số định lượng chuẩn xác giúp cải thiện thể chất toàn diện.
+                </p>
+
+                <div class="article-meta-row">
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>                        22 tháng 6, 2026
+                    </div>
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4 phút đọc
+                    </div>
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 3.1k lượt xem
+                    </div>
+                </div>
+
+                <div class="article-hero">
+                    <img src="../Image/thieuhutchatdinhduong.png" alt="Hội thảo dinh dưỡng lâm sàng tại bệnh viện" loading="lazy" />
+                </div>
+                <p class="article-hero-caption">
+                    BS. Nguyễn Minh Tuấn phát biểu tại hội thảo Dinh dưỡng lâm sàng thường niên
+                </p>
+
+                <div class="article-body">
+                    <p>
+                        Dinh dưỡng hợp lý là nền tảng của một sức khỏe bền vững, tuy nhiên việc đo lường lượng dưỡng chất nạp vào cơ thể hàng ngày vẫn chưa được người dân Việt Nam chú trọng đúng mức. Đặc biệt đối với chất đạm (protein) - thành phần cốt lõi xây dựng tế bào.
+                    </p>
+
+                    <h2>1. Thực trạng tiêu thụ đạm tại Việt Nam</h2>
+                    <p>
+                        Theo báo cáo khảo sát mới nhất, cơ cấu bữa ăn của người Việt có sự chênh lệch lớn giữa nông thôn và thành thị. Trong khi khu vực thành thị có xu hướng tiêu thụ quá nhiều đạm động vật từ các loại thịt đỏ, thì ngược lại, nhiều nhóm đối tượng lao động hoặc người cao tuổi lại bị thiếu hụt lượng protein cần thiết.
+                    </p>
+
+                    <h2>2. Khuyến nghị định lượng chuẩn từ chuyên gia</h2>
+                    <p>
+                        Bác sĩ Nguyễn Minh Tuấn, Chuyên gia Dinh dưỡng lâm sàng với hơn 12 năm kinh nghiệm tại Bệnh viện Chợ Rẫy, thành viên Hội Dinh dưỡng Việt Nam nhấn mạnh:
+                    </p>
+                    <div class="callout-box">
+                        <div class="callout-icon"></div>
+                        <div class="callout-text">
+                            <strong>Lượng protein tiêu chuẩn dựa trên thể trọng:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Người trưởng thành bình thường:</strong> Cần tối thiểu 0,8g protein cho mỗi kilôgam thể trọng một ngày. Ví dụ, một người nặng 60kg sẽ cần khoảng 48g protein nguyên chất.</li>
+                                <li><strong>Người lao động nặng, vận động viên:</strong> Nhu cầu tăng mạnh từ 1,2 đến 2,0g/kg thể trọng/ngày để phục hồi mô cơ tổn thương khi làm việc nặng.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>3. Làm sao để bổ sung đạm đúng cách?</h2>
+                    <p>
+                        Việc nạp đủ khối lượng là chưa đủ, người tiêu dùng cần chú trọng đến chất lượng nguồn đạm. Hãy chia nhỏ lượng protein vào các bữa ăn trong ngày để cơ thể hấp thụ tối đa, đồng thời ưu tiên các phương pháp chế biến lành mạnh như hấp, luộc thay vì chiên rán nhiều dầu mỡ.
+                    </p>
+                </div>
+
+                <div class="article-tags">
+                    <span class="tag-label">Từ khoá:</span>
+                    <a class="tag-item" href="#">BS Nguyễn Minh Tuấn</a>
+                    <a class="tag-item" href="#">Bệnh viện Chợ Rẫy</a>
+                    <a class="tag-item" href="#">bổ sung protein</a>
+                    <a class="tag-item" href="#">dinh dưỡng người Việt</a>
+                </div>
+
+                <section class="comments-section">
+                    <h2 class="section-heading">Bình luận <span class="count-badge">1</span></h2>
+                    <div class="comment-form-card" id="commentFormCard">
+                        <h3>Để lại bình luận</h3>
+                        <div class="form-row"><div class="form-group"><label for="c-name">Họ và tên</label><input id="c-name" type="text" placeholder="Nguyễn Văn A" /></div><div class="form-group"><label for="c-email">Email</label><input id="c-email" type="email" placeholder="email@example.com" /></div></div>
+                        <div class="form-group"><label for="c-text">Nội dung</label><textarea id="c-text" placeholder="Chia sẻ ý kiến của bạn..."></textarea></div>
+                        <div class="form-footer"><p class="form-note">* Email của bạn sẽ được bảo mật.</p><button class="btn-submit" onclick="handleSubmitComment(event)">Gửi bình luận</button></div>
+                    </div>
+                    <div class="comment-list">
+                        <div class="comment-card" data-comment-id="c1">
+                            <div class="comment-header"><div class="comment-avatar avatar-teal">TM</div><div class="comment-meta"><div class="comment-author">Trần Minh Mạnh</div><div class="comment-time">10 phút trước</div></div></div>
+                            <div class="comment-text">Tính ra trước giờ mình ăn uống bừa bãi quá, cảm ơn bài phân tích chi tiết của bác sĩ Tuấn ạ!</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="article-sidebar">
+                <div class="sidebar-card">
+                    <div class="sidebar-card-header"><span>🔥</span> Đọc nhiều nhất</div>
+                    <div class="sidebar-list">
+                        <div class="sidebar-item">
+                            <div class="sidebar-thumb"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=120&q=70" alt="" /></div>
+                            <div class="sidebar-item-text"><div class="sidebar-item-title">5 dấu hiệu cơ thể đang thiếu vitamin D nghiêm trọng</div><div class="sidebar-item-date">10 tháng 6, 2025</div></div>
+                        </div>
+                        <div class="sidebar-item">
+                            <div class="sidebar-thumb"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=120&q=70" alt="" /></div>
+                            <div class="sidebar-item-text"><div class="sidebar-item-title">Tại sao bạn luôn cảm thấy mệt mỏi dù đã ngủ đủ giấc?</div><div class="sidebar-item-date">8 tháng 6, 2025</div></div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+</html>

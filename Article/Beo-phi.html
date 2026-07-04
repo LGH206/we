@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ===================== MAIN ===================== -->
+    <main>
+        <div class="page-body">
+
+            <!-- ---- ARTICLE COLUMN ---- -->
+            <div class="article-main">
+
+                <!-- Category -->
+                <span class="article-category-tag">Nội tiết & chuyển hoá</span>
+
+                <!-- Title -->
+                <h1 class="article-title">
+                    Béo phì (Obesity): Nguyên nhân, biến chứng và chiến lược giảm cân bền vững
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="article-subtitle">
+                    Béo phì là bệnh mạn tính phức tạp, là nguyên nhân hàng đầu của nhiều bệnh lý nguy hiểm như tiểu đường, tim mạch và ung thư. Kiểm soát cân nặng hiệu quả giúp cải thiện sức khỏe toàn diện và kéo dài tuổi thọ.
+                </p>
+
+                <!-- Meta -->
+                <div class="article-meta-row">
+                   
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>                        30 tháng 6, 2025
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 12 phút đọc
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 16.8k lượt xem
+                    </div>
+                </div>
+
+                <!-- Hero image -->
+                <div class="article-hero">
+                    <img src="../Image/beophi.png" alt="Béo phì và sức khỏe" loading="lazy" />
+                </div>
+                <p class="article-hero-caption">
+                    Béo phì là dịch bệnh toàn cầu, ảnh hưởng đến hơn 1 tỷ người trên thế giới – Ảnh: Unsplash
+                </p>
+
+                <!-- Body -->
+                <div class="article-body">
+                    <p>
+                        Béo phì (Obesity) là tình trạng tích tụ mỡ thừa bất thường hoặc quá mức trong cơ thể, gây ảnh hưởng nghiêm trọng đến sức khỏe. Theo <strong>Tổ chức Y tế Thế giới (WHO)</strong>, béo phì đã trở thành dịch bệnh toàn cầu với hơn 1
+                        tỷ người bị béo phì, trong đó có 650 triệu người trưởng thành và 340 triệu trẻ em và thanh thiếu niên. Đây là một trong những thách thức sức khỏe cộng đồng lớn nhất thế kỷ 21.
+                    </p>
+
+                    <h2>1. Định nghĩa và phân loại béo phì</h2>
+                    <p>
+                        Béo phì được chẩn đoán dựa trên chỉ số khối cơ thể (BMI) và vòng bụng, kết hợp các yếu tố nguy cơ khác để đánh giá mức độ ảnh hưởng đến sức khỏe.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">📏</div>
+                        <div class="callout-text">
+                            <strong>Phân loại béo phì theo BMI (người châu Á):</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Bình thường:</strong> BMI 18.5 - 22.9 kg/m²</li>
+                                <li><strong>Thừa cân:</strong> BMI 23 - 24.9 kg/m²</li>
+                                <li><strong>Béo phì độ 1 (nhẹ):</strong> BMI 25 - 29.9 kg/m²</li>
+                                <li><strong>Béo phì độ 2 (trung bình):</strong> BMI 30 - 34.9 kg/m²</li>
+                                <li><strong>Béo phì độ 3 (nặng):</strong> BMI ≥ 35 kg/m²</li>
+                                <li><strong>Béo phì độ 4 (bệnh lý):</strong> BMI ≥ 40 kg/m²</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>Phân loại theo vòng bụng (béo bụng)</h3>
+                    <ul>
+                        <li><strong>Nam giới:</strong> Vòng bụng ≥ 90 cm là nguy cơ cao.</li>
+                        <li><strong>Nữ giới:</strong> Vòng bụng ≥ 80 cm là nguy cơ cao.</li>
+                        <li><strong>Béo bụng:</strong> Liên quan chặt chẽ với hội chứng chuyển hóa, tăng nguy cơ tiểu đường và tim mạch.</li>
+                    </ul>
+
+                    <h2>2. Nguyên nhân và yếu tố nguy cơ</h2>
+                    <p>
+                        Béo phì là bệnh đa yếu tố, kết hợp giữa di truyền, môi trường, lối sống và các yếu tố tâm lý - xã hội.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-text">
+                            <strong>Nguyên nhân và yếu tố nguy cơ chính:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Yếu tố di truyền:</strong> Gen ảnh hưởng đến cảm giác no, tốc độ chuyển hóa và phân bố mỡ.</li>
+                                <li><strong>Chế độ ăn không lành mạnh:</strong> Thực phẩm chế biến sẵn giàu đường, chất béo bão hòa, đồ uống có đường.</li>
+                                <li><strong>Lối sống ít vận động:</strong> Ngồi nhiều, sử dụng phương tiện cơ giới, thiếu hoạt động thể lực.</li>
+                                <li><strong>Yếu tố tâm lý:</strong> Stress, trầm cảm, ăn uống cảm xúc, thiếu ngủ.</li>
+                                <li><strong>Rối loạn nội tiết:</strong> Suy giáp, hội chứng Cushing, hội chứng buồng trứng đa nang (PCOS).</li>
+                                <li><strong>Thuốc:</strong> Corticosteroid, thuốc chống trầm cảm, thuốc chống động kinh.</li>
+                                <li><strong>Yếu tố môi trường:</strong> Môi trường sống ít cây xanh, tiếp cận thực phẩm không lành mạnh.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>3. Biến chứng và hậu quả của béo phì</h2>
+                    <p>
+                        Béo phì là nguyên nhân của nhiều bệnh mạn tính nguy hiểm, ảnh hưởng đến hầu hết các cơ quan trong cơ thể.
+                    </p>
+
+                    <ul>
+                        <li><strong>Bệnh tim mạch:</strong> Tăng huyết áp, bệnh động mạch vành, suy tim, nhồi máu cơ tim.</li>
+                        <li><strong>Đái tháo đường type 2:</strong> 80-90% người bệnh tiểu đường type 2 có thừa cân/béo phì.</li>
+                        <li><strong>Rối loạn mỡ máu:</strong> Tăng LDL, Triglyceride, giảm HDL-Cholesterol.</li>
+                        <li><strong>Bệnh gan nhiễm mỡ:</strong> Thoái hóa mỡ gan không do rượu, tiến triển thành xơ gan.</li>
+                        <li><strong>Bệnh khớp:</strong> Thoái hóa khớp, viêm khớp, đau lưng, gout.</li>
+                        <li><strong>Hội chứng ngưng thở khi ngủ:</strong> Giảm oxy máu, tăng nguy cơ đột quỵ.</li>
+                        <li><strong>Ung thư:</strong> Nguy cơ cao với ung thư vú, đại tràng, nội mạc tử cung, thận, tụy.</li>
+                        <li><strong>Vô sinh:</strong> Rối loạn phóng noãn, hội chứng buồng trứng đa nang.</li>
+                        <li><strong>Tâm lý - xã hội:</strong> Trầm cảm, lo âu, kỳ thị, giảm chất lượng cuộc sống.</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">🚨</div>
+                        <div class="callout-text">
+                            <strong>Béo phì và nguy cơ tử vong:</strong> Theo nghiên cứu, béo phì làm giảm tuổi thọ trung bình 7-10 năm. Béo phì độ 3 (BMI ≥40) làm tăng nguy cơ tử vong sớm lên đến 3-4 lần so với người có cân nặng bình thường.
+                        </div>
+                    </div>
+
+                    <h2>4. Chiến lược điều trị và kiểm soát béo phì</h2>
+                    <p>
+                        Điều trị béo phì cần tiếp cận đa mô thức, kết hợp thay đổi lối sống, dinh dưỡng, hoạt động thể lực, hỗ trợ tâm lý và can thiệp y tế khi cần thiết.
+                    </p>
+
+                    <h3>4.1 Mục tiêu điều trị</h3>
+                    <ul>
+                        <li><strong>Mục tiêu chính:</strong> Giảm 5-10% trọng lượng cơ thể trong 6 tháng đầu, giúp cải thiện đáng kể các chỉ số chuyển hóa.</li>
+                        <li><strong>Mục tiêu lâu dài:</strong> Duy trì cân nặng đạt được, ngăn ngừa tăng cân trở lại.</li>
+                        <li><strong>Mục tiêu toàn diện:</strong> Cải thiện các bệnh lý kèm theo (đường huyết, mỡ máu, huyết áp, gan nhiễm mỡ).</li>
+                    </ul>
+
+                    <h3>4.2 Thay đổi lối sống (Nền tảng quan trọng)</h3>
+
+                    <h4>Chế độ dinh dưỡng</h4>
+                    <ul>
+                        <li><strong>Nguyên tắc giảm calo:</strong> Giảm 500-1000 calo/ngày để giảm 0.5-1kg/tuần.</li>
+                        <li><strong>Chọn thực phẩm ít năng lượng nhưng nhiều dinh dưỡng:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Rau xanh không chứa tinh bột: Cải bó xôi, bông cải xanh, xà lách, cà chua.</li>
+                                <li>Protein nạc: Ức gà, cá, đậu phụ, trứng, sữa chua Hy Lạp.</li>
+                                <li>Ngũ cốc nguyên hạt: Gạo lứt, yến mạch, quinoa.</li>
+                                <li>Chất béo lành mạnh: Bơ, dầu ô-liu, các loại hạt.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Hạn chế:</strong> Đường và đồ uống có đường, thực phẩm chế biến sẵn, đồ chiên rán, nước ngọt.</li>
+                        <li><strong>Ghi chép thực phẩm:</strong> Theo dõi chế độ ăn hàng ngày giúp kiểm soát lượng calo.</li>
+                    </ul>
+
+                    <h4>Hoạt động thể lực</h4>
+                    <ul>
+                        <li><strong>Khuyến nghị:</strong> 150-300 phút/tuần tập thể dục cường độ vừa phải (đi bộ nhanh, bơi, đạp xe).</li>
+                        <li><strong>Kết hợp:</strong> Tập kháng lực 2-3 buổi/tuần để duy trì khối cơ, tăng chuyển hóa cơ bản.</li>
+                        <li><strong>Vận động hàng ngày:</strong> Đi thang bộ thay thang máy, đi bộ thay xe, đứng dậy sau mỗi 30 phút ngồi.</li>
+                    </ul>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">🏃</div>
+                        <div class="callout-text">
+                            <strong>Lợi ích của giảm 5-10% trọng lượng:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li>Giảm 50% nguy cơ đái tháo đường type 2</li>
+                                <li>Giảm huyết áp 5-10 mmHg</li>
+                                <li>Giảm LDL-Cholesterol 10-15 mg/dL</li>
+                                <li>Giảm triglyceride 20-30%</li>
+                                <li>Cải thiện tình trạng gan nhiễm mỡ</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>4.3 Điều trị bằng thuốc</h3>
+                    <ul>
+                        <li><strong>Chỉ định:</strong> BMI ≥30 kg/m² hoặc BMI ≥27 kg/m² kèm bệnh lý kèm theo.</li>
+                        <li><strong>Các loại thuốc phổ biến:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li><strong>Orlistat:</strong> Ức chế hấp thu chất béo tại ruột.</li>
+                                <li><strong>Liraglutide (GLP-1 receptor agonist):</strong> Giảm cảm giác thèm ăn, chậm tiêu hóa, giảm cân hiệu quả 5-10%.</li>
+                                <li><strong>Semaglutide:</strong> GLP-1 tác dụng kéo dài, giảm cân trung bình 15% sau 68 tuần.</li>
+                                <li><strong>Phentermine-Topiramate:</strong> Kết hợp giảm thèm ăn và tăng cảm giác no.</li>
+                                <li><strong>Naltrexone-Bupropion:</strong> Tác động lên trung tâm thèm ăn trong não.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Lưu ý:</strong> Thuốc chỉ dùng theo chỉ định của bác sĩ, cần theo dõi tác dụng phụ và hiệu quả.</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-text">
+                            <strong>Cảnh báo:</strong> Không sử dụng các loại thuốc giảm cân không rõ nguồn gốc, thuốc cấm, hoặc các sản phẩm quảng cáo giảm cân cấp tốc. Những sản phẩm này có thể gây hại nghiêm trọng đến sức khỏe, thậm chí đe dọa tính
+                            mạng.
+                        </div>
+                    </div>
+
+                    <h3>4.4 Can thiệp phẫu thuật</h3>
+                    <ul>
+                        <li><strong>Chỉ định:</strong> BMI ≥40 kg/m² hoặc BMI ≥35 kg/m² kèm bệnh lý kèm theo mà không đáp ứng với điều trị nội khoa.</li>
+                        <li><strong>Các phương pháp phổ biến:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li><strong>Nội soi cắt dạ dày hình ống (Sleeve gastrectomy):</strong> Loại bỏ 80% dạ dày, giảm khả năng ăn và hormone ghrelin.</li>
+                                <li><strong>Nội soi nối tắt dạ dày (Gastric bypass):</strong> Phẫu thuật phức tạp, hiệu quả giảm cân cao nhất.</li>
+                                <li><strong>Đặt bóng dạ dày:</strong> Can thiệp nội soi ít xâm lấn.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Hiệu quả:</strong> Giảm cân trung bình 20-30% và duy trì 10-15 năm, cải thiện hoặc khỏi hoàn toàn các bệnh kèm theo.</li>
+                    </ul>
+
+                    <h2>5. Phòng ngừa béo phì</h2>
+                    <p>
+                        Phòng ngừa béo phì dễ dàng hơn điều trị. Các chiến lược phòng ngừa cần bắt đầu từ thời thơ ấu và duy trì suốt đời.
+                    </p>
+                    <ul>
+                        <li><strong>Xây dựng thói quen ăn uống lành mạnh:</strong> Ăn nhiều rau củ, hạn chế đồ ngọt, ăn chậm nhai kỹ.</li>
+                        <li><strong>Vận động thường xuyên:</strong> Tối thiểu 30 phút hoạt động thể lực mỗi ngày, hạn chế thời gian xem tivi, điện thoại.</li>
+                        <li><strong>Ngủ đủ giấc:</strong> 7-8 tiếng/đêm, tránh thức khuya, bảo vệ đồng hồ sinh học.</li>
+                        <li><strong>Quản lý stress:</strong> Tìm sở thích lành mạnh, thư giãn, tránh ăn uống cảm xúc.</li>
+                        <li><strong>Tạo môi trường hỗ trợ:</strong> Gia đình, bạn bè, đồng nghiệp cùng xây dựng lối sống khỏe mạnh.</li>
+                        <li><strong>Tầm soát định kỳ:</strong> Theo dõi chỉ số BMI, vòng bụng, các chỉ số chuyển hóa (đường huyết, mỡ máu).</li>
+                    </ul>
+
+                    <p>
+                        Béo phì là bệnh mạn tính nhưng có thể kiểm soát và điều trị hiệu quả với sự phối hợp chặt chẽ giữa thay đổi lối sống, can thiệp dinh dưỡng, hoạt động thể lực và điều trị y tế. Hành trình giảm cân là một quá trình lâu dài, đòi hỏi sự kiên nhẫn, kiên trì
+                        và sự hỗ trợ từ gia đình, bạn bè và các chuyên gia sức khỏe.
+                    </p>
+                </div>
+
+                <!-- Tags -->
+                <div class="article-tags">
+                    <span class="tag-label">Từ khoá:</span>
+                    <a class="tag-item" href="#">béo phì</a>
+                    <a class="tag-item" href="#">obesity</a>
+                    <a class="tag-item" href="#">giảm cân</a>
+                    <a class="tag-item" href="#">BMI</a>
+                    <a class="tag-item" href="#">hội chứng chuyển hóa</a>
+                    <a class="tag-item" href="#">tiểu đường</a>
+                    <a class="tag-item" href="#">béo bụng</a>
+                    <a class="tag-item" href="#">semaglutide</a>
+                    <a class="tag-item" href="#">phẫu thuật giảm cân</a>
+                </div>
+                <!-- ============ COMMENTS ============ -->
+                <section class="comments-section">
+                    <h2 class="section-heading">
+                        Bình luận
+                        <span class="count-badge">14</span>
+                    </h2>
+                    <p class="section-desc">Chia sẻ câu hỏi hoặc kinh nghiệm của bạn về chủ đề này</p>
+
+                    <!-- Form -->
+                    <div class="comment-form-card">
+                        <h3>✍️ Để lại bình luận</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-name">Họ và tên</label>
+                                <input id="c-name" type="text" placeholder="Nguyễn Văn A" />
+                            </div>
+                            <div class="form-group">
+                                <label for="c-email">Email (không hiển thị)</label>
+                                <input id="c-email" type="email" placeholder="email@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-text">Nội dung bình luận</label>
+                            <textarea id="c-text" placeholder="Bạn có câu hỏi hoặc muốn chia sẻ kinh nghiệm của mình?"></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <p class="form-note">* Email của bạn sẽ không được hiển thị công khai.</p>
+                            <button class="btn-submit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                Gửi bình luận
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="comments-sort-bar">
+                        <span class="sort-label">Sắp xếp theo:</span>
+                        <button class="sort-btn active">Mới nhất</button>
+                        <button class="sort-btn">Cũ nhất</button>
+                        <button class="sort-btn">Nhiều lượt thích nhất</button>
+                    </div>
+
+                    <!-- List -->
+                    <div class="comment-list">
+
+                        <!-- Comment 1 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">LH</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">
+                                        Lê Thị Hương
+                                        <span class="verified-badge">✓ Đã xác minh</span>
+                                    </div>
+                                    <div class="comment-time">2 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Bài viết rất hữu ích! Mình đã áp dụng mô hình đĩa thức ăn này được 3 tháng rồi và cảm thấy sức khoẻ cải thiện rõ rệt, đặc biệt là giảm được cảm giác mệt mỏi vào buổi chiều. Cảm ơn bác sĩ đã chia sẻ.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                        <!-- Comment 2 with reply -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-amber">NV</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Nguyễn Văn Bình</div>
+                                    <div class="comment-time">5 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Cho mình hỏi với người bị tiểu đường type 2 thì có cần điều chỉnh gì khác không ạ? Mình đang phân vân giữa việc ăn gạo lứt hay hoàn toàn kiêng tinh bột.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+
+                            <!-- Reply -->
+                            <div class="reply-thread">
+                                <div class="comment-card is-reply">
+                                    <div class="comment-header">
+                                        <div class="comment-avatar avatar-green">BS</div>
+                                        <div class="comment-meta">
+                                            <div class="comment-author">
+                                                BS. Nguyễn Minh Tuấn
+                                                <span class="verified-badge">✓ Tác giả</span>
+                                            </div>
+                                            <div class="comment-time">3 giờ trước</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-text">
+                                        Chào bạn! Với người tiểu đường type 2, không cần kiêng hoàn toàn tinh bột mà nên chọn tinh bột có chỉ số GI thấp như gạo lứt, yến mạch, khoai lang. Điều quan trọng là kiểm soát khẩu phần và kết hợp với rau xanh để làm chậm hấp thu đường. Bạn nên gặp bác
+                                        sĩ chuyên khoa nội tiết để được tư vấn cụ thể theo tình trạng của mình nhé.
+                                    </div>
+                                    <div class="comment-actions">
+                                        <button class="action-btn liked">
+                                            <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 3 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">TM</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Trần Minh Khoa</div>
+                                    <div class="comment-time">1 ngày trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Phần về bữa tối giảm tinh bột rất đúng với kinh nghiệm của mình. Từ khi chuyển sang ăn nhiều rau và cá vào buổi tối, giấc ngủ của mình cải thiện hẳn, không còn cảm giác nặng bụng khó ngủ nữa.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="comments-pagination">
+                        <button class="page-btn wide">‹ Trước</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span>…</span>
+                        <button class="page-btn">8</button>
+                        <button class="page-btn wide">Tiếp ›</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+   
+    <!-- =============================================
+        FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

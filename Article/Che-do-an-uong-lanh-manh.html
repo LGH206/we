@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ===================== BREADCRUMB ===================== -->
+    <div class="breadcrumb-bar">
+      <div class="breadcrumb-inner">
+        <a href="#">Trang chủ</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="#">Lối sống khoẻ</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Chế độ ăn uống lành mạnh cho người trưởng thành</span>
+      </div>
+    </div>
+
+    <!-- ===================== MAIN ===================== -->
+    <main>
+      <div class="page-body">
+
+        <!-- ---- ARTICLE COLUMN ---- -->
+        <div class="article-main">
+
+          <!-- Category -->
+          <span class="article-category-tag">Dinh dưỡng</span>
+
+          <!-- Title -->
+          <h1 class="article-title">
+            Chế độ ăn uống lành mạnh cho người trưởng thành: Những điều bạn cần biết để sống khoẻ hơn mỗi ngày
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="article-subtitle">
+            Khoa học đã chứng minh rằng thói quen ăn uống đúng cách không chỉ giúp kiểm soát cân nặng mà còn cải thiện rõ rệt sức đề kháng, tinh thần và tuổi thọ.
+          </p>
+
+          <!-- Meta -->
+          <div class="article-meta-row">
+            <div class="author-info">
+              <div class="author-avatar">BS</div>
+              <div class="author-details">
+                <div class="author-name">BS. Nguyễn Minh Tuấn</div>
+                <div class="author-title-label">Chuyên gia Dinh dưỡng lâm sàng</div>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              15 tháng 6, 2025
+            </div>
+
+            <div class="meta-item">
+              <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              8 phút đọc
+            </div>
+
+            <div class="meta-item">
+              <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              4.2k lượt xem
+            </div>
+          </div>
+
+          <!-- Hero image -->
+          <div class="article-hero">
+            <img
+              src="../Image/traicaymatlanh.png"
+              alt="Bữa ăn lành mạnh đầy màu sắc"
+              loading="lazy"
+            />
+          </div>
+          <p class="article-hero-caption">
+            Một bữa ăn cân bằng nên có đủ rau xanh, protein và tinh bột tốt – Ảnh: Unsplash
+          </p>
+
+          <!-- Body -->
+          <div class="article-body">
+            <p>
+              Trong bối cảnh lối sống hiện đại ngày càng bận rộn, nhiều người có xu hướng bỏ qua chất lượng bữa ăn để ưu tiên sự tiện lợi. Tuy nhiên, các nghiên cứu gần đây từ <strong>Tổ chức Y tế Thế giới (WHO)</strong> cho thấy chế độ dinh dưỡng chiếm tới 30% yếu tố quyết định sức khoẻ tổng thể và tuổi thọ.
+            </p>
+
+            <h2>1. Nguyên tắc vàng của chế độ ăn cân bằng</h2>
+            <p>
+              Một bữa ăn cân bằng không đơn giản chỉ là "ăn đủ no". Chuyên gia dinh dưỡng khuyến nghị áp dụng <strong>mô hình đĩa thức ăn khoẻ mạnh</strong> – một công cụ trực quan giúp phân chia tỷ lệ hợp lý giữa các nhóm chất.
+            </p>
+
+            <div class="callout-box">
+              <div class="callout-icon">💡</div>
+              <div class="callout-text">
+                <strong>Mô hình đĩa thức ăn:</strong> Chia đĩa thành 4 phần – ½ rau củ quả, ¼ ngũ cốc nguyên hạt, ¼ protein nạc và một phần nhỏ chất béo lành mạnh. Uống đủ 2 lít nước mỗi ngày.
+              </div>
+            </div>
+
+            <h3>Các nhóm chất không thể thiếu</h3>
+            <ul>
+              <li><strong>Carbohydrate phức hợp:</strong> Gạo lứt, yến mạch, khoai lang – cung cấp năng lượng bền vững, không làm tăng đột biến đường huyết.</li>
+              <li><strong>Protein chất lượng cao:</strong> Cá hồi, đậu phụ, trứng, ức gà – hỗ trợ tái tạo cơ bắp và miễn dịch.</li>
+              <li><strong>Chất béo lành mạnh:</strong> Dầu ô-liu, bơ, các loại hạt – cần thiết cho hệ thần kinh và hormone.</li>
+              <li><strong>Chất xơ:</strong> Rau xanh, trái cây tươi, đậu – hỗ trợ tiêu hóa và kiểm soát cholesterol.</li>
+              <li><strong>Vi chất dinh dưỡng:</strong> Vitamin và khoáng chất từ đa dạng thực phẩm, đặc biệt vitamin D, sắt, canxi.</li>
+            </ul>
+
+            <h2>2. Những thói quen ăn uống nên xây dựng ngay hôm nay</h2>
+            <p>
+              Thay đổi chế độ ăn không cần phải diễn ra đột ngột. Các chuyên gia khuyên nên bắt đầu bằng những điều chỉnh nhỏ, duy trì liên tục trong ít nhất 21 ngày để tạo thành thói quen.
+            </p>
+
+            <p>
+              Nghiên cứu từ Đại học Harvard (2023) chỉ ra rằng những người ăn bữa sáng đều đặn với nguồn protein và chất xơ có xu hướng kiểm soát cân nặng tốt hơn 40% so với nhóm bỏ bữa sáng, và ít có nguy cơ mắc tiểu đường type 2 hơn đáng kể.
+            </p>
+
+            <h3>Lịch ăn uống tham khảo trong ngày</h3>
+            <ul>
+              <li><strong>Bữa sáng (7:00–8:00):</strong> Yến mạch với hoa quả tươi hoặc trứng luộc + bánh mì nguyên cám.</li>
+              <li><strong>Bữa phụ sáng (10:00):</strong> Một nắm hạnh nhân hoặc sữa chua không đường.</li>
+              <li><strong>Bữa trưa (12:00–13:00):</strong> Cơm gạo lứt, rau xào + thịt/cá nấu đơn giản, ít dầu mỡ.</li>
+              <li><strong>Bữa phụ chiều (15:30):</strong> Trái cây tươi theo mùa hoặc một ít hạt.</li>
+              <li><strong>Bữa tối (18:30–19:30):</strong> Ưu tiên rau và protein, giảm tinh bột về chiều tối.</li>
+            </ul>
+
+            <div class="warning-box">
+              <div class="callout-icon">⚠️</div>
+              <div class="callout-text">
+                <strong>Lưu ý quan trọng:</strong> Thực đơn trên chỉ mang tính tham khảo. Nhu cầu dinh dưỡng mỗi người khác nhau tùy theo tuổi, giới tính, mức độ hoạt động thể lực và tình trạng sức khoẻ. Hãy tham khảo ý kiến bác sĩ hoặc chuyên gia dinh dưỡng trước khi thay đổi chế độ ăn đáng kể.
+              </div>
+            </div>
+
+            <h2>3. Những thực phẩm nên hạn chế</h2>
+            <p>
+              Không có thực phẩm nào hoàn toàn "xấu", nhưng một số nhóm thực phẩm khi tiêu thụ quá mức thường xuyên có thể gây hại cho sức khoẻ lâu dài.
+            </p>
+            <ul>
+              <li>Đồ uống có đường và nước ngọt có ga – nguồn calo rỗng chính.</li>
+              <li>Thực phẩm chế biến sẵn nhiều natri và chất bảo quản.</li>
+              <li>Chất béo trans trong đồ chiên rán công nghiệp.</li>
+              <li>Rượu bia – ảnh hưởng trực tiếp đến gan và khả năng hấp thụ dinh dưỡng.</li>
+            </ul>
+
+            <p>
+              Điều quan trọng nhất là <strong>tính nhất quán và đa dạng</strong>. Một bữa ăn lý tưởng không phải là bữa ăn hoàn hảo theo tiêu chuẩn sách giáo khoa, mà là bữa ăn bạn có thể duy trì đều đặn, vui vẻ và phù hợp với hoàn cảnh thực tế của mình.
+            </p>
+          </div>
+
+          <!-- Tags -->
+          <div class="article-tags">
+            <span class="tag-label">Từ khoá:</span>
+            <a class="tag-item" href="#">dinh dưỡng</a>
+            <a class="tag-item" href="#">ăn uống lành mạnh</a>
+            <a class="tag-item" href="#">chế độ ăn</a>
+            <a class="tag-item" href="#">sức khoẻ tổng quát</a>
+            <a class="tag-item" href="#">tiểu đường</a>
+            <a class="tag-item" href="#">cân nặng</a>
+          </div>
+
+          <!-- ============ COMMENTS ============ -->
+          <section class="comments-section">
+                    <h2 class="section-heading">
+                        Bình luận
+                        <span class="count-badge">14</span>
+                    </h2>
+                    <p class="section-desc">Chia sẻ câu hỏi hoặc kinh nghiệm của bạn về chủ đề này</p>
+
+                    <!-- Form -->
+                    <div class="comment-form-card">
+                        <h3>✍️ Để lại bình luận</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-name">Họ và tên</label>
+                                <input id="c-name" type="text" placeholder="Nguyễn Văn A" />
+                            </div>
+                            <div class="form-group">
+                                <label for="c-email">Email (không hiển thị)</label>
+                                <input id="c-email" type="email" placeholder="email@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-text">Nội dung bình luận</label>
+                            <textarea id="c-text" placeholder="Bạn có câu hỏi hoặc muốn chia sẻ kinh nghiệm của mình?"></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <p class="form-note">* Email của bạn sẽ không được hiển thị công khai.</p>
+                            <button class="btn-submit">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  Gửi bình luận
+                </button>
+                        </div>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="comments-sort-bar">
+                        <span class="sort-label">Sắp xếp theo:</span>
+                        <button class="sort-btn active">Mới nhất</button>
+                        <button class="sort-btn">Cũ nhất</button>
+                        <button class="sort-btn">Nhiều lượt thích nhất</button>
+                    </div>
+
+                    <!-- List -->
+                    <div class="comment-list">
+
+                        <!-- Comment 1 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">LH</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">
+                                        Lê Thị Hương
+                                        <span class="verified-badge">✓ Đã xác minh</span>
+                                    </div>
+                                    <div class="comment-time">2 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Bài viết rất hữu ích! Mình đã áp dụng mô hình đĩa thức ăn này được 3 tháng rồi và cảm thấy sức khoẻ cải thiện rõ rệt, đặc biệt là giảm được cảm giác mệt mỏi vào buổi chiều. Cảm ơn bác sĩ đã chia sẻ.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    28
+                  </button>
+                                <button class="action-btn">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    Trả lời
+                  </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                        <!-- Comment 2 with reply -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-amber">NV</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Nguyễn Văn Bình</div>
+                                    <div class="comment-time">5 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Cho mình hỏi với người bị tiểu đường type 2 thì có cần điều chỉnh gì khác không ạ? Mình đang phân vân giữa việc ăn gạo lứt hay hoàn toàn kiêng tinh bột.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    12
+                  </button>
+                                <button class="action-btn">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    Trả lời
+                  </button>
+                            </div>
+
+                            <!-- Reply -->
+                            <div class="reply-thread">
+                                <div class="comment-card is-reply">
+                                    <div class="comment-header">
+                                        <div class="comment-avatar avatar-green">BS</div>
+                                        <div class="comment-meta">
+                                            <div class="comment-author">
+                                                BS. Nguyễn Minh Tuấn
+                                                <span class="verified-badge">✓ Tác giả</span>
+                                            </div>
+                                            <div class="comment-time">3 giờ trước</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-text">
+                                        Chào bạn! Với người tiểu đường type 2, không cần kiêng hoàn toàn tinh bột mà nên chọn tinh bột có chỉ số GI thấp như gạo lứt, yến mạch, khoai lang. Điều quan trọng là kiểm soát khẩu phần và kết hợp với rau xanh để làm chậm hấp thu đường. Bạn nên gặp bác
+                                        sĩ chuyên khoa nội tiết để được tư vấn cụ thể theo tình trạng của mình nhé.
+                                    </div>
+                                    <div class="comment-actions">
+                                        <button class="action-btn liked">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        41
+                      </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 3 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">TM</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Trần Minh Khoa</div>
+                                    <div class="comment-time">1 ngày trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Phần về bữa tối giảm tinh bột rất đúng với kinh nghiệm của mình. Từ khi chuyển sang ăn nhiều rau và cá vào buổi tối, giấc ngủ của mình cải thiện hẳn, không còn cảm giác nặng bụng khó ngủ nữa.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    19
+                  </button>
+                                <button class="action-btn">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    Trả lời
+                  </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="comments-pagination">
+                        <button class="page-btn wide">‹ Trước</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span style="color:var(--n-500);font-size:.85rem">…</span>
+                        <button class="page-btn">8</button>
+                        <button class="page-btn wide">Tiếp ›</button>
+                    </div>
+                </section>
+        </div>
+        <!-- ---- SIDEBAR ---- -->
+        <aside class="article-sidebar">
+
+          <!-- Doctor card -->
+          <div class="sidebar-card">
+            <div class="sidebar-card-header">
+              <span>👨‍⚕️</span> Về tác giả
+            </div>
+            <div class="doctor-card">
+              <div class="doctor-avatar">👨‍⚕️</div>
+              <div class="doctor-name">BS. Nguyễn Minh Tuấn</div>
+              <div class="doctor-spec">Chuyên gia Dinh dưỡng lâm sàng</div>
+              <p class="doctor-desc">
+                Hơn 12 năm kinh nghiệm tư vấn dinh dưỡng tại Bệnh viện Chợ Rẫy. Thành viên Hội Dinh dưỡng Việt Nam.
+              </p>
+              <button class="btn-consult">📩 Đặt câu hỏi</button>
+            </div>
+          </div>
+
+          <!-- Most read -->
+          <div class="sidebar-card">
+            <div class="sidebar-card-header">
+              <span>🔥</span> Đọc nhiều nhất
+            </div>
+            <div class="sidebar-list">
+              <div class="sidebar-item">
+                <div class="sidebar-thumb">
+                  <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=120&q=70" alt="" loading="lazy" />
+                </div>
+                <div class="sidebar-item-text">
+                  <div class="sidebar-item-title">5 dấu hiệu cơ thể đang thiếu vitamin D nghiêm trọng</div>
+                  <div class="sidebar-item-date">10 tháng 6, 2025</div>
+                </div>
+              </div>
+              <div class="sidebar-item">
+                <div class="sidebar-thumb">
+                  <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=120&q=70" alt="" loading="lazy" />
+                </div>
+                <div class="sidebar-item-text">
+                  <div class="sidebar-item-title">Tại sao bạn luôn cảm thấy mệt mỏi dù đã ngủ đủ giấc?</div>
+                  <div class="sidebar-item-date">8 tháng 6, 2025</div>
+                </div>
+              </div>
+              <div class="sidebar-item">
+                <div class="sidebar-thumb">
+                  <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=120&q=70" alt="" loading="lazy" />
+                </div>
+                <div class="sidebar-item-text">
+                  <div class="sidebar-item-title">Lợi ích của việc đi bộ 30 phút mỗi sáng với tim mạch</div>
+                  <div class="sidebar-item-date">5 tháng 6, 2025</div>
+                </div>
+              </div>
+              <div class="sidebar-item">
+                <div class="sidebar-thumb">
+                  <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=120&q=70" alt="" loading="lazy" />
+                </div>
+                <div class="sidebar-item-text">
+                  <div class="sidebar-item-title">Cách kiểm soát stress hiệu quả theo khoa học thần kinh</div>
+                  <div class="sidebar-item-date">2 tháng 6, 2025</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div><!-- /page-body -->
+    </main>
+
+    <!-- ===================== RELATED ARTICLES ===================== -->
+    <section class="related-section">
+      <div class="related-header">
+        <h2 class="section-heading">
+          📰 Xem thêm bài viết
+        </h2>
+        <a href="#" class="view-all-link">
+          Xem tất cả
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+
+      <!-- Tabs -->
+      <div class="related-tabs">
+        <button class="related-tab active">Liên quan</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="related-grid">
+
+        <!-- Featured -->
+        <div class="related-card featured">
+          <div class="related-thumb">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=700&q=80" alt="" loading="lazy" />
+            <span class="related-thumb-badge">Nổi bật</span>
+          </div>
+          <div class="related-content">
+            <div class="related-cat">Dinh dưỡng</div>
+            <div class="related-title">Superfoods thực sự là gì? Danh sách 10 siêu thực phẩm được khoa học kiểm chứng năm 2025</div>
+            <div class="related-excerpt">Thuật ngữ "superfood" được dùng rất nhiều nhưng ít ai hiểu đúng. Các chuyên gia dinh dưỡng giải thích và cung cấp danh sách thực phẩm thực sự xứng đáng với danh hiệu này.</div>
+            <div class="related-footer">
+              <div class="related-date">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                12 tháng 6, 2025
+              </div>
+              <span class="related-read-time">⏱ 10 phút</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="related-card">
+          <div class="related-thumb">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=75" alt="" loading="lazy" />
+          </div>
+          <div class="related-content">
+            <div class="related-cat">Sức khoẻ tổng quát</div>
+            <div class="related-title">Hội chứng mệt mỏi mãn tính: Nguyên nhân, dấu hiệu và cách điều trị</div>
+            <div class="related-excerpt">Mệt mỏi kéo dài không rõ nguyên nhân có thể là dấu hiệu của một rối loạn sức khoẻ nghiêm trọng cần được chú ý.</div>
+            <div class="related-footer">
+              <div class="related-date">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                8 tháng 6, 2025
+              </div>
+              <span class="related-read-time">⏱ 7 phút</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="related-card">
+          <div class="related-thumb">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&q=75" alt="" loading="lazy" />
+          </div>
+          <div class="related-content">
+            <div class="related-cat">Thể thao</div>
+            <div class="related-title">Lợi ích của việc đi bộ 30 phút mỗi sáng với tim mạch và não bộ</div>
+            <div class="related-excerpt">Chỉ cần đi bộ đều đặn mỗi sáng có thể giảm nguy cơ bệnh tim mạch tới 35% theo nghiên cứu mới nhất.</div>
+            <div class="related-footer">
+              <div class="related-date">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                5 tháng 6, 2025
+              </div>
+              <span class="related-read-time">⏱ 5 phút</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="related-card">
+          <div class="related-thumb">
+            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=75" alt="" loading="lazy" />
+          </div>
+          <div class="related-content">
+            <div class="related-cat">Tâm lý</div>
+            <div class="related-title">Mối liên hệ giữa chế độ ăn và sức khoẻ tâm thần: Bằng chứng từ khoa học thần kinh</div>
+            <div class="related-excerpt">Ruột và não kết nối chặt chẽ hơn chúng ta nghĩ. Những thực phẩm bạn ăn có thể ảnh hưởng trực tiếp đến tâm trạng và khả năng tập trung.</div>
+            <div class="related-footer">
+              <div class="related-date">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2 tháng 6, 2025
+              </div>
+              <span class="related-read-time">⏱ 9 phút</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Load more -->
+      <div class="related-load-more">
+        <button class="btn-load-more">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          Xem thêm bài viết
+        </button>
+      </div>
+    </section>
+
+    <!-- =============================================
+        FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+  </body>
+</html>

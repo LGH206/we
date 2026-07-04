@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- ===================== MAIN ===================== -->
+    <main>
+        <div class="page-body">
+
+            <!-- ---- ARTICLE COLUMN ---- -->
+            <div class="article-main">
+
+                <!-- Category -->
+                <span class="article-category-tag">Bệnh lý sinh dục & sinh sản</span>
+
+                <!-- Title -->
+                <h1 class="article-title">
+                    Hội chứng buồng trứng đa nang (PCOS): Nguyên nhân, triệu chứng và chiến lược điều trị toàn diện
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="article-subtitle">
+                    Hội chứng buồng trứng đa nang là rối loạn nội tiết phổ biến ở phụ nữ trong độ tuổi sinh sản, ảnh hưởng đến 8-13% phụ nữ trên toàn cầu. Phát hiện và điều trị sớm giúp cải thiện sức khỏe sinh sản, ngăn ngừa biến chứng và nâng cao chất lượng cuộc sống.
+                </p>
+
+                <!-- Meta -->
+                <div class="article-meta-row">
+                    
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>                        25 tháng 6, 2025
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10 phút đọc
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 12.9k lượt xem
+                    </div>
+                </div>
+
+                <!-- Hero image -->
+                <div class="article-hero">
+                    <img src="../Image/hoichungbuongtrung.png" alt="Hội chứng buồng trứng đa nang" loading="lazy" />
+                </div>
+                <p class="article-hero-caption">
+                    PCOS là rối loạn nội tiết phổ biến, ảnh hưởng đến sức khỏe sinh sản và chuyển hóa của phụ nữ – Ảnh: Unsplash
+                </p>
+
+                <!-- Body -->
+                <div class="article-body">
+                    <p>
+                        Hội chứng buồng trứng đa nang (PCOS - Polycystic Ovary Syndrome) là rối loạn nội tiết phức tạp, đặc trưng bởi sự mất cân bằng hormone ở phụ nữ trong độ tuổi sinh sản. Theo <strong>Hiệp hội Sản phụ khoa Hoa Kỳ (ACOG)</strong>, PCOS
+                        ảnh hưởng đến 8-13% phụ nữ trong độ tuổi sinh sản và là nguyên nhân hàng đầu gây vô sinh ở nữ giới. Tuy nhiên, nhiều phụ nữ chưa được chẩn đoán đúng, dẫn đến những hậu quả sức khỏe lâu dài.
+                    </p>
+
+                    <h2>1. Hội chứng buồng trứng đa nang là gì?</h2>
+                    <p>
+                        PCOS là tình trạng buồng trứng sản xuất quá nhiều hormone androgen (hormone nam), dẫn đến mất cân bằng nội tiết tố, ảnh hưởng đến quá trình rụng trứng, kinh nguyệt và sức khỏe sinh sản.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">📋</div>
+                        <div class="callout-text">
+                            <strong>Tiêu chuẩn chẩn đoán Rotterdam (có ít nhất 2 trong 3 tiêu chuẩn):</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Rối loạn phóng noãn:</strong> Chu kỳ kinh thưa (≥35 ngày) hoặc vô kinh.</li>
+                                <li><strong>Tăng androgen:</strong> Tăng androgen máu (xét nghiệm) hoặc biểu hiện lâm sàng (mụn trứng cá, rậm lông, rụng tóc).</li>
+                                <li><strong>Buồng trứng đa nang:</strong> Siêu âm thấy ≥12 nang nhỏ (2-9mm) trong buồng trứng hoặc thể tích buồng trứng >10ml.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>2. Nguyên nhân và yếu tố nguy cơ</h2>
+                    <p>
+                        Nguyên nhân chính xác của PCOS vẫn chưa được xác định rõ, nhưng các nhà khoa học cho rằng có sự kết hợp của nhiều yếu tố di truyền, nội tiết và môi trường.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-text">
+                            <strong>Nguyên nhân và yếu tố nguy cơ chính:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Yếu tố di truyền:</strong> PCOS có xu hướng gia đình, nếu mẹ hoặc chị gái mắc PCOS thì nguy cơ cao hơn.</li>
+                                <li><strong>Kháng insulin:</strong> Là yếu tố trung tâm, làm tăng sản xuất androgen và ức chế rụng trứng.</li>
+                                <li><strong>Viêm mạn tính:</strong> Tình trạng viêm cấp thấp trong cơ thể kích thích buồng trứng sản xuất androgen.</li>
+                                <li><strong>Thừa cân/Béo phì:</strong> Làm trầm trọng thêm tình trạng kháng insulin và mất cân bằng hormone.</li>
+                                <li><strong>Rối loạn hormone:</strong> Tăng LH, giảm FSH, tăng androgen từ buồng trứng và tuyến thượng thận.</li>
+                                <li><strong>Yếu tố môi trường:</strong> Tiếp xúc với các chất gây rối loạn nội tiết (endocrine disruptors).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>3. Triệu chứng và dấu hiệu nhận biết</h2>
+                    <p>
+                        Triệu chứng của PCOS rất đa dạng và khác nhau ở mỗi người. Một số phụ nữ có các triệu chứng rõ ràng ngay từ tuổi dậy thì, trong khi người khác chỉ phát hiện khi có vấn đề về sinh sản.
+                    </p>
+
+                    <h3>Triệu chứng chính</h3>
+                    <ul>
+                        <li><strong>Rối loạn kinh nguyệt:</strong> Chu kỳ kinh thưa (>35 ngày), vô kinh (không có kinh trong 3 tháng) hoặc rong kinh (chảy máu kéo dài).</li>
+                        <li><strong>Tăng androgen:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li><strong>Rậm lông (hirsutism):</strong> Lông mọc nhiều ở mặt, ngực, bụng, lưng, đùi (theo thang điểm Ferriman-Gallwey).</li>
+                                <li><strong>Mụn trứng cá:</strong> Da dầu, mụn mủ, đặc biệt ở vùng mặt, ngực, lưng.</li>
+                                <li><strong>Rụng tóc:</strong> Tóc thưa dần ở đỉnh đầu (rụng tóc kiểu nam).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Vô sinh:</strong> Khó có thai do rối loạn phóng noãn mạn tính.</li>
+                        <li><strong>Thừa cân/Béo phì:</strong> >50% phụ nữ mắc PCOS có thừa cân hoặc béo phì, đặc biệt là béo bụng.</li>
+                        <li><strong>Da sẫm màu (acanthosis nigricans):</strong> Vùng da tối màu, dày, sần ở cổ, nách, bẹn, dưới ngực (dấu hiệu kháng insulin).</li>
+                        <li><strong>Rối loạn tâm lý:</strong> Trầm cảm, lo âu, tâm trạng thất thường do thay đổi hormone và ảnh hưởng về ngoại hình.</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">🚨</div>
+                        <div class="callout-text">
+                            <strong>Khi nào cần đi khám:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li>Chu kỳ kinh không đều kéo dài >3 tháng.</li>
+                                <li>Không có kinh nguyệt sau tuổi 15 (có thể kèm dấu hiệu dậy thì).</li>
+                                <li>Dấu hiệu tăng androgen rõ rệt (rậm lông, mụn nặng, rụng tóc).</li>
+                                <li>Khó có thai sau 1 năm quan hệ không bảo vệ (hoặc 6 tháng nếu trên 35 tuổi).</li>
+                                <li>Có triệu chứng đái tháo đường hoặc rối loạn chuyển hóa.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>4. Biến chứng của PCOS không được điều trị</h2>
+                    <p>
+                        PCOS không được chẩn đoán và điều trị kịp thời có thể dẫn đến nhiều biến chứng nguy hiểm, ảnh hưởng đến sức khỏe toàn thân.
+                    </p>
+                    <ul>
+                        <li><strong>Vô sinh:</strong> Không rụng trứng mạn tính là nguyên nhân hàng đầu gây vô sinh ở phụ nữ.</li>
+                        <li><strong>Đái tháo đường type 2:</strong> PCOS làm tăng nguy cơ tiểu đường type 2 lên 4-7 lần (do kháng insulin).</li>
+                        <li><strong>Bệnh tim mạch:</strong> Tăng nguy cơ tăng huyết áp, rối loạn mỡ máu, xơ vữa động mạch.</li>
+                        <li><strong>Hội chứng chuyển hóa:</strong> PCOS kết hợp với béo bụng, tăng huyết áp, rối loạn lipid máu, tăng đường huyết.</li>
+                        <li><strong>Ung thư nội mạc tử cung:</strong> Do không rụng trứng, không có progesterone bảo vệ, dẫn đến tăng sinh nội mạc tử cung.</li>
+                        <li><strong>Rối loạn giấc ngủ:</strong> Ngưng thở khi ngủ do béo phì và rối loạn nội tiết.</li>
+                        <li><strong>Vấn đề tâm lý:</strong> Trầm cảm, lo âu, rối loạn ăn uống, ảnh hưởng đến chất lượng cuộc sống.</li>
+                    </ul>
+
+                    <h2>5. Điều trị và kiểm soát PCOS</h2>
+                    <p>
+                        Điều trị PCOS cần tiếp cận đa mô thức, tùy theo mục tiêu của người bệnh (điều trị triệu chứng, điều hòa kinh nguyệt, hỗ trợ sinh sản hoặc giảm nguy cơ biến chứng).
+                    </p>
+
+                    <h3>5.1 Thay đổi lối sống (Nền tảng quan trọng nhất)</h3>
+                    <ul>
+                        <li><strong>Giảm cân:</strong> Giảm 5-10% trọng lượng cơ thể giúp cải thiện đáng kể:
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Phục hồi rụng trứng (ở 50-60% phụ nữ).</li>
+                                <li>Giảm androgen và cải thiện triệu chứng rậm lông, mụn.</li>
+                                <li>Cải thiện nhạy cảm insulin và giảm nguy cơ tiểu đường.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Chế độ ăn:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Chọn thực phẩm có chỉ số đường huyết thấp (GI thấp).</li>
+                                <li>Tăng cường protein và chất xơ.</li>
+                                <li>Hạn chế đường và thực phẩm chế biến sẵn.</li>
+                                <li>Ăn nhiều rau xanh, trái cây ít ngọt, ngũ cốc nguyên hạt.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Hoạt động thể lực:</strong> Tập thể dục 30-45 phút/ngày, ít nhất 5 ngày/tuần (kết hợp aerobic và kháng lực).</li>
+                        <li><strong>Quản lý stress:</strong> Yoga, thiền, hít thở sâu giúp giảm cortisol và cân bằng hormone.</li>
+                        <li><strong>Ngủ đủ giấc:</strong> 7-8 tiếng/đêm để ổn định hormone và chuyển hóa.</li>
+                    </ul>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">🏃</div>
+                        <div class="callout-text">
+                            <strong>Lợi ích của giảm 5-10% trọng lượng ở PCOS:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li>Phục hồi rụng trứng ở 50-60% phụ nữ.</li>
+                                <li>Giảm insulin và đường huyết 10-20%.</li>
+                                <li>Giảm testosterone 10-15%.</li>
+                                <li>Cải thiện triệu chứng rậm lông và mụn.</li>
+                                <li>Giảm nguy cơ tiểu đường type 2 và bệnh tim mạch.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>5.2 Điều trị bằng thuốc</h3>
+                    <ul>
+                        <li><strong>Điều hòa kinh nguyệt và bảo vệ nội mạc tử cung:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li><strong>Thuốc tránh thai kết hợp (COC):</strong> Ethinyl estradiol + progestin, giúp điều hòa chu kỳ, giảm androgen và triệu chứng mụn, rậm lông.</li>
+                                <li><strong>Progestin tuần hoàn:</strong> Medroxyprogesterone 10mg/ngày trong 10-14 ngày/tháng.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Giảm androgen và triệu chứng da:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li><strong>Spironolactone:</strong> Kháng androgen, giảm rậm lông và mụn (50-100mg/ngày).</li>
+                                <li><strong>Metformin:</strong> Cải thiện nhạy cảm insulin, 500-2000mg/ngày.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Kích thích rụng trứng (hỗ trợ sinh sản):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li><strong>Clomiphene citrate:</strong> Thuốc kích thích rụng trứng hàng đầu, 50-150mg/ngày từ ngày 2-6 của chu kỳ.</li>
+                                <li><strong>Letrozole:</strong> Ức chế aromatase, hiệu quả cao, 2.5-7.5mg/ngày.</li>
+                                <li><strong>Gonadotropin (FSH, LH):</strong> Tiêm kích thích rụng trứng, dùng trong các trường hợp khó.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-text">
+                            <strong>Lưu ý quan trọng:</strong> Các thuốc điều trị PCOS chỉ được sử dụng theo chỉ định và theo dõi của bác sĩ chuyên khoa. Không tự ý mua và sử dụng thuốc, đặc biệt là các thuốc kích thích rụng trứng vì có thể gây hội chứng
+                            quá kích buồng trứng nguy hiểm.
+                        </div>
+                    </div>
+
+                    <h3>5.3 Hỗ trợ sinh sản</h3>
+                    <ul>
+                        <li><strong>IUI (Bơm tinh trùng vào tử cung):</strong> Kết hợp với kích thích rụng trứng.</li>
+                        <li><strong>IVF (Thụ tinh trong ống nghiệm):</strong> Phương pháp cuối cùng khi các biện pháp khác thất bại.</li>
+                        <li><strong>Phẫu thuật:</strong> Khoan buồng trứng (laparoscopic ovarian drilling) - giảm androgen và phục hồi rụng trứng ở một số trường hợp.</li>
+                    </ul>
+
+                    <h2>6. Phòng ngừa và theo dõi lâu dài</h2>
+                    <p>
+                        PCOS là bệnh mạn tính cần được theo dõi và quản lý suốt đời để ngăn ngừa biến chứng và duy trì sức khỏe.
+                    </p>
+                    <ul>
+                        <li><strong>Tầm soát định kỳ:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Đường huyết và HbA1c 1-2 năm/lần để tầm soát tiểu đường.</li>
+                                <li>Lipid máu và huyết áp hàng năm.</li>
+                                <li>Siêu âm nội mạc tử cung nếu có kinh nguyệt thưa không điều trị.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Duy trì lối sống lành mạnh:</strong> Tiếp tục chế độ ăn, tập thể dục và quản lý cân nặng suốt đời.</li>
+                        <li><strong>Điều trị các triệu chứng:</strong> Điều trị rậm lông (laser, triệt lông), mụn, rụng tóc khi cần.</li>
+                        <li><strong>Hỗ trợ tâm lý:</strong> Tư vấn tâm lý giúp cải thiện chất lượng cuộc sống và giảm lo âu, trầm cảm.</li>
+                        <li><strong>Theo dõi trong thai kỳ:</strong> Nếu mang thai, cần kiểm soát đường huyết chặt chẽ do nguy cơ tiểu đường thai kỳ cao.</li>
+                    </ul>
+
+                    <p>
+                        Hội chứng buồng trứng đa nang là bệnh lý mạn tính nhưng có thể kiểm soát tốt với sự phối hợp của thay đổi lối sống, điều trị thuốc và hỗ trợ tâm lý. Với sự phát hiện sớm và quản lý toàn diện, phụ nữ mắc PCOS vẫn có thể có thai tự nhiên hoặc với hỗ trợ,
+                        giảm đáng kể nguy cơ biến chứng và sống khỏe mạnh, chất lượng cao.
+                    </p>
+                </div>
+
+                <!-- Tags -->
+                <div class="article-tags">
+                    <span class="tag-label">Từ khoá:</span>
+                    <a class="tag-item" href="#">PCOS</a>
+                    <a class="tag-item" href="#">buồng trứng đa nang</a>
+                    <a class="tag-item" href="#">rối loạn nội tiết</a>
+                    <a class="tag-item" href="#">vô sinh nữ</a>
+                    <a class="tag-item" href="#">kháng insulin</a>
+                    <a class="tag-item" href="#">metformin</a>
+                    <a class="tag-item" href="#">rụng trứng</a>
+                    <a class="tag-item" href="#">rậm lông</a>
+                </div>
+
+                <!-- ============ COMMENTS ============ -->
+                <section class="comments-section">
+                    <h2 class="section-heading">
+                        Bình luận
+                        <span class="count-badge">14</span>
+                    </h2>
+                    <p class="section-desc">Chia sẻ câu hỏi hoặc kinh nghiệm của bạn về chủ đề này</p>
+
+                    <!-- Form -->
+                    <div class="comment-form-card">
+                        <h3>✍️ Để lại bình luận</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-name">Họ và tên</label>
+                                <input id="c-name" type="text" placeholder="Nguyễn Văn A" />
+                            </div>
+                            <div class="form-group">
+                                <label for="c-email">Email (không hiển thị)</label>
+                                <input id="c-email" type="email" placeholder="email@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-text">Nội dung bình luận</label>
+                            <textarea id="c-text" placeholder="Bạn có câu hỏi hoặc muốn chia sẻ kinh nghiệm của mình?"></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <p class="form-note">* Email của bạn sẽ không được hiển thị công khai.</p>
+                            <button class="btn-submit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                Gửi bình luận
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="comments-sort-bar">
+                        <span class="sort-label">Sắp xếp theo:</span>
+                        <button class="sort-btn active">Mới nhất</button>
+                        <button class="sort-btn">Cũ nhất</button>
+                        <button class="sort-btn">Nhiều lượt thích nhất</button>
+                    </div>
+
+                    <!-- List -->
+                    <div class="comment-list">
+
+                        <!-- Comment 1 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">LH</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">
+                                        Lê Thị Hương
+                                        <span class="verified-badge">✓ Đã xác minh</span>
+                                    </div>
+                                    <div class="comment-time">2 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Bài viết rất hữu ích! Mình đã áp dụng mô hình đĩa thức ăn này được 3 tháng rồi và cảm thấy sức khoẻ cải thiện rõ rệt, đặc biệt là giảm được cảm giác mệt mỏi vào buổi chiều. Cảm ơn bác sĩ đã chia sẻ.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                        <!-- Comment 2 with reply -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-amber">NV</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Nguyễn Văn Bình</div>
+                                    <div class="comment-time">5 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Cho mình hỏi với người bị tiểu đường type 2 thì có cần điều chỉnh gì khác không ạ? Mình đang phân vân giữa việc ăn gạo lứt hay hoàn toàn kiêng tinh bột.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+
+                            <!-- Reply -->
+                            <div class="reply-thread">
+                                <div class="comment-card is-reply">
+                                    <div class="comment-header">
+                                        <div class="comment-avatar avatar-green">BS</div>
+                                        <div class="comment-meta">
+                                            <div class="comment-author">
+                                                BS. Nguyễn Minh Tuấn
+                                                <span class="verified-badge">✓ Tác giả</span>
+                                            </div>
+                                            <div class="comment-time">3 giờ trước</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-text">
+                                        Chào bạn! Với người tiểu đường type 2, không cần kiêng hoàn toàn tinh bột mà nên chọn tinh bột có chỉ số GI thấp như gạo lứt, yến mạch, khoai lang. Điều quan trọng là kiểm soát khẩu phần và kết hợp với rau xanh để làm chậm hấp thu đường. Bạn nên gặp bác
+                                        sĩ chuyên khoa nội tiết để được tư vấn cụ thể theo tình trạng của mình nhé.
+                                    </div>
+                                    <div class="comment-actions">
+                                        <button class="action-btn liked">
+                                            <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 3 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">TM</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Trần Minh Khoa</div>
+                                    <div class="comment-time">1 ngày trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Phần về bữa tối giảm tinh bột rất đúng với kinh nghiệm của mình. Từ khi chuyển sang ăn nhiều rau và cá vào buổi tối, giấc ngủ của mình cải thiện hẳn, không còn cảm giác nặng bụng khó ngủ nữa.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="comments-pagination">
+                        <button class="page-btn wide">‹ Trước</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span>…</span>
+                        <button class="page-btn">8</button>
+                        <button class="page-btn wide">Tiếp ›</button>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    
+
+    <!-- =============================================
+        FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

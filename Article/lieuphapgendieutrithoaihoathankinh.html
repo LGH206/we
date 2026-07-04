@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-body">
+            <div class="article-main">
+                <span class="article-category-tag">Nghiên cứu y học</span>
+
+                <h1 class="article-title">
+                    Liệu pháp gen mới mở ra hướng điều trị bệnh thoái hoá thần kinh
+                </h1>
+
+                <p class="article-subtitle">
+                    Một nghiên cứu y học đột phá vừa công bố kỹ thuật can thiệp tái cấu trúc chuỗi gen, thắp lên hy vọng đảo ngược quá trình mất trí nhớ và suy giảm chức năng vận động ở người bệnh thoái hóa hệ thần kinh.
+                </p>
+
+                <div class="article-meta-row">
+                    <div class="meta-item">⏱ 3 giờ trước</div>
+                    <div class="meta-item">👁 4.1k lượt xem</div>
+                </div>
+
+                <div class="article-body">
+                    <p>
+                        Các bệnh lý thoái hóa thần kinh như Alzheimer hay Parkinson từ lâu luôn là bài toán nan giải đối với y học toàn cầu do các tế bào não một khi đã tổn thương rất khó để phục hồi tự nhiên. Sự xuất hiện của liệu pháp gen thế hệ mới hứa hẹn sẽ thay đổi hoàn toàn thực trạng này.
+                    </p>
+
+                    <h2>1. Cơ chế sửa đổi cấu trúc tế bào từ gốc</h2>
+                    <p>
+                        Khác với thuốc ức chế triệu chứng thông thường, liệu pháp gen sử dụng các vector virus vô hại để vận chuyển mã di truyền chỉnh sửa trực tiếp vào các neuron thần kinh đích.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">🧬</div>
+                        <div class="callout-text">
+                            <strong>Nguyên lý cốt lõi:</strong> Liệu pháp giúp ngăn chặn sự tích tụ của các mảng bám protein độc hại (như Beta-amyloid) - tác nhân chính bóp nghẹt và phá hủy các kết nối synapse trong não bộ người bệnh.
+                        </div>
+                    </div>
+
+                    <h2>2. Những kết quả lâm sàng khả quan</h2>
+                    <p>
+                        Dưới đây là bảng so sánh hiệu quả giữa phác đồ điều trị truyền thống và liệu pháp can thiệp gen mới:
+                    </p>
+
+                    <table style="width:100%; border-collapse: collapse; margin: 15px 0; font-size: 0.9rem;">
+                        <thead>
+                            <tr style="background-color: var(--n-100); text-align: left;">
+                                <th style="padding: 10px; border: 1px solid var(--n-300);">Tiêu chí so sánh</th>
+                                <th style="padding: 10px; border: 1px solid var(--n-300);">Phác đồ truyền thống</th>
+                                <th style="padding: 10px; border: 1px solid var(--n-300);">Liệu pháp Gen mới</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid var(--n-300);"><strong>Cơ chế tác động</strong></td>
+                                <td style="padding: 10px; border: 1px solid var(--n-300);">Giảm nhẹ và làm chậm triệu chứng bên ngoài</td>
+                                <td style="padding: 10px; border: 1px solid var(--n-300);">Tác động trực tiếp vào căn nguyên chuỗi DNA sụt giảm</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid var(--n-300);"><strong>Khả năng phục hồi</strong></td>
+                                <td style="padding: 10px; border: 1px solid var(--n-300);">Không thể phục hồi các neuron đã mất</td>
+                                <td style="padding: 10px; border: 1px solid var(--n-300);">Kích thích tái sinh và bảo vệ tế bào não sống sót</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">ℹ️</div>
+                        <div class="callout-text">
+                            <strong>Lộ trình ứng dụng:</strong> Mặc dù kết quả thử nghiệm giai đoạn đầu rất tích cực, nghiên cứu cần trải qua thêm các quy trình kiểm duyệt an toàn khắt khe trước khi đưa vào ứng dụng thương mại rộng rãi.
+                        </div>
+                    </div>
+
+                    <p>
+                        <strong>Kết luận:</strong> Kỷ nguyên cải tiến sinh học phân tử đang mang đến những bước đi thần tốc, mở ra tương lai chữa khỏi hoàn toàn các căn bệnh thoái hóa thần kinh cho nhân loại.
+                    </p>
+                </div>
+
+                <div class="article-tags">
+                    <span class="tag-label">Từ khoá:</span>
+                    <a class="tag-item" href="#">liệu pháp gen</a>
+                    <a class="tag-item" href="#">thoái hóa thần kinh</a>
+                    <a class="tag-item" href="#">nghiên cứu y học</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+</html>

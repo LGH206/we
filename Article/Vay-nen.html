@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+   
+
+    <!-- ===================== MAIN ===================== -->
+    <main>
+        <div class="page-body">
+
+            <!-- ---- ARTICLE COLUMN ---- -->
+            <div class="article-main">
+
+                <!-- Category -->
+                <span class="article-category-tag">Ngoài Da</span>
+
+                <!-- Title -->
+                <h1 class="article-title">
+                    Vảy nến (Psoriasis): Nguyên nhân, triệu chứng và phương pháp điều trị hiện đại
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="article-subtitle">
+                    Vảy nến là bệnh tự miễn mạn tính ảnh hưởng đến khoảng 2-3% dân số. Điều trị kịp thời và đúng cách giúp kiểm soát bệnh, cải thiện chất lượng cuộc sống và ngăn ngừa biến chứng.
+                </p>
+
+                <!-- Meta -->
+                <div class="article-meta-row">
+                    
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>                        30 tháng 6, 2025
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10 phút đọc
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 22.7k lượt xem
+                    </div>
+                </div>
+
+                <!-- Hero image -->
+                <div class="article-hero">
+                    <img src="../Image/vaynen.png" alt="Vảy nến trên da" loading="lazy" />
+                </div>
+                <p class="article-hero-caption">
+                    Vảy nến biểu hiện bằng các mảng da đỏ, có vảy trắng bạc, thường xuất hiện ở khuỷu tay, đầu gối và da đầu – Ảnh minh họa
+                </p>
+
+                <!-- Body -->
+                <div class="article-body">
+                    <p>
+                        Vảy nến là bệnh da liễu mạn tính, không lây, do hệ thống miễn dịch hoạt động quá mức, đẩy nhanh vòng đời của tế bào da. Thay vì chu kỳ 28-30 ngày, tế bào da mới được sản sinh chỉ trong 3-4 ngày, tạo thành các mảng da dày, có vảy trắng bạc.
+                    </p>
+
+                    <h2>1. Nguyên nhân và yếu tố nguy cơ</h2>
+                    <ul>
+                        <li><strong>Di truyền:</strong> Khoảng 30% người bệnh có người thân mắc bệnh. Nhiều gen liên quan đến hệ miễn dịch (như HLA-Cw6) được xác định.</li>
+                        <li><strong>Rối loạn miễn dịch:</strong> Tế bào T (một loại bạch cầu) tấn công nhầm vào tế bào da khỏe mạnh, kích hoạt phản ứng viêm.</li>
+                        <li><strong>Yếu tố khởi phát:</strong> Stress, nhiễm trùng (đặc biệt viêm họng liên cầu), chấn thương da (hiệu ứng Koebner), thay đổi nội tiết, thuốc (lithium, thuốc sốt rét).</li>
+                        <li><strong>Lối sống:</strong> Hút thuốc, uống nhiều rượu, béo phì làm tăng nguy cơ và mức độ nặng của bệnh.</li>
+                    </ul>
+
+                    <h2>2. Các thể lâm sàng của vảy nến</h2>
+                    <div class="callout-box">
+                        <div class="callout-icon">📋</div>
+                        <div class="callout-text">
+                            <strong>Phân loại vảy nến:</strong>
+                            <ul>
+                                <li><strong>Vảy nến thể mảng (thường gặp nhất - 80-90%):</strong> Mảng da đỏ, vảy trắng bạc ở khuỷu, đầu gối, da đầu.</li>
+                                <li><strong>Vảy nến thể giọt:</strong> Nhiều đốm nhỏ, thường khởi phát sau nhiễm khuẩn.</li>
+                                <li><strong>Vảy nến thể mủ:</strong> Có mụn mủ, có thể khu trú hoặc toàn thân.</li>
+                                <li><strong>Vảy nến thể đảo ngược:</strong> Ở nếp gấp da (nách, bẹn, dưới ngực), da đỏ nhưng ít vảy.</li>
+                                <li><strong>Vảy nến thể đỏ da toàn thân:</strong> Da đỏ, bong vảy khắp cơ thể, cần cấp cứu.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>3. Triệu chứng và dấu hiệu nhận biết</h2>
+                    <ul>
+                        <li><strong>Da:</strong> Mảng da đỏ, viền rõ, phủ vảy trắng bạc, gãi có thể chảy máu (dấu hiệu Auspitz).</li>
+                        <li><strong>Móng:</strong> Móng dày, gồ ghề, đổi màu, tách khỏi giường móng, có các chấm lõm nhỏ.</li>
+                        <li><strong>Khớp:</strong> Đau, sưng, cứng khớp (viêm khớp vảy nến - 30% bệnh nhân).</li>
+                        <li><strong>Ngứa và rát:</strong> 60-90% bệnh nhân bị ngứa, đặc biệt về đêm, ảnh hưởng giấc ngủ và sinh hoạt.</li>
+                    </ul>
+
+                    <h2>4. Phương pháp điều trị hiện đại</h2>
+                    <ul>
+                        <li><strong>Điều trị tại chỗ:</strong> Kem bôi corticosteroid, tác dụng phụ (vitamin D3, tacrolimus), dưỡng ẩm hàng ngày giảm khô da.</li>
+                        <li><strong>Quang trị liệu:</strong> Chiếu tia UVB (311nm) hoặc PUVA (psoralen + UVA) có hiệu quả với bệnh vừa và nặng.</li>
+                        <li><strong>Thuốc toàn thân:</strong> Methotrexate, Cyclosporine, Acitretin cho bệnh nặng hoặc không đáp ứng.</li>
+                        <li><strong>Sinh học (thế hệ mới):</strong> Adalimumab, Etanercept, Infliximab, Ustekinumab nhắm trúng đích phân tử IL-17, IL-23 - hiệu quả cao, ít tác dụng phụ toàn thân.</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">🚨</div>
+                        <div class="callout-text">
+                            <strong>Khi nào cần điều trị khẩn cấp:</strong> Sốt cao kèm phát ban đỏ toàn thân, đau khớp dữ dội, sưng khớp ảnh hưởng vận động. Đặc biệt, vảy nến thể đỏ da toàn thân hoặc thể mủ cần nhập viện ngay do nguy cơ mất nước, nhiễm
+                            trùng và rối loạn điện giải.
+                        </div>
+                    </div>
+
+                    <h2>5. Phòng ngừa và chăm sóc tại nhà</h2>
+                    <ul>
+                        <li><strong>Dưỡng ẩm:</strong> Thoa kem dưỡng ngay sau tắm, ưu tiên loại không mùi, không màu, giàu ceramide.</li>
+                        <li><strong>Quản lý stress:</strong> Tập yoga, thiền, ngủ đủ giấc - stress làm bùng phát vảy nến.</li>
+                        <li><strong>Chế độ ăn:</strong> Bổ sung omega-3 (cá hồi, hạt chia), chất chống oxy hóa (rau xanh, trái cây). Hạn chế thịt đỏ, đồ ăn nhanh, rượu bia.</li>
+                        <li><strong>Tránh tổn thương da:</strong> Cắt móng tay cẩn thận, tránh cào gãi, mặc quần áo cotton thoáng mát.</li>
+                        <li><strong>Theo dõi định kỳ:</strong> Tái khám 3-6 tháng/lần để đánh giá đáp ứng điều trị và phát hiện sớm biến chứng.</li>
+                    </ul>
+
+                    <p>
+                        Mặc dù vảy nến là bệnh mạn tính chưa thể chữa khỏi hoàn toàn, nhưng với các phương pháp điều trị hiện đại và lối sống khoa học, bệnh có thể được kiểm soát tốt. Người bệnh vẫn có thể sống khỏe mạnh, năng động và đạt chất lượng cuộc sống cao.
+                    </p>
+                </div>
+
+                <!-- Tags -->
+                <div class="article-tags">
+                    <span class="tag-label">Từ khoá:</span>
+                    <a class="tag-item" href="#">vảy nến</a>
+                    <a class="tag-item" href="#">psoriasis</a>
+                    <a class="tag-item" href="#">bệnh da liễu</a>
+                    <a class="tag-item" href="#">điều trị vảy nến</a>
+                    <a class="tag-item" href="#">thuốc sinh học</a>
+                    <a class="tag-item" href="#">viêm khớp vảy nến</a>
+                    <a class="tag-item" href="#">chăm sóc da bị vảy nến</a>
+                </div>
+
+                <!-- ============ COMMENTS ============ -->
+                <section class="comments-section">
+                    <h2 class="section-heading">
+                        Bình luận
+                        <span class="count-badge">14</span>
+                    </h2>
+                    <p class="section-desc">Chia sẻ câu hỏi hoặc kinh nghiệm của bạn về chủ đề này</p>
+
+                    <!-- Form -->
+                    <div class="comment-form-card">
+                        <h3>✍️ Để lại bình luận</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-name">Họ và tên</label>
+                                <input id="c-name" type="text" placeholder="Nguyễn Văn A" />
+                            </div>
+                            <div class="form-group">
+                                <label for="c-email">Email (không hiển thị)</label>
+                                <input id="c-email" type="email" placeholder="email@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-text">Nội dung bình luận</label>
+                            <textarea id="c-text" placeholder="Bạn có câu hỏi hoặc muốn chia sẻ kinh nghiệm của mình?"></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <p class="form-note">* Email của bạn sẽ không được hiển thị công khai.</p>
+                            <button class="btn-submit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                Gửi bình luận
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="comments-sort-bar">
+                        <span class="sort-label">Sắp xếp theo:</span>
+                        <button class="sort-btn active">Mới nhất</button>
+                        <button class="sort-btn">Cũ nhất</button>
+                        <button class="sort-btn">Nhiều lượt thích nhất</button>
+                    </div>
+
+                    <!-- List -->
+                    <div class="comment-list">
+
+                        <!-- Comment 1 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">LH</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">
+                                        Lê Thị Hương
+                                        <span class="verified-badge">✓ Đã xác minh</span>
+                                    </div>
+                                    <div class="comment-time">2 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Bài viết rất hữu ích! Mình đã áp dụng mô hình đĩa thức ăn này được 3 tháng rồi và cảm thấy sức khoẻ cải thiện rõ rệt, đặc biệt là giảm được cảm giác mệt mỏi vào buổi chiều. Cảm ơn bác sĩ đã chia sẻ.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                        <!-- Comment 2 with reply -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-amber">NV</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Nguyễn Văn Bình</div>
+                                    <div class="comment-time">5 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Cho mình hỏi với người bị tiểu đường type 2 thì có cần điều chỉnh gì khác không ạ? Mình đang phân vân giữa việc ăn gạo lứt hay hoàn toàn kiêng tinh bột.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+
+                            <!-- Reply -->
+                            <div class="reply-thread">
+                                <div class="comment-card is-reply">
+                                    <div class="comment-header">
+                                        <div class="comment-avatar avatar-green">BS</div>
+                                        <div class="comment-meta">
+                                            <div class="comment-author">
+                                                BS. Nguyễn Minh Tuấn
+                                                <span class="verified-badge">✓ Tác giả</span>
+                                            </div>
+                                            <div class="comment-time">3 giờ trước</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-text">
+                                        Chào bạn! Với người tiểu đường type 2, không cần kiêng hoàn toàn tinh bột mà nên chọn tinh bột có chỉ số GI thấp như gạo lứt, yến mạch, khoai lang. Điều quan trọng là kiểm soát khẩu phần và kết hợp với rau xanh để làm chậm hấp thu đường. Bạn nên gặp bác
+                                        sĩ chuyên khoa nội tiết để được tư vấn cụ thể theo tình trạng của mình nhé.
+                                    </div>
+                                    <div class="comment-actions">
+                                        <button class="action-btn liked">
+                                            <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 3 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">TM</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Trần Minh Khoa</div>
+                                    <div class="comment-time">1 ngày trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Phần về bữa tối giảm tinh bột rất đúng với kinh nghiệm của mình. Từ khi chuyển sang ăn nhiều rau và cá vào buổi tối, giấc ngủ của mình cải thiện hẳn, không còn cảm giác nặng bụng khó ngủ nữa.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="comments-pagination">
+                        <button class="page-btn wide">‹ Trước</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span>…</span>
+                        <button class="page-btn">8</button>
+                        <button class="page-btn wide">Tiếp ›</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+  
+    <!-- =============================================
+        FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

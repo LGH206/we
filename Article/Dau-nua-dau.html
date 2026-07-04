@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- ===================== MAIN ===================== -->
+    <main>
+        <div class="page-body">
+
+            <!-- ---- ARTICLE COLUMN ---- -->
+            <div class="article-main">
+
+                <!-- Category -->
+                <span class="article-category-tag">Thần kinh</span>
+
+                <!-- Title -->
+                <h1 class="article-title">
+                    Đau nửa đầu (Migraine): Nguyên nhân, triệu chứng và chiến lược điều trị toàn diện
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="article-subtitle">
+                    Đau nửa đầu là chứng đau đầu mạn tính phổ biến, ảnh hưởng đến khoảng 1 tỷ người trên toàn cầu, với tỷ lệ mắc ở nữ giới cao gấp 3 lần nam giới. Phát hiện và điều trị kịp thời giúp giảm tần suất cơn đau, cải thiện chất lượng cuộc sống và ngăn ngừa biến
+                    chứng.
+                </p>
+
+                <!-- Meta -->
+                <div class="article-meta-row">
+                    <div class="author-info">
+                        
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>                        7 tháng 7, 2025
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10 phút đọc
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 15.2k lượt xem
+                    </div>
+                </div>
+
+                <!-- Hero image -->
+                <div class="article-hero">
+                    <img src="../Image/daunuadau.png" alt="Đau nửa đầu Migraine" loading="lazy" />
+                </div>
+                <p class="article-hero-caption">
+                    Đau nửa đầu là bệnh lý thần kinh mạn tính, gây ra những cơn đau đầu dữ dội kèm nhiều triệu chứng khác – Ảnh: Unsplash
+                </p>
+
+                <!-- Body -->
+                <div class="article-body">
+                    <p>
+                        Đau nửa đầu (Migraine) là rối loạn thần kinh mạn tính đặc trưng bởi các cơn đau đầu tái phát, thường là đau một bên đầu, dữ dội, kèm theo buồn nôn, nhạy cảm với ánh sáng và âm thanh. Theo <strong>Tổ chức Y tế Thế giới (WHO)</strong>,
+                        đau nửa đầu là nguyên nhân gây tàn tật đứng thứ 8 trong tất cả các bệnh lý và là nguyên nhân hàng đầu gây tàn tật ở phụ nữ dưới 50 tuổi, ảnh hưởng đến khoảng 1 tỷ người trên toàn cầu.
+                    </p>
+
+                    <h2>1. Đau nửa đầu là gì?</h2>
+                    <p>
+                        Đau nửa đầu là một loại đau đầu nguyên phát, nghĩa là không phải do các bệnh lý khác gây ra. Cơn đau thường kéo dài từ 4-72 giờ, có tính chất mạch đập, thường ở một bên đầu và kèm theo các rối loạn thần kinh thực vật.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">📋</div>
+                        <div class="callout-text">
+                            <strong>Phân loại đau nửa đầu:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Migraine có tiền triệu (aura):</strong> Xuất hiện các triệu chứng thần kinh khu trú trước hoặc trong cơn đau đầu, thường là rối loạn thị giác (nhìn thấy tia sáng, mất thị trường), rối loạn cảm giác (tê bì) hoặc
+                                    rối loạn ngôn ngữ.</li>
+                                <li><strong>Migraine không tiền triệu:</strong> Cơn đau đầu xảy ra đột ngột mà không có triệu chứng báo trước, chiếm khoảng 70-80% các trường hợp.</li>
+                                <li><strong>Migraine mạn tính:</strong> Đau đầu ≥15 ngày/tháng, trong đó ≥8 ngày có đau nửa đầu, kéo dài ≥3 tháng.</li>
+                                <li><strong>Migraine ở trẻ em:</strong> Có thể biểu hiện như đau bụng, buồn nôn, chóng mặt thay vì đau đầu điển hình.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>2. Triệu chứng và dấu hiệu nhận biết</h2>
+                    <p>
+                        Cơn đau nửa đầu thường trải qua 4 giai đoạn: tiền triệu, tiền triệu (aura - nếu có), đau đầu và hồi phục. Tuy nhiên, không phải tất cả các cơn đều có đủ 4 giai đoạn.
+                    </p>
+
+                    <h3>Các giai đoạn của cơn đau nửa đầu</h3>
+                    <ul>
+                        <li><strong>Giai đoạn tiền triệu (1-2 ngày trước cơn đau):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Thay đổi tâm trạng (trầm cảm, hưng phấn, dễ cáu gắt).</li>
+                                <li>Thèm ăn (đặc biệt đồ ngọt).</li>
+                                <li>Cổ cứng, mệt mỏi, ngáp nhiều.</li>
+                                <li>Táo bón hoặc tiêu chảy.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Giai đoạn tiền triệu (aura) - kéo dài 20-60 phút:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li><strong>Rối loạn thị giác:</strong> Nhìn thấy tia sáng, đốm sáng, điểm mù.</li>
+                                <li><strong>Rối loạn cảm giác:</strong> Tê bì hoặc kim châm ở mặt, tay, chân.</li>
+                                <li><strong>Rối loạn ngôn ngữ:</strong> Khó nói, nói ngọng.</li>
+                                <li><strong>Rối loạn vận động:</strong> Yếu cơ một bên (hiếm gặp).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Giai đoạn đau đầu (4-72 giờ):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li><strong>Đau:</strong> Đau mạch đập hoặc đau nhói, thường ở một bên đầu.</li>
+                                <li><strong>Kèm theo:</strong> Buồn nôn, nôn, nhạy cảm với ánh sáng (photophobia), âm thanh (phonophobia).</li>
+                                <li><strong>Vận động:</strong> Đau tăng lên khi vận động.</li>
+                                <li><strong>Màu da:</strong> Da xanh, tái, đổ mồ hôi.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Giai đoạn hồi phục (sau cơn đau):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Mệt mỏi, kiệt sức.</li>
+                                <li>Khó tập trung.</li>
+                                <li>Tâm trạng thất thường.</li>
+                                <li>Đau nhức cơ bắp.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">🔍</div>
+                        <div class="callout-text">
+                            <strong>Phân biệt đau nửa đầu với đau đầu thông thường:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Đau nửa đầu:</strong> Đau mạch đập, một bên, kèm buồn nôn, nhạy cảm ánh sáng/âm thanh, kéo dài 4-72 giờ.</li>
+                                <li><strong>Đau đầu căng thẳng:</strong> Đau như bóp chặt, hai bên, không kèm buồn nôn, không nhạy cảm với ánh sáng/âm thanh, kéo dài vài giờ.</li>
+                                <li><strong>Đau đầu cụm:</strong> Đau rất dữ dội một bên, đau quanh mắt, kèm chảy nước mắt, nghẹt mũi, kéo dài 15-180 phút.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>3. Nguyên nhân và yếu tố khởi phát</h2>
+                    <p>
+                        Nguyên nhân chính xác của đau nửa đầu vẫn chưa được biết rõ, nhưng có sự kết hợp của yếu tố di truyền, thay đổi mạch máu và hệ thần kinh, cùng với các yếu tố khởi phát.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-text">
+                            <strong>Các yếu tố khởi phát cơn đau nửa đầu:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Thực phẩm:</strong> Phô mai, sô-cô-la, rượu vang đỏ, thịt chế biến sẵn (nitrat), chất tạo ngọt nhân tạo.</li>
+                                <li><strong>Hormone:</strong> Thay đổi estrogen trong kỳ kinh nguyệt, mang thai, mãn kinh.</li>
+                                <li><strong>Stress:</strong> Stress tâm lý, lo âu, căng thẳng.</li>
+                                <li><strong>Giấc ngủ:</strong> Thiếu ngủ hoặc ngủ quá nhiều, thay đổi múi giờ.</li>
+                                <li><strong>Môi trường:</strong> Ánh sáng nhấp nháy, ánh nắng chói, tiếng ồn lớn, mùi hương mạnh.</li>
+                                <li><strong>Thời tiết:</strong> Thay đổi áp suất khí quyển, độ ẩm, nhiệt độ.</li>
+                                <li><strong>Bỏ bữa:</strong> Nhịn đói hoặc bỏ bữa.</li>
+                                <li><strong>Thuốc:</strong> Thuốc ngủ, thuốc tránh thai, thuốc giãn mạch.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>Yếu tố nguy cơ</h3>
+                    <ul>
+                        <li><strong>Giới tính:</strong> Nữ giới có nguy cơ cao gấp 3 lần nam giới.</li>
+                        <li><strong>Tiền sử gia đình:</strong> 70-80% người bệnh có người thân mắc bệnh.</li>
+                        <li><strong>Tuổi:</strong> Thường khởi phát ở tuổi dậy thì hoặc thanh niên, đỉnh cao ở 30-40 tuổi.</li>
+                        <li><strong>Bệnh lý kèm theo:</strong> Trầm cảm, lo âu, rối loạn giấc ngủ, động kinh.</li>
+                    </ul>
+
+                    <h2>4. Điều trị và kiểm soát đau nửa đầu</h2>
+                    <p>
+                        Điều trị đau nửa đầu bao gồm điều trị cơn đau cấp tính và dự phòng tái phát. Phác đồ điều trị cần được cá nhân hóa tùy theo tần suất, mức độ nặng và đáp ứng của người bệnh.
+                    </p>
+
+                    <h3>4.1 Điều trị cơn đau cấp tính</h3>
+                    <ul>
+                        <li><strong>Thuốc giảm đau thông thường:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Paracetamol 500-1000mg.</li>
+                                <li>NSAIDs (Ibuprofen 400-600mg, Naproxen 500mg).</li>
+                                <li>Kết hợp Paracetamol + Aspirin + Caffeine.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Thuốc đặc hiệu - Triptans (uống, xịt mũi, tiêm):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Sumatriptan 50-100mg (dùng sớm khi có dấu hiệu đau).</li>
+                                <li>Rizatriptan 10mg.</li>
+                                <li>Zolmitriptan 2.5-5mg.</li>
+                                <li>Eletriptan 40mg.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Chống nôn:</strong> Metoclopramide 10mg hoặc Domperidone 10mg.</li>
+                        <li><strong>Ergotamine:</strong> Ít dùng do tác dụng phụ.</li>
+                        <li><strong>Các biện pháp không dùng thuốc:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Nghỉ ngơi trong phòng tối, yên tĩnh.</li>
+                                <li>Chườm lạnh hoặc nóng lên trán/đỉnh đầu.</li>
+                                <li>Massage, châm cứu.</li>
+                                <li>Uống đủ nước, tránh caffein và rượu.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-text">
+                            <strong>Cảnh báo về lạm dụng thuốc giảm đau:</strong> Sử dụng thuốc giảm đau >10 ngày/tháng có thể dẫn đến <strong>đau đầu do lạm dụng thuốc</strong>, làm tăng tần suất và mức độ nặng của cơn đau. Cần tuân thủ đúng liều và
+                            chỉ định của bác sĩ.
+                        </div>
+                    </div>
+
+                    <h3>4.2 Điều trị dự phòng</h3>
+                    <p>
+                        Chỉ định khi đau nửa đầu ≥4 ngày/tháng hoặc ảnh hưởng nghiêm trọng đến chất lượng cuộc sống.
+                    </p>
+                    <ul>
+                        <li><strong>Thuốc dự phòng:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Beta-blockers: Propranolol 20-80mg/ngày, Atenolol 50-100mg/ngày.</li>
+                                <li>Thuốc chống trầm cảm: Amitriptyline 10-50mg/ngày, Venlafaxine 37.5-150mg/ngày.</li>
+                                <li>Thuốc chống động kinh: Topiramate 50-200mg/ngày, Valproate 250-1000mg/ngày.</li>
+                                <li>Thuốc chẹn kênh Calci: Flunarizine 5-10mg/ngày.</li>
+                                <li>Thuốc mới: CGRP inhibitors (Erenumab, Galcanezumab) - điều trị dự phòng thế hệ mới, hiệu quả cao.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Thay đổi lối sống:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Nhận diện và tránh yếu tố khởi phát.</li>
+                                <li>Duy trì lịch ăn uống và ngủ nghỉ đều đặn.</li>
+                                <li>Quản lý stress (yoga, thiền, hít thở sâu).</li>
+                                <li>Tập thể dục thường xuyên.</li>
+                                <li>Hydrat hóa đầy đủ.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h2>5. Khi nào cần đi khám</h2>
+                    <p>
+                        Mặc dù đau nửa đầu thường lành tính, nhưng cần đi khám khi có các dấu hiệu sau:
+                    </p>
+                    <ul>
+                        <li>Đau đầu đột ngột, dữ dội (đau như sét đánh).</li>
+                        <li>Đau đầu kèm sốt cao, cứng cổ, lú lẫn, co giật.</li>
+                        <li>Đau đầu sau chấn thương đầu.</li>
+                        <li>Đau đầu kèm yếu tay chân, nói khó, nhìn đôi.</li>
+                        <li>Đau đầu nặng hơn khi thay đổi tư thế hoặc vận động.</li>
+                        <li>Đau đầu xuất hiện lần đầu sau 50 tuổi.</li>
+                        <li>Đau đầu kèm các triệu chứng bất thường khác.</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">🚨</div>
+                        <div class="callout-text">
+                            <strong>Đau nửa đầu và nguy cơ tim mạch:</strong> Phụ nữ bị đau nửa đầu có tiền triệu (aura) và hút thuốc lá có nguy cơ đột quỵ não tăng cao. Cần kiểm soát các yếu tố nguy cơ tim mạch và tham khảo bác sĩ khi sử dụng thuốc tránh
+                            thai kết hợp.
+                        </div>
+                    </div>
+
+                    <h2>6. Phòng ngừa và sống chung với Migraine</h2>
+                    <p>
+                        Đau nửa đầu là bệnh mạn tính, cần quản lý lâu dài. Bằng cách hiểu rõ bệnh và các yếu tố khởi phát, người bệnh có thể kiểm soát cơn đau và sống khỏe mạnh.
+                    </p>
+                    <ul>
+                        <li><strong>Nhật ký đau đầu:</strong> Ghi lại thời điểm, mức độ đau, triệu chứng, yếu tố khởi phát để nhận diện mẫu hình.</li>
+                        <li><strong>Duy trì lịch sinh hoạt:</strong> Ăn uống đúng giờ, ngủ đủ 7-8 tiếng/đêm.</li>
+                        <li><strong>Quản lý stress:</strong> Tập thư giãn, thiền, yoga, hít thở sâu.</li>
+                        <li><strong>Hydrat hóa:</strong> Uống đủ 2-3 lít nước/ngày.</li>
+                        <li><strong>Tập thể dục đều đặn:</strong> 30-45 phút/ngày, ít nhất 5 ngày/tuần.</li>
+                        <li><strong>Tuân thủ thuốc:</strong> Uống thuốc dự phòng và điều trị đúng theo chỉ định.</li>
+                        <li><strong>Tái khám định kỳ:</strong> 3-6 tháng/lần để đánh giá đáp ứng và điều chỉnh phác đồ.</li>
+                        <li><strong>Hỗ trợ tâm lý:</strong> Tham gia nhóm hỗ trợ bệnh nhân, tư vấn tâm lý khi cần.</li>
+                    </ul>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">📌</div>
+                        <div class="callout-text">
+                            <strong>Lời khuyên cho người bệnh Migraine:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li>Hãy nhớ rằng bạn không đơn độc - 1 tỷ người trên thế giới cũng mắc bệnh này.</li>
+                                <li>Kiên nhẫn với quá trình điều trị - cần thời gian để tìm phác đồ phù hợp.</li>
+                                <li>Chia sẻ với người thân và đồng nghiệp để họ hiểu và hỗ trợ.</li>
+                                <li>Tìm các hoạt động tích cực để giảm căng thẳng.</li>
+                                <li>Đừng ngần ngại tìm đến bác sĩ chuyên khoa để được điều trị tốt nhất.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p>
+                        Đau nửa đầu (Migraine) là bệnh lý thần kinh mạn tính phổ biến nhưng có thể kiểm soát hiệu quả với sự kết hợp của thuốc, thay đổi lối sống và nhận diện yếu tố khởi phát. Với sự phối hợp chặt chẽ giữa bác sĩ và người bệnh, đa số người bệnh có thể giảm đáng
+                        kể tần suất và mức độ cơn đau, sống khỏe mạnh và năng động.
+                    </p>
+                </div>
+
+                <!-- Tags -->
+                <div class="article-tags">
+                    <span class="tag-label">Từ khoá:</span>
+                    <a class="tag-item" href="#">đau nửa đầu</a>
+                    <a class="tag-item" href="#">migraine</a>
+                    <a class="tag-item" href="#">đau đầu</a>
+                    <a class="tag-item" href="#">tiền triệu</a>
+                    <a class="tag-item" href="#">triptan</a>
+                    <a class="tag-item" href="#">aura</a>
+                    <a class="tag-item" href="#">đau nửa đầu mạn tính</a>
+                    <a class="tag-item" href="#">CGRP</a>
+                </div>
+
+                <!-- ============ COMMENTS ============ -->
+                <section class="comments-section">
+                    <h2 class="section-heading">
+                        Bình luận
+                        <span class="count-badge">14</span>
+                    </h2>
+                    <p class="section-desc">Chia sẻ câu hỏi hoặc kinh nghiệm của bạn về chủ đề này</p>
+
+                    <!-- Form -->
+                    <div class="comment-form-card">
+                        <h3>✍️ Để lại bình luận</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-name">Họ và tên</label>
+                                <input id="c-name" type="text" placeholder="Nguyễn Văn A" />
+                            </div>
+                            <div class="form-group">
+                                <label for="c-email">Email (không hiển thị)</label>
+                                <input id="c-email" type="email" placeholder="email@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-text">Nội dung bình luận</label>
+                            <textarea id="c-text" placeholder="Bạn có câu hỏi hoặc muốn chia sẻ kinh nghiệm của mình?"></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <p class="form-note">* Email của bạn sẽ không được hiển thị công khai.</p>
+                            <button class="btn-submit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                Gửi bình luận
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="comments-sort-bar">
+                        <span class="sort-label">Sắp xếp theo:</span>
+                        <button class="sort-btn active">Mới nhất</button>
+                        <button class="sort-btn">Cũ nhất</button>
+                        <button class="sort-btn">Nhiều lượt thích nhất</button>
+                    </div>
+
+                    <!-- List -->
+                    <div class="comment-list">
+
+                        <!-- Comment 1 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">LH</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">
+                                        Lê Thị Hương
+                                        <span class="verified-badge">✓ Đã xác minh</span>
+                                    </div>
+                                    <div class="comment-time">2 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Bài viết rất hữu ích! Mình đã áp dụng mô hình đĩa thức ăn này được 3 tháng rồi và cảm thấy sức khoẻ cải thiện rõ rệt, đặc biệt là giảm được cảm giác mệt mỏi vào buổi chiều. Cảm ơn bác sĩ đã chia sẻ.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                        <!-- Comment 2 with reply -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-amber">NV</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Nguyễn Văn Bình</div>
+                                    <div class="comment-time">5 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Cho mình hỏi với người bị tiểu đường type 2 thì có cần điều chỉnh gì khác không ạ? Mình đang phân vân giữa việc ăn gạo lứt hay hoàn toàn kiêng tinh bột.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+
+                            <!-- Reply -->
+                            <div class="reply-thread">
+                                <div class="comment-card is-reply">
+                                    <div class="comment-header">
+                                        <div class="comment-avatar avatar-green">BS</div>
+                                        <div class="comment-meta">
+                                            <div class="comment-author">
+                                                BS. Nguyễn Minh Tuấn
+                                                <span class="verified-badge">✓ Tác giả</span>
+                                            </div>
+                                            <div class="comment-time">3 giờ trước</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-text">
+                                        Chào bạn! Với người tiểu đường type 2, không cần kiêng hoàn toàn tinh bột mà nên chọn tinh bột có chỉ số GI thấp như gạo lứt, yến mạch, khoai lang. Điều quan trọng là kiểm soát khẩu phần và kết hợp với rau xanh để làm chậm hấp thu đường. Bạn nên gặp bác
+                                        sĩ chuyên khoa nội tiết để được tư vấn cụ thể theo tình trạng của mình nhé.
+                                    </div>
+                                    <div class="comment-actions">
+                                        <button class="action-btn liked">
+                                            <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 3 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">TM</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Trần Minh Khoa</div>
+                                    <div class="comment-time">1 ngày trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Phần về bữa tối giảm tinh bột rất đúng với kinh nghiệm của mình. Từ khi chuyển sang ăn nhiều rau và cá vào buổi tối, giấc ngủ của mình cải thiện hẳn, không còn cảm giác nặng bụng khó ngủ nữa.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="comments-pagination">
+                        <button class="page-btn wide">‹ Trước</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span>…</span>
+                        <button class="page-btn">8</button>
+                        <button class="page-btn wide">Tiếp ›</button>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    
+    <!-- =============================================
+        FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

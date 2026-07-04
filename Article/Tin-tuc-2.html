@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-body">
+
+            <!-- ---- ARTICLE COLUMN ---- -->
+            <div class="article-main">
+
+                <!-- Category -->
+                <span class="article-category-tag">Lối sống khỏe</span>
+
+                <!-- Title -->
+                <h1 class="article-title">
+                    Xu hướng lựa chọn Đạm thực vật trong thực đơn lành mạnh tại Việt Nam
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="article-subtitle">
+                    Ghi nhận xu hướng chuyển dịch dinh dưỡng tại các đô thị lớn khi người dân ngày càng ưa chuộng các loại đạm thực vật tự nhiên nhằm hướng tới lối sống xanh bền vững.
+                </p>
+
+                <!-- Meta -->
+                <div class="article-meta-row">
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>                        21 tháng 6, 2026
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 phút đọc
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 2.8k lượt xem
+                    </div>
+                </div>
+
+                <!-- Content Body -->
+                <div class="article-body">
+                    
+            <p>Xu hướng ăn xanh, sống lành mạnh đang bùng nổ mạnh mẽ tại các thành phố lớn ở Việt Nam như Hà Nội, TP.HCM và Đà Nẵng. Thay vì phụ thuộc hoàn toàn vào nguồn đạm từ thịt động vật, nhiều người trẻ và các gia đình hiện đại đang chủ động tìm kiếm các giải pháp thay thế từ thực vật.</p>
+            
+            <h2>1. Sự chuyển dịch trong tư duy ăn uống</h2>
+            <p>Những năm gần đây, các nghiên cứu y khoa liên tục chỉ ra mối liên hệ giữa việc tiêu thụ quá mức thịt đỏ và các bệnh lý tim mạch, cao huyết áp hay gout. Điều này đã thúc đẩy một làn sóng chuyển dịch mạnh mẽ. Người tiêu dùng thông minh không chỉ ăn để no mà còn ăn để phòng bệnh, tối ưu hóa năng lượng cho cơ thể thông qua các nguồn thực phẩm thuần tự nhiên.</p>
+            
+            <h2>2. Các nguồn đạm thực vật vàng dễ tìm</h2>
+            <p>Đạm thực vật không hề nghèo nàn như nhiều người lầm tưởng. Nếu biết cách kết hợp đa dạng, chúng hoàn toàn có thể cung cấp đầy đủ các acid amin thiết yếu:</p>
+            <ul>
+                <li><strong>Đậu nành và các sản phẩm từ đậu:</strong> Được ví như "thịt không xương", chứa hàm lượng protein dồi dào cùng các hợp chất isoflavone tốt cho nội tiết.</li>
+                <li><strong>Hạt quinoa, đậu lăng, đậu xanh, đậu đỏ:</strong> Chứa hàm lượng chất xơ siêu cao, giúp duy trì cảm giác no lâu, hỗ trợ tiêu hóa tốt và kiểm soát cân nặng hiệu quả.</li>
+                <li><strong>Các loại hạt dinh dưỡng (Hạnh nhân, óc chó, hạt điều):</strong> Không chỉ cung cấp chất đạm mà còn bổ sung chất béo lành mạnh Omega-3.</li>
+            </ul>
+            
+            <h2>3. Lời khuyên xây dựng thực đơn từ chuyên gia</h2>
+            <p>Các chuyên gia dinh dưỡng khuyến nghị không nhất thiết phải ăn chay hoàn toàn, mà có thể áp dụng chế độ ăn linh hoạt (Flexitarian). Việc thay thế 2-3 bữa thịt mỗi tuần bằng các món ăn từ đậu và hạt là bước khởi đầu lý tưởng để thanh lọc cơ thể, giảm tải cho hệ tiêu hóa và bảo vệ môi trường.</p>
+        
+                </div>
+
+                <!-- Tags -->
+                <div class="article-tags">
+                    <span class="tag-label">Từ khoá:</span>
+                    <a class="tag-item" href="#">Protein thực vật</a>\n                    <a class="tag-item" href="#">lối sống lành mạnh</a>\n                    <a class="tag-item" href="#">dinh dưỡng cân bằng</a>\n                    <a class="tag-item" href="#">xu hướng sống xanh</a>
+                </div>
+
+                <!-- Comments section placeholder -->
+                <section class="comments-section">
+                    <h2 class="section-heading">Bình luận <span class="count-badge">0</span></h2>
+                    
+                    <!-- Form -->
+                    <div class="comment-form-card" id="commentFormCard">
+                        <h3>✍️ Để lại bình luận</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-name">Họ và tên</label>
+                                <input id="c-name" type="text" placeholder="Nguyễn Văn A" />
+                            </div>
+                            <div class="form-group">
+                                <label for="c-email">Email (Không công khai)</label>
+                                <input id="c-email" type="email" placeholder="email@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-text">Nội dung bình luận</label>
+                            <textarea id="c-text" placeholder="Chia sẻ cảm nghĩ của bạn về bài viết..."></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <p class="form-note">* Email của bạn sẽ được bảo mật tuyệt đối.</p>
+                            <button class="btn-submit" onclick="handleSubmitComment(event)">Gửi bình luận</button>
+                        </div>
+                    </div>
+
+                    <!-- List -->
+                    <div class="comment-list" id="commentListContainer">
+                        <!-- Sẽ được thêm bằng JS từ file Article.js nếu có -->
+                    </div>
+                </section></div>
+            <!-- /article-main -->
+
+            <!-- ---- SIDEBAR ---- -->
+            <aside class="article-sidebar">
+
+                <!-- Most read -->
+                <div class="sidebar-card">
+                    <div class="sidebar-card-header">
+                        <span>🔥</span> Đọc nhiều nhất
+                    </div>
+                    <div class="sidebar-list">
+                        <div class="sidebar-item">
+                            <div class="sidebar-thumb">
+                                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=120&q=70" alt="" loading="lazy" />
+                            </div>
+                            <div class="sidebar-item-text">
+                                <div class="sidebar-item-title">5 dấu hiệu cơ thể đang thiếu vitamin D nghiêm trọng</div>
+                                <div class="sidebar-item-date">10 tháng 6, 2025</div>
+                            </div>
+                        </div>
+                        <div class="sidebar-item">
+                            <div class="sidebar-thumb">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=120&q=70" alt="" loading="lazy" />
+                            </div>
+                            <div class="sidebar-item-text">
+                                <div class="sidebar-item-title">Tại sao bạn luôn cảm thấy mệt mỏi dù đã ngủ đủ giấc?</div>
+                                <div class="sidebar-item-date">8 tháng 6, 2025</div>
+                            </div>
+                        </div>
+                        <div class="sidebar-item">
+                            <div class="sidebar-thumb">
+                                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=120&q=70" alt="" loading="lazy" />
+                            </div>
+                            <div class="sidebar-item-text">
+                                <div class="sidebar-item-title">Lợi ích của việc đi bộ 30 phút mỗi sáng với tim mạch</div>
+                                <div class="sidebar-item-date">5 tháng 6, 2025</div>
+                            </div>
+                        </div>
+                        <div class="sidebar-item">
+                            <div class="sidebar-thumb">
+                                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=120&q=70" alt="" loading="lazy" />
+                            </div>
+                            <div class="sidebar-item-text">
+                                <div class="sidebar-item-title">Cách kiểm soát stress hiệu quả theo khoa học thần kinh</div>
+                                <div class="sidebar-item-date">2 tháng 6, 2025</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <!-- /page-body -->
+    </main>
+
+    <!-- =============================================
+        FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

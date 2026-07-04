@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+   
+
+    <!-- ===================== MAIN ===================== -->
+    <main>
+        <div class="page-body">
+
+            <!-- ---- ARTICLE COLUMN ---- -->
+            <div class="article-main">
+
+                <!-- Category -->
+                <span class="article-category-tag">Thần kinh</span>
+
+                <!-- Title -->
+                <h1 class="article-title">
+                    Động kinh (Epilepsy): Nguyên nhân, triệu chứng và chiến lược điều trị toàn diện
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="article-subtitle">
+                    Động kinh là bệnh lý thần kinh mạn tính phổ biến, ảnh hưởng đến khoảng 50 triệu người trên toàn cầu. Với điều trị đúng và kịp thời, 70% người bệnh có thể kiểm soát được cơn co giật và sống một cuộc sống bình thường, khỏe mạnh.
+                </p>
+
+                <!-- Meta -->
+                <div class="article-meta-row">
+                    <div class="author-info">
+                        
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>                        11 tháng 7, 2025
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10 phút đọc
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 14.8k lượt xem
+                    </div>
+                </div>
+
+                <!-- Hero image -->
+                <div class="article-hero">
+                    <img src="../Image/dongkinh.png" alt="Bệnh động kinh" loading="lazy" />
+                </div>
+                <p class="article-hero-caption">
+                    Động kinh là bệnh lý thần kinh mạn tính, có thể kiểm soát tốt với điều trị đúng cách – Ảnh: Unsplash
+                </p>
+
+                <!-- Body -->
+                <div class="article-body">
+                    <p>
+                        Động kinh (Epilepsy) là bệnh lý thần kinh mạn tính đặc trưng bởi các cơn co giật tái phát, không do nguyên nhân cấp tính, do hoạt động điện bất thường trong não. Theo <strong>Tổ chức Y tế Thế giới (WHO)</strong>, động kinh là một
+                        trong những bệnh thần kinh phổ biến nhất, ảnh hưởng đến khoảng 50 triệu người trên toàn cầu. Điều đáng mừng là 70% người bệnh có thể kiểm soát được cơn co giật với thuốc chống động kinh, giúp họ sống bình thường và hòa nhập cộng
+                        đồng.
+                    </p>
+
+                    <h2>1. Động kinh là gì?</h2>
+                    <p>
+                        Động kinh xảy ra khi có sự phóng điện bất thường và đồng thời của một nhóm tế bào thần kinh trong não. Các cơn co giật có thể biểu hiện dưới nhiều hình thức khác nhau, từ rất nhẹ (chỉ mất tập trung trong vài giây) đến nặng (co giật toàn thân kéo dài).
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">📋</div>
+                        <div class="callout-text">
+                            <strong>Phân loại cơn động kinh (Theo ILAE 2017):</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Cơn động kinh khởi phát khu trú (Focal seizures):</strong>
+                                    <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                        <li>Có nhận thức: Bệnh nhân tỉnh táo, có thể có cử động bất thường ở một bộ phận cơ thể.</li>
+                                        <li>Mất nhận thức: Bệnh nhân lơ mơ, mất ý thức một phần.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Cơn động kinh khởi phát toàn thể (Generalized seizures):</strong>
+                                    <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                        <li><strong>Co giật toàn thể (Tonic-clonic):</strong> Mất ý thức, co cứng toàn thân, sau đó co giật nhịp nhàng.</li>
+                                        <li><strong>Vắng ý thức (Absence):</strong> Ngừng hoạt động đột ngột, nhìn chằm chằm, mất ý thức vài giây.</li>
+                                        <li><strong>Co giật cứng (Tonic):</strong> Co cứng đột ngột toàn thân.</li>
+                                        <li><strong>Co giật mất trương lực (Atonic):</strong> Mất trương lực cơ đột ngột, ngã.</li>
+                                        <li><strong>Co giật cơ (Myoclonic):</strong> Cơn co giật ngắn, giật cơ đột ngột.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Cơn không xác định (Unknown onset):</strong> Không xác định được điểm khởi phát.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>2. Triệu chứng và dấu hiệu nhận biết</h2>
+                    <p>
+                        Triệu chứng của cơn động kinh rất đa dạng, phụ thuộc vào vị trí và mức độ phóng điện trong não. Dưới đây là các dấu hiệu thường gặp:
+                    </p>
+
+                    <h3>Các giai đoạn của cơn động kinh toàn thể (Tonic-clonic)</h3>
+                    <ul>
+                        <li><strong>Giai đoạn tiền triệu (aura):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Cảm giác bất thường: mùi lạ, vị lạ, cảm giác buồn nôn.</li>
+                                <li>Cảm xúc đột ngột: sợ hãi, lo lắng, vui mừng không rõ nguyên nhân.</li>
+                                <li>Nhìn thấy tia sáng, đốm màu.</li>
+                                <li>Cảm giác lạ ở bụng (nổi da gà, bồn chồn).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Giai đoạn co cứng (Tonic phase - 10-20 giây):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Mất ý thức đột ngột.</li>
+                                <li>Co cứng toàn thân, gập cánh tay, duỗi chân.</li>
+                                <li>Có thể cắn lưỡi, tiểu không tự chủ.</li>
+                                <li>Mắt đảo lên, da tím tái do ngừng thở.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Giai đoạn giật (Clonic phase - 1-2 phút):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Co giật nhịp nhàng ở tay, chân, mặt.</li>
+                                <li>Tiết nhiều nước bọt, có thể sùi bọt mép.</li>
+                                <li>Thở không đều, có thể có tiếng rên.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Giai đoạn hậu ictal (Sau cơn - vài phút đến vài giờ):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Mệt mỏi, lú lẫn, đau nhức cơ bắp.</li>
+                                <li>Ngủ sâu, đau đầu.</li>
+                                <li>Mất trí nhớ tạm thời về cơn động kinh.</li>
+                                <li>Tâm trạng thất thường, khó tập trung.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">🚨</div>
+                        <div class="callout-text">
+                            <strong>Khi nào cần cấp cứu ngay:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li>Cơn co giật kéo dài >5 phút.</li>
+                                <li>Người bệnh không tỉnh lại sau cơn.</li>
+                                <li>Cơn thứ hai xảy ra ngay sau cơn trước.</li>
+                                <li>Người bệnh bị thương, ngã, hoặc hít phải chất nôn.</li>
+                                <li>Người bệnh có thai, tiểu đường, bệnh tim mạch.</li>
+                                <li>Đây là cơn co giật đầu tiên.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>3. Nguyên nhân và yếu tố nguy cơ</h2>
+                    <p>
+                        Nguyên nhân của động kinh rất đa dạng, từ bẩm sinh đến mắc phải. Trong khoảng 60% trường hợp, không xác định được nguyên nhân cụ thể.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">🔬</div>
+                        <div class="callout-text">
+                            <strong>Nguyên nhân chính gây động kinh:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Bẩm sinh và di truyền:</strong> Đột biến gen ảnh hưởng đến kênh ion và dẫn truyền thần kinh.</li>
+                                <li><strong>Chấn thương sọ não:</strong> Tai nạn giao thông, ngã, chấn thương thể thao.</li>
+                                <li><strong>Nhiễm trùng hệ thần kinh:</strong> Viêm màng não, viêm não, áp xe não.</li>
+                                <li><strong>Rối loạn mạch máu não:</strong> Đột quỵ, xuất huyết não, dị dạng mạch máu.</li>
+                                <li><strong>Khối u não:</strong> U lành hoặc ác tính.</li>
+                                <li><strong>Rối loạn chuyển hóa:</strong> Hạ đường huyết, rối loạn điện giải, suy gan, suy thận.</li>
+                                <li><strong>Yếu tố môi trường:</strong> Thiếu oxy não khi sinh, ngộ độc chì, rượu bia.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>Yếu tố khởi phát cơn động kinh</h3>
+                    <ul>
+                        <li><strong>Thiếu ngủ:</strong> Là yếu tố khởi phát phổ biến nhất.</li>
+                        <li><strong>Stress:</strong> Căng thẳng tâm lý, lo âu.</li>
+                        <li><strong>Sốt:</strong> Đặc biệt ở trẻ em (co giật do sốt).</li>
+                        <li><strong>Rượu bia:</strong> Uống rượu hoặc cai rượu đột ngột.</li>
+                        <li><strong>Ánh sáng nhấp nháy:</strong> Đèn nhấp nháy, màn hình TV/điện thoại.</li>
+                        <li><strong>Bỏ bữa:</strong> Hạ đường huyết do nhịn đói.</li>
+                        <li><strong>Thuốc:</strong> Một số loại thuốc có thể làm giảm ngưỡng co giật.</li>
+                    </ul>
+
+                    <h2>4. Điều trị và kiểm soát động kinh</h2>
+                    <p>
+                        Mục tiêu điều trị động kinh là kiểm soát hoàn toàn cơn co giật với ít tác dụng phụ nhất, giúp người bệnh có chất lượng cuộc sống tốt nhất.
+                    </p>
+
+                    <h3>4.1 Điều trị bằng thuốc chống động kinh (AEDs)</h3>
+                    <ul>
+                        <li><strong>Nguyên tắc:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Bắt đầu với một loại thuốc duy nhất (monotherapy).</li>
+                                <li>Tăng liều từ từ đến khi kiểm soát được cơn hoặc xuất hiện tác dụng phụ.</li>
+                                <li>Kiểm tra nồng độ thuốc trong máu định kỳ.</li>
+                                <li>Không tự ý ngừng thuốc đột ngột.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Các loại thuốc phổ biến:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li><strong>Valproate (Depakine):</strong> Phổ rộng, hiệu quả với nhiều loại động kinh.</li>
+                                <li><strong>Carbamazepine (Tegretol):</strong> Hiệu quả với động kinh khu trú và toàn thể.</li>
+                                <li><strong>Phenytoin (Dilantin):</strong> Thuốc cổ điển, hiệu quả với động kinh toàn thể.</li>
+                                <li><strong>Levetiracetam (Keppra):</strong> Phổ rộng, ít tương tác thuốc.</li>
+                                <li><strong>Lamotrigine (Lamictal):</strong> Hiệu quả với động kinh khu trú và toàn thể.</li>
+                                <li><strong>Topiramate (Topamax):</strong> Phổ rộng, có thể gây giảm cân.</li>
+                                <li><strong>Oxcarbazepine (Trileptal):</strong> Ít tác dụng phụ, phù hợp với động kinh khu trú.</li>
+                                <li><strong>Clonazepam (Rivotril):</strong> Hiệu quả với co giật cơ và vắng ý thức.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-text">
+                            <strong>Lưu ý quan trọng khi điều trị bằng thuốc:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li>Uống thuốc đều đặn đúng giờ, không bỏ liều.</li>
+                                <li>Không tự ý ngừng thuốc hoặc thay đổi liều mà không có ý kiến bác sĩ.</li>
+                                <li>Ngừng thuốc đột ngột có thể gây cơn động kinh nặng hơn hoặc trạng thái động kinh (status epilepticus).</li>
+                                <li>Thông báo ngay cho bác sĩ nếu có tác dụng phụ: buồn ngủ, chóng mặt, phát ban, rối loạn tiêu hóa.</li>
+                                <li>Phụ nữ mang thai hoặc có kế hoạch mang thai cần tham khảo bác sĩ để chọn thuốc an toàn.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>4.2 Điều trị ngoại khoa</h3>
+                    <ul>
+                        <li><strong>Phẫu thuật cắt bỏ ổ động kinh:</strong> Khi có ổ động kinh khu trú rõ ràng và không đáp ứng với thuốc.</li>
+                        <li><strong>Cắt thể chai (Corpus callosotomy):</strong> Giảm lan tỏa của cơn co giật.</li>
+                        <li><strong>Kích thích dây thần kinh lang thang (VNS):</strong> Đặt máy tạo xung dưới da, giảm tần suất cơn.</li>
+                        <li><strong>Kích thích não sâu (DBS):</strong> Đặt điện cực vào não.</li>
+                    </ul>
+
+                    <h3>4.3 Chế độ ăn Ketogenic</h3>
+                    <ul>
+                        <li><strong>Chế độ ăn giàu chất béo, ít carbohydrate:</strong> Làm thay đổi chuyển hóa, giảm cơn co giật.</li>
+                        <li><strong>Áp dụng cho trẻ em kháng thuốc:</strong> Đặc biệt hiệu quả ở trẻ em.</li>
+                        <li><strong>Cần theo dõi chặt chẽ:</strong> Dưới sự hướng dẫn của bác sĩ và chuyên gia dinh dưỡng.</li>
+                    </ul>
+
+                    <h2>5. Sơ cứu khi gặp người bị động kinh</h2>
+                    <p>
+                        Biết cách sơ cứu đúng khi gặp người bị động kinh có thể cứu sống và giảm thiểu tổn thương. Dưới đây là các bước cần thực hiện:
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">🆘</div>
+                        <div class="callout-text">
+                            <strong>Hướng dẫn sơ cứu động kinh:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>GIỮ BÌNH TĨNH</strong> - Đừng hoảng sợ.</li>
+                                <li><strong>ĐẶT NGƯỜI BỆNH NẰM NGHIÊNG</strong> để tránh sặc chất nôn, đảm bảo đường thở thông thoáng.</li>
+                                <li><strong>NỚI LỎNG QUẦN ÁO</strong> quanh cổ, ngực để dễ thở.</li>
+                                <li><strong>KHÔNG</strong> nhét bất kỳ vật gì vào miệng người bệnh (có thể gây gãy răng, hít sặc).</li>
+                                <li><strong>KHÔNG</strong> cố giữ hoặc trói chặt người bệnh (có thể gây gãy xương).</li>
+                                <li><strong>KHÔNG</strong> cho uống nước hay thuốc trong lúc co giật.</li>
+                                <li><strong>LƯU Ý</strong> thời gian cơn co giật kéo dài.</li>
+                                <li><strong>BẢO VỆ</strong> người bệnh khỏi các vật nguy hiểm xung quanh.</li>
+                                <li><strong>GỌI CẤP CỨU (115)</strong> nếu cơn kéo dài >5 phút hoặc có dấu hiệu nguy hiểm.</li>
+                                <li><strong>Ở BÊN CẠNH</strong> người bệnh cho đến khi họ tỉnh lại hoàn toàn.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">⛔</div>
+                        <div class="callout-text">
+                            <strong>Những điều TUYỆT ĐỐI KHÔNG LÀM:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>KHÔNG</strong> nhét tay, đũa, khăn vào miệng người bệnh.</li>
+                                <li><strong>KHÔNG</strong> cố ghì chặt người bệnh.</li>
+                                <li><strong>KHÔNG</strong> cho người bệnh uống nước hoặc thuốc trong cơn.</li>
+                                <li><strong>KHÔNG</strong> di chuyển người bệnh trừ khi môi trường nguy hiểm.</li>
+                                <li><strong>KHÔNG</strong> bỏ mặc người bệnh sau khi cơn kết thúc.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>6. Sống chung với động kinh</h2>
+                    <p>
+                        Người bệnh động kinh vẫn có thể sống một cuộc sống trọn vẹn, ý nghĩa nếu được quản lý tốt. Dưới đây là một số lời khuyên:
+                    </p>
+                    <ul>
+                        <li><strong>Tuân thủ điều trị:</strong> Uống thuốc đều đặn, tái khám định kỳ.</li>
+                        <li><strong>Nhận diện yếu tố khởi phát:</strong> Ghi nhật ký cơn động kinh để tránh các yếu tố nguy cơ.</li>
+                        <li><strong>Lối sống lành mạnh:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Ngủ đủ 7-8 tiếng/đêm.</li>
+                                <li>Ăn uống đều đặn, không bỏ bữa.</li>
+                                <li>Hạn chế rượu bia, cà phê.</li>
+                                <li>Quản lý stress (thiền, yoga, hít thở sâu).</li>
+                            </ul>
+                        </li>
+                        <li><strong>An toàn trong sinh hoạt:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Tránh các hoạt động nguy hiểm: leo trèo, bơi lội một mình, sử dụng máy móc.</li>
+                                <li>Tắm vòi hoa sen thay vì tắm bồn.</li>
+                                <li>Không lái xe nếu chưa hết cơn trong thời gian quy định (6-12 tháng).</li>
+                                <li>Sử dụng các thiết bị an toàn: mũ bảo hiểm khi đi xe đạp/xe máy.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Hòa nhập xã hội:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Tham gia các nhóm hỗ trợ bệnh nhân động kinh.</li>
+                                <li>Chia sẻ với người thân và bạn bè để họ hiểu và hỗ trợ.</li>
+                                <li>Không tự ti, mặc cảm vì bệnh.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Điều trị phối hợp:</strong> Kết hợp thuốc với tâm lý trị liệu, vật lý trị liệu khi cần.</li>
+                    </ul>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">💡</div>
+                        <div class="callout-text">
+                            <strong>Thông điệp cho người bệnh động kinh:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li>Động kinh KHÔNG lây và KHÔNG phải bệnh tâm thần.</li>
+                                <li>70% người bệnh có thể kiểm soát được cơn với thuốc.</li>
+                                <li>Nhiều người nổi tiếng mắc động kinh vẫn thành công (Julius Caesar, Van Gogh, Agatha Christie).</li>
+                                <li>Bạn có thể học tập, làm việc, kết hôn và có cuộc sống bình thường.</li>
+                                <li>Đừng ngần ngại chia sẻ và tìm kiếm sự hỗ trợ.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p>
+                        Động kinh là bệnh lý thần kinh mạn tính nhưng có thể kiểm soát hiệu quả với sự kết hợp của thuốc, thay đổi lối sống và hỗ trợ xã hội. Với sự tiến bộ của y học và nhận thức cộng đồng, người bệnh động kinh ngày càng có cơ hội sống khỏe mạnh, hòa nhập và
+                        đóng góp tích cực cho xã hội. Hãy xóa bỏ kỳ thị và xây dựng một cộng đồng hỗ trợ, thấu hiểu cho người bệnh động kinh.
+                    </p>
+                </div>
+
+                <!-- Tags -->
+                <div class="article-tags">
+                    <span class="tag-label">Từ khoá:</span>
+                    <a class="tag-item" href="#">động kinh</a>
+                    <a class="tag-item" href="#">epilepsy</a>
+                    <a class="tag-item" href="#">co giật</a>
+                    <a class="tag-item" href="#">thuốc chống động kinh</a>
+                    <a class="tag-item" href="#">AED</a>
+                    <a class="tag-item" href="#">sơ cứu động kinh</a>
+                    <a class="tag-item" href="#">bệnh thần kinh</a>
+                </div>
+
+                <!-- ============ COMMENTS ============ -->
+                <section class="comments-section">
+                    <h2 class="section-heading">
+                        Bình luận
+                        <span class="count-badge">14</span>
+                    </h2>
+                    <p class="section-desc">Chia sẻ câu hỏi hoặc kinh nghiệm của bạn về chủ đề này</p>
+
+                    <!-- Form -->
+                    <div class="comment-form-card">
+                        <h3>✍️ Để lại bình luận</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-name">Họ và tên</label>
+                                <input id="c-name" type="text" placeholder="Nguyễn Văn A" />
+                            </div>
+                            <div class="form-group">
+                                <label for="c-email">Email (không hiển thị)</label>
+                                <input id="c-email" type="email" placeholder="email@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-text">Nội dung bình luận</label>
+                            <textarea id="c-text" placeholder="Bạn có câu hỏi hoặc muốn chia sẻ kinh nghiệm của mình?"></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <p class="form-note">* Email của bạn sẽ không được hiển thị công khai.</p>
+                            <button class="btn-submit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                Gửi bình luận
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="comments-sort-bar">
+                        <span class="sort-label">Sắp xếp theo:</span>
+                        <button class="sort-btn active">Mới nhất</button>
+                        <button class="sort-btn">Cũ nhất</button>
+                        <button class="sort-btn">Nhiều lượt thích nhất</button>
+                    </div>
+
+                    <!-- List -->
+                    <div class="comment-list">
+
+                        <!-- Comment 1 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">LH</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">
+                                        Lê Thị Hương
+                                        <span class="verified-badge">✓ Đã xác minh</span>
+                                    </div>
+                                    <div class="comment-time">2 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Bài viết rất hữu ích! Mình đã áp dụng mô hình đĩa thức ăn này được 3 tháng rồi và cảm thấy sức khoẻ cải thiện rõ rệt, đặc biệt là giảm được cảm giác mệt mỏi vào buổi chiều. Cảm ơn bác sĩ đã chia sẻ.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                        <!-- Comment 2 with reply -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-amber">NV</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Nguyễn Văn Bình</div>
+                                    <div class="comment-time">5 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Cho mình hỏi với người bị tiểu đường type 2 thì có cần điều chỉnh gì khác không ạ? Mình đang phân vân giữa việc ăn gạo lứt hay hoàn toàn kiêng tinh bột.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+
+                            <!-- Reply -->
+                            <div class="reply-thread">
+                                <div class="comment-card is-reply">
+                                    <div class="comment-header">
+                                        <div class="comment-avatar avatar-green">BS</div>
+                                        <div class="comment-meta">
+                                            <div class="comment-author">
+                                                BS. Nguyễn Minh Tuấn
+                                                <span class="verified-badge">✓ Tác giả</span>
+                                            </div>
+                                            <div class="comment-time">3 giờ trước</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-text">
+                                        Chào bạn! Với người tiểu đường type 2, không cần kiêng hoàn toàn tinh bột mà nên chọn tinh bột có chỉ số GI thấp như gạo lứt, yến mạch, khoai lang. Điều quan trọng là kiểm soát khẩu phần và kết hợp với rau xanh để làm chậm hấp thu đường. Bạn nên gặp bác
+                                        sĩ chuyên khoa nội tiết để được tư vấn cụ thể theo tình trạng của mình nhé.
+                                    </div>
+                                    <div class="comment-actions">
+                                        <button class="action-btn liked">
+                                            <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 3 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">TM</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Trần Minh Khoa</div>
+                                    <div class="comment-time">1 ngày trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Phần về bữa tối giảm tinh bột rất đúng với kinh nghiệm của mình. Từ khi chuyển sang ăn nhiều rau và cá vào buổi tối, giấc ngủ của mình cải thiện hẳn, không còn cảm giác nặng bụng khó ngủ nữa.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="comments-pagination">
+                        <button class="page-btn wide">‹ Trước</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span>…</span>
+                        <button class="page-btn">8</button>
+                        <button class="page-btn wide">Tiếp ›</button>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+   
+
+    <!-- =============================================
+        FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

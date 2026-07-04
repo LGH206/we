@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-body">
+            <div class="article-main">
+                <span class="article-category-tag">Dịch bệnh</span>
+
+                <h1 class="article-title">
+                    TP.HCM khởi động chiến dịch phòng chống sốt xuất huyết trước mùa mưa 2024
+                </h1>
+
+                <p class="article-subtitle">
+                    Sở Y tế TP.HCM triển khai chiến dịch diệt muỗi và tuyên truyền phòng bệnh tại 22 quận huyện, dự kiến tiếp cận hơn 500.000 hộ gia đình trong tháng tới nhằm kéo giảm số ca mắc trước mùa mưa.
+                </p>
+
+                <div class="article-meta-row">
+                    <div class="meta-item">⏱ 1 giờ trước</div>
+                    <div class="meta-item">👁 3.2k lượt xem</div>
+                </div>
+
+                <div class="article-hero">
+                    <img src="../Image/phongchongsotuathuyet.png" alt="Chiến dịch phòng chống sốt xuất huyết TP.HCM" loading="lazy" />
+                </div>
+
+                <div class="article-body">
+                    <p>
+                        Trước bối cảnh thời tiết chuyển mùa tạo điều kiện thuận lợi cho muỗi vằn phát triển truyền bệnh, Sở Y tế TP.HCM đã chính thức phát động chiến dịch tổng lực phòng chống sốt xuất huyết năm 2024 trên quy mô toàn thành phố.
+                    </p>
+
+                    <h2>1. Mục tiêu và quy mô tiếp cận toàn diện</h2>
+                    <p>
+                        Chiến dịch lần này huy động toàn bộ mạng lưới y tế cơ sở phối hợp cùng ban ngành địa phương nhằm triệt tiêu các ổ lăng quăng ngay tại khu dân cư.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">🎯</div>
+                        <div class="callout-text">
+                            <strong>Chỉ tiêu chiến dịch:</strong> Chủ động tiếp cận và xử lý triệt để dụng cụ chứa nước tại hơn 500.000 hộ gia đình thuộc 22 quận, huyện và TP. Thủ Đức, quyết tâm không để hình thành các ổ dịch lớn.
+                        </div>
+                    </div>
+
+                    <h2>2. Các biện pháp cốt lõi được triển khai</h2>
+                    <p>
+                        Ngành y tế thành phố nhấn mạnh việc phòng chống sốt xuất huyết phải dựa vào ý thức tự giác của mỗi người dân thông qua các hành động cụ thể:
+                    </p>
+                    <ul>
+                        <li><strong>Tìm và diệt lăng quăng:</strong> Lật úp các dụng cụ chứa nước đọng, thay nước bình bông hàng tuần, thả cá bảy màu vào các bể chứa nước lớn.</li>
+                        <li><strong>Phun hóa chất diện rộng:</strong> Tập trung xử lý hóa chất tại các khu vực nguy cơ cao, công trình xây dựng, khu nhà trọ công nhân.</li>
+                        <li><strong>Xử phạt nghiêm khắc:</strong> Áp dụng chế tài đối với các cá nhân, tổ chức cố tình không xử lý các ổ đọng nước tạo điều kiện cho muỗi đẻ trứng.</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-text">
+                            <strong>Dấu hiệu cảnh báo:</strong> Khi xuất hiện sốt cao đột ngột, đau đầu, đau hốc mắt hoặc có chấm xuất huyết dưới da, người bệnh cần đến ngay cơ sở y tế gần nhất để xét nghiệm, tuyệt đối không tự ý truyền dịch tại nhà.
+                        </div>
+                    </div>
+
+                    <p>
+                        <strong>Kết luận:</strong> Sự đồng lòng của người dân trong việc dành 10 phút mỗi tuần để dọn dẹp nhà cửa là chìa khóa then chốt giúp kiểm soát thành công dịch bệnh sốt xuất huyết trước khi mùa mưa đạt đỉnh.
+                    </p>
+                </div>
+
+                <div class="article-tags">
+                    <span class="tag-label">Từ khoá:</span>
+                    <a class="tag-item" href="#">sốt xuất huyết 2024</a>
+                    <a class="tag-item" href="#">Sở Y tế TP.HCM</a>
+                    <a class="tag-item" href="#">diệt lăng quăng</a>
+                </div>
+            </div>
+
+            <aside class="article-sidebar">
+                <div class="sidebar-card">
+                    <div class="sidebar-card-header">📊 Chỉ số chiến dịch</div>
+                    <div style="padding: 15px; font-size: 0.9rem; color: var(--n-700)">
+                        <p>• <strong>Địa bàn:</strong> 22 quận huyện</p>
+                        <p>• <strong>Mục tiêu:</strong> 500.000+ hộ dân</p>
+                        <p>• <strong>Thời gian:</strong> Cao điểm tháng này</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+</html>

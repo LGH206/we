@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- ===================== MAIN ===================== -->
+    <main>
+        <div class="page-body">
+
+            <!-- ---- ARTICLE COLUMN ---- -->
+            <div class="article-main">
+
+                <!-- Category -->
+                <span class="article-category-tag">Sinh dục & sinh sản</span>
+
+                <!-- Title -->
+                <h1 class="article-title">
+                    Lạc nội mạc tử cung (Endometriosis): Nguyên nhân, triệu chứng và chiến lược điều trị toàn diện
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="article-subtitle">
+                    Lạc nội mạc tử cung là bệnh lý mạn tính, ảnh hưởng đến 10-15% phụ nữ trong độ tuổi sinh sản, gây đau vùng chậu mạn tính và vô sinh. Chẩn đoán sớm và điều trị kịp thời giúp cải thiện chất lượng cuộc sống và bảo tồn khả năng sinh sản.
+                </p>
+
+                <!-- Meta -->
+                <div class="article-meta-row">
+                    
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>                        28 tháng 6, 2025
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11 phút đọc
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 14.3k lượt xem
+                    </div>
+                </div>
+
+                <!-- Hero image -->
+                <div class="article-hero">
+                    <img src="../Image/lacnoitucung.png" alt="Lạc nội mạc tử cung" loading="lazy" />
+                </div>
+                <p class="article-hero-caption">
+                    Lạc nội mạc tử cung là nguyên nhân hàng đầu gây đau vùng chậu mạn tính và vô sinh ở phụ nữ – Ảnh: Unsplash
+                </p>
+
+                <!-- Body -->
+                <div class="article-body">
+                    <p>
+                        Lạc nội mạc tử cung (Endometriosis) là tình trạng mô giống nội mạc tử cung (lớp lót bên trong tử cung) phát triển bên ngoài buồng tử cung, thường ở các cơ quan trong ổ bụng và vùng chậu. Theo <strong>Hiệp hội Sản phụ khoa Hoa Kỳ (ACOG)</strong>,
+                        bệnh ảnh hưởng đến khoảng 10-15% phụ nữ trong độ tuổi sinh sản và là một trong những nguyên nhân hàng đầu gây đau vùng chậu mạn tính và vô sinh ở phụ nữ.
+                    </p>
+
+                    <h2>1. Lạc nội mạc tử cung là gì?</h2>
+                    <p>
+                        Trong chu kỳ kinh nguyệt, nội mạc tử cung dày lên, chuẩn bị cho trứng làm tổ. Nếu không có thai, lớp này sẽ bong ra và đào thải qua đường kinh nguyệt. Ở phụ nữ bị lạc nội mạc tử cung, mô tương tự cũng phát triển bên ngoài tử cung, gây viêm, đau và hình
+                        thành mô sẹo.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">📋</div>
+                        <div class="callout-text">
+                            <strong>Vị trí thường gặp của mô lạc nội mạc:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Buồng trứng:</strong> Hình thành u nang lạc nội mạc (u nang chocolate).</li>
+                                <li><strong>Dây chằng tử cung - cùng đồ:</strong> Dây chằng nối tử cung với xương cùng.</li>
+                                <li><strong>Mạc nối:</strong> Lớp mỡ bao phủ các cơ quan trong ổ bụng.</li>
+                                <li><strong>Ruột và bàng quang:</strong> Gây rối loạn tiêu hóa và tiểu tiện.</li>
+                                <li><strong>Màng phổi và cơ hoành:</strong> Trường hợp hiếm gặp (lạc nội mạc ngực).</li>
+                                <li><strong>Sẹo mổ:</strong> Vết mổ cũ lấy thai hoặc phẫu thuật phụ khoa.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>2. Nguyên nhân và yếu tố nguy cơ</h2>
+                    <p>
+                        Nguyên nhân chính xác của lạc nội mạc tử cung vẫn chưa được xác định rõ, nhưng có nhiều giả thuyết được đưa ra, bao gồm yếu tố di truyền, nội tiết và miễn dịch.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">🔬</div>
+                        <div class="callout-text">
+                            <strong>Các giả thuyết về nguyên nhân:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Kinh nguyệt dòng chảy ngược:</strong> Máu kinh chảy ngược qua vòi trứng vào ổ bụng, mang theo tế bào nội mạc.</li>
+                                <li><strong>Chuyển sản tế bào màng bụng:</strong> Tế bào màng bụng biến đổi thành mô nội mạc.</li>
+                                <li><strong>Yếu tố di truyền:</strong> Nguy cơ tăng 6-8 lần nếu có mẹ hoặc chị gái mắc bệnh.</li>
+                                <li><strong>Rối loạn miễn dịch:</strong> Hệ miễn dịch không thể phát hiện và tiêu diệt mô lạc nội mạc.</li>
+                                <li><strong>Yếu tố nội tiết:</strong> Estrogen kích thích sự phát triển của mô lạc nội mạc.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>Yếu tố nguy cơ</h3>
+                    <ul>
+                        <li><strong>Tiền sử gia đình:</strong> Có người thân mắc lạc nội mạc tử cung.</li>
+                        <li><strong>Chu kỳ kinh nguyệt ngắn:</strong> Chu kỳ 27 ngày làm tăng nguy cơ.</li>
+                        <li><strong>Kinh nguyệt kéo dài:</strong> Thời gian hành kinh >7 ngày.</li>
+                        <li><strong>Thiếu máu:</strong> Có thể liên quan đến nồng độ estrogen cao.</li>
+                        <li><strong>Phụ nữ không sinh con:</strong> Nguy cơ cao hơn so với người đã sinh con.</li>
+                        <li><strong>Tuổi khởi phát kinh sớm:</strong> Có kinh sớm trước 11 tuổi.</li>
+                        <li><strong>Dị dạng tử cung:</strong> Tạo điều kiện cho kinh nguyệt chảy ngược.</li>
+                    </ul>
+
+                    <h2>3. Triệu chứng và dấu hiệu nhận biết</h2>
+                    <p>
+                        Triệu chứng của lạc nội mạc tử cung rất đa dạng, từ không có triệu chứng đến đau dữ dội ảnh hưởng đến sinh hoạt hàng ngày. Mức độ đau không tương quan với mức độ nặng của bệnh.
+                    </p>
+
+                    <h3>Triệu chứng chính</h3>
+                    <ul>
+                        <li><strong>Đau vùng chậu:</strong> Đau âm ỉ hoặc đau dữ dội, thường tăng trước và trong kỳ kinh.</li>
+                        <li><strong>Đau bụng kinh dữ dội (dysmenorrhea):</strong> Đau quặn ở vùng bụng dưới, có thể lan xuống đùi và lưng.</li>
+                        <li><strong>Đau khi quan hệ tình dục (dyspareunia):</strong> Đau sâu trong khi giao hợp.</li>
+                        <li><strong>Đau khi đại tiện hoặc tiểu tiện:</strong> Đau tăng trong kỳ kinh, có thể có máu trong phân hoặc nước tiểu.</li>
+                        <li><strong>Vô sinh:</strong> Lạc nội mạc tử cung là nguyên nhân gây vô sinh ở 30-50% phụ nữ.</li>
+                        <li><strong>Rong kinh:</strong> Chảy máu kinh nguyệt nhiều hơn bình thường hoặc kéo dài.</li>
+                        <li><strong>Mệt mỏi mạn tính:</strong> Mệt mỏi, thiếu năng lượng thường xuyên.</li>
+                        <li><strong>Rối loạn tiêu hóa:</strong> Buồn nôn, tiêu chảy, táo bón, đầy hơi trong kỳ kinh.</li>
+                        <li><strong>Bệnh lý kèm theo:</strong> Đau cơ xơ hóa, hội chứng ruột kích thích, đau nửa đầu.</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">🚨</div>
+                        <div class="callout-text">
+                            <strong>Khi nào cần đi khám ngay:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li>Đau vùng chậu hoặc đau bụng kinh ảnh hưởng đến sinh hoạt hàng ngày.</li>
+                                <li>Đau khi quan hệ tình dục kéo dài.</li>
+                                <li>Đau khi đi tiểu hoặc đại tiện trong kỳ kinh.</li>
+                                <li>Không có thai sau 1 năm quan hệ không bảo vệ (hoặc 6 tháng nếu >35 tuổi).</li>
+                                <li>Kinh nguyệt ra nhiều bất thường hoặc kéo dài.</li>
+                                <li>Sốt kèm đau bụng dữ dội (có thể nhiễm trùng).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>4. Biến chứng của lạc nội mạc tử cung</h2>
+                    <p>
+                        Lạc nội mạc tử cung không được điều trị kịp thời có thể gây ra nhiều biến chứng nghiêm trọng, ảnh hưởng đến sức khỏe sinh sản và chất lượng cuộc sống.
+                    </p>
+                    <ul>
+                        <li><strong>Vô sinh:</strong> Viêm mạn tính, dính vùng chậu, tổn thương buồng trứng và vòi trứng.</li>
+                        <li><strong>U nang buồng trứng:</strong> U nang lạc nội mạc (u nang chocolate) có thể vỡ gây đau dữ dội.</li>
+                        <li><strong>Dính vùng chậu:</strong> Mô sẹo dính các cơ quan trong vùng chậu lại với nhau.</li>
+                        <li><strong>Tắc ruột hoặc tắc niệu quản:</strong> Do mô sẹo chèn ép.</li>
+                        <li><strong>Tràn khí màng phổi do lạc nội mạc ngực:</strong> Hiếm gặp nhưng nguy hiểm.</li>
+                        <li><strong>Ung thư:</strong> Nguy cơ ung thư buồng trứng tăng nhẹ (nhưng vẫn thấp).</li>
+                        <li><strong>Ảnh hưởng tâm lý:</strong> Trầm cảm, lo âu, giảm chất lượng cuộc sống do đau mạn tính.</li>
+                    </ul>
+
+                    <h2>5. Chẩn đoán và điều trị</h2>
+                    <p>
+                        Chẩn đoán lạc nội mạc tử cung thường bị chậm trễ trung bình 7-10 năm do triệu chứng dễ nhầm với các bệnh khác. Chẩn đoán xác định cần được thực hiện qua nội soi ổ bụng.
+                    </p>
+
+                    <h3>5.1 Chẩn đoán</h3>
+                    <ul>
+                        <li><strong>Khám lâm sàng:</strong> Thăm khám phụ khoa phát hiện u nang, dính hoặc đau khi ấn.</li>
+                        <li><strong>Siêu âm:</strong> Phát hiện u nang lạc nội mạc trên buồng trứng (đặc trưng: dạng nang có hồi âm đồng đều).</li>
+                        <li><strong>MRI:</strong> Đánh giá chi tiết hơn về mức độ tổn thương.</li>
+                        <li><strong>Nội soi ổ bụng (Laparoscopy):</strong> Tiêu chuẩn vàng để chẩn đoán xác định và phân loại bệnh.</li>
+                        <li><strong>Xét nghiệm CA-125:</strong> Thường tăng cao trong lạc nội mạc nhưng không đặc hiệu.</li>
+                    </ul>
+
+                    <h3>5.2 Điều trị</h3>
+                    <div class="callout-box">
+                        <div class="callout-icon">💊</div>
+                        <div class="callout-text">
+                            <strong>Các phương pháp điều trị:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Điều trị nội khoa:</strong>
+                                    <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                        <li><strong>Thuốc giảm đau:</strong> NSAIDs (Ibuprofen, Naproxen) giảm đau và viêm.</li>
+                                        <li><strong>Thuốc tránh thai kết hợp:</strong> Giảm đau bằng cách ức chế rụng trứng và giảm nồng độ estrogen.</li>
+                                        <li><strong>Progestin:</strong> Medroxyprogesterone, Dienogest - ức chế phát triển mô lạc nội mạc.</li>
+                                        <li><strong>GnRH agonists:</strong> Tạo trạng thái mãn kinh tạm thời, giảm estrogen và co mô lạc nội mạc.</li>
+                                        <li><strong>Danazol:</strong> Thuốc androgen, ít được sử dụng do tác dụng phụ.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Điều trị ngoại khoa:</strong>
+                                    <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                        <li><strong>Nội soi cắt bỏ:</strong> Cắt bỏ tổn thương lạc nội mạc và mô sẹo.</li>
+                                        <li><strong>Cắt u nang buồng trứng:</strong> Bóc tách u nang lạc nội mạc.</li>
+                                        <li><strong>Cắt tử cung và buồng trứng:</strong> Phẫu thuật triệt căn, chỉ định khi bệnh nặng hoặc không đáp ứng điều trị.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Hỗ trợ sinh sản:</strong> IUI, IVF cho phụ nữ muốn có thai.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>6. Vai trò của dinh dưỡng và lối sống</h2>
+                    <p>
+                        Chế độ ăn uống và lối sống đóng vai trò hỗ trợ quan trọng trong quản lý lạc nội mạc tử cung, giúp giảm triệu chứng và cải thiện chất lượng cuộc sống.
+                    </p>
+
+                    <h3>Nguyên tắc dinh dưỡng hỗ trợ</h3>
+                    <ul>
+                        <li><strong>Thực phẩm chống viêm:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Cá béo (cá hồi, cá thu, cá mòi) giàu omega-3.</li>
+                                <li>Dầu ô-liu nguyên chất, bơ.</li>
+                                <li>Rau lá xanh đậm (cải bó xôi, cải xoăn).</li>
+                                <li>Quả mọng (dâu tây, việt quất, mâm xôi).</li>
+                                <li>Nghệ và gừng - có tác dụng chống viêm tự nhiên.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Hạn chế:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Thịt đỏ và thực phẩm chế biến sẵn.</li>
+                                <li>Đường tinh luyện và đồ uống có đường.</li>
+                                <li>Chất béo trans và chất béo bão hòa.</li>
+                                <li>Caffeine và rượu bia.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Bổ sung:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Vitamin D, Magie, Kẽm.</li>
+                                <li>Probiotic (sữa chua, kefir) hỗ trợ hệ tiêu hóa và miễn dịch.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h3>Lối sống hỗ trợ</h3>
+                    <ul>
+                        <li><strong>Quản lý stress:</strong> Yoga, thiền, hít thở sâu, các bài tập thư giãn.</li>
+                        <li><strong>Tập thể dục đều đặn:</strong> 30 phút/ngày, ít nhất 5 ngày/tuần.</li>
+                        <li><strong>Nghỉ ngơi đầy đủ:</strong> Ngủ 7-8 tiếng/đêm.</li>
+                        <li><strong>Chườm nóng:</strong> Giảm đau vùng chậu và bụng dưới.</li>
+                        <li><strong>Vật lý trị liệu:</strong> Massage, xoa bóp, tập cơ sàn chậu.</li>
+                        <li><strong>Hỗ trợ tâm lý:</strong> Tham gia nhóm hỗ trợ bệnh nhân, tư vấn tâm lý.</li>
+                    </ul>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">📌</div>
+                        <div class="callout-text">
+                            <strong>Lưu ý cho phụ nữ mong muốn có thai:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li>Nên có thai sớm sau khi điều trị vì khả năng sinh sản giảm dần theo thời gian.</li>
+                                <li>Phẫu thuật bảo tồn (nội soi cắt bỏ) có thể cải thiện tỷ lệ có thai tự nhiên.</li>
+                                <li>Kết hợp với các phương pháp hỗ trợ sinh sản (IUI, IVF) khi cần thiết.</li>
+                                <li>Theo dõi thai kỳ chặt chẽ vì nguy cơ sinh non và nhau tiền đạo cao hơn.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p>
+                        Lạc nội mạc tử cung là bệnh lý mạn tính phức tạp, nhưng với sự kết hợp của chẩn đoán sớm, điều trị đa mô thức, thay đổi lối sống và hỗ trợ tâm lý, phụ nữ mắc bệnh vẫn có thể kiểm soát triệu chứng, bảo tồn khả năng sinh sản và sống khỏe mạnh, chất lượng
+                        cao.
+                    </p>
+                </div>
+
+                <!-- Tags -->
+                <div class="article-tags">
+                    <span class="tag-label">Từ khoá:</span>
+                    <a class="tag-item" href="#">lạc nội mạc tử cung</a>
+                    <a class="tag-item" href="#">endometriosis</a>
+                    <a class="tag-item" href="#">đau vùng chậu</a>
+                    <a class="tag-item" href="#">vô sinh</a>
+                    <a class="tag-item" href="#">u nang buồng trứng</a>
+                    <a class="tag-item" href="#">nội soi ổ bụng</a>
+                    <a class="tag-item" href="#">đau bụng kinh</a>
+                </div>
+
+
+                <!-- ============ COMMENTS ============ -->
+                <section class="comments-section">
+                    <h2 class="section-heading">
+                        Bình luận
+                        <span class="count-badge">14</span>
+                    </h2>
+                    <p class="section-desc">Chia sẻ câu hỏi hoặc kinh nghiệm của bạn về chủ đề này</p>
+
+                    <!-- Form -->
+                    <div class="comment-form-card">
+                        <h3>✍️ Để lại bình luận</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-name">Họ và tên</label>
+                                <input id="c-name" type="text" placeholder="Nguyễn Văn A" />
+                            </div>
+                            <div class="form-group">
+                                <label for="c-email">Email (không hiển thị)</label>
+                                <input id="c-email" type="email" placeholder="email@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-text">Nội dung bình luận</label>
+                            <textarea id="c-text" placeholder="Bạn có câu hỏi hoặc muốn chia sẻ kinh nghiệm của mình?"></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <p class="form-note">* Email của bạn sẽ không được hiển thị công khai.</p>
+                            <button class="btn-submit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                Gửi bình luận
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="comments-sort-bar">
+                        <span class="sort-label">Sắp xếp theo:</span>
+                        <button class="sort-btn active">Mới nhất</button>
+                        <button class="sort-btn">Cũ nhất</button>
+                        <button class="sort-btn">Nhiều lượt thích nhất</button>
+                    </div>
+
+                    <!-- List -->
+                    <div class="comment-list">
+
+                        <!-- Comment 1 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">LH</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">
+                                        Lê Thị Hương
+                                        <span class="verified-badge">✓ Đã xác minh</span>
+                                    </div>
+                                    <div class="comment-time">2 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Bài viết rất hữu ích! Mình đã áp dụng mô hình đĩa thức ăn này được 3 tháng rồi và cảm thấy sức khoẻ cải thiện rõ rệt, đặc biệt là giảm được cảm giác mệt mỏi vào buổi chiều. Cảm ơn bác sĩ đã chia sẻ.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                        <!-- Comment 2 with reply -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-amber">NV</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Nguyễn Văn Bình</div>
+                                    <div class="comment-time">5 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Cho mình hỏi với người bị tiểu đường type 2 thì có cần điều chỉnh gì khác không ạ? Mình đang phân vân giữa việc ăn gạo lứt hay hoàn toàn kiêng tinh bột.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+
+                            <!-- Reply -->
+                            <div class="reply-thread">
+                                <div class="comment-card is-reply">
+                                    <div class="comment-header">
+                                        <div class="comment-avatar avatar-green">BS</div>
+                                        <div class="comment-meta">
+                                            <div class="comment-author">
+                                                BS. Nguyễn Minh Tuấn
+                                                <span class="verified-badge">✓ Tác giả</span>
+                                            </div>
+                                            <div class="comment-time">3 giờ trước</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-text">
+                                        Chào bạn! Với người tiểu đường type 2, không cần kiêng hoàn toàn tinh bột mà nên chọn tinh bột có chỉ số GI thấp như gạo lứt, yến mạch, khoai lang. Điều quan trọng là kiểm soát khẩu phần và kết hợp với rau xanh để làm chậm hấp thu đường. Bạn nên gặp bác
+                                        sĩ chuyên khoa nội tiết để được tư vấn cụ thể theo tình trạng của mình nhé.
+                                    </div>
+                                    <div class="comment-actions">
+                                        <button class="action-btn liked">
+                                            <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 3 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">TM</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Trần Minh Khoa</div>
+                                    <div class="comment-time">1 ngày trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Phần về bữa tối giảm tinh bột rất đúng với kinh nghiệm của mình. Từ khi chuyển sang ăn nhiều rau và cá vào buổi tối, giấc ngủ của mình cải thiện hẳn, không còn cảm giác nặng bụng khó ngủ nữa.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="comments-pagination">
+                        <button class="page-btn wide">‹ Trước</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span>…</span>
+                        <button class="page-btn">8</button>
+                        <button class="page-btn wide">Tiếp ›</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+   
+
+    <!-- =============================================
+        FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

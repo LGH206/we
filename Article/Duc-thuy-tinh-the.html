@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===================== MAIN ===================== -->
+    <main>
+        <div class="page-body">
+
+            <!-- ---- ARTICLE COLUMN ---- -->
+            <div class="article-main">
+
+                <!-- Category -->
+                <span class="article-category-tag">Cơ quan giác quan</span>
+
+                <!-- Title -->
+                <h1 class="article-title">
+                    Đục thủy tinh thể: Nguyên nhân, triệu chứng và phương pháp điều trị hiệu quả
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="article-subtitle">
+                    Đục thủy tinh thể là nguyên nhân hàng đầu gây giảm thị lực ở người cao tuổi. Bệnh có thể điều trị rất tốt bằng phẫu thuật, giúp người bệnh lấy lại thị lực rõ ràng và cải thiện chất lượng cuộc sống.
+                </p>
+
+                <!-- Meta -->
+                <div class="article-meta-row">
+                  
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>                        27 tháng 6, 2026
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 9 phút đọc
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 6.5k lượt xem
+                    </div>
+                </div>
+
+                <!-- Hero image -->
+                <div class="article-hero">
+                    <img src="..\Image\ducthuytinhthe.png" alt="Đục thủy tinh thể " loading="lazy " />
+                </div>
+                <p class="article-hero-caption ">
+                    Đục thủy tinh thể làm mờ thủy tinh thể tự nhiên của mắt – Ảnh: Unsplash
+                </p>
+
+                <!-- Body -->
+                <div class="article-body ">
+                    <p>
+                        Đục thủy tinh thể là tình trạng thủy tinh thể (lens) trong suốt của mắt bị mờ đục, giống như kính bị bám bụi hoặc sương mù. Đây là nguyên nhân gây giảm thị lực phổ biến nhất ở người trên 60 tuổi, nhưng cũng có thể gặp ở người trẻ do chấn thương, tiểu
+                        đường hoặc bẩm sinh.
+                    </p>
+
+                    <h2>1. Nguyên nhân và yếu tố nguy cơ</h2>
+                    <p>
+                        Nguyên nhân chính là quá trình lão hóa tự nhiên. Các yếu tố làm tăng nguy cơ bao gồm: tuổi cao, tiếp xúc ánh nắng mạnh lâu năm, hút thuốc lá, tiểu đường, sử dụng corticosteroid dài ngày và chấn thương mắt.
+                    </p>
+
+                    <div class="callout-box ">
+                        <div class="callout-icon ">🌫️</div>
+                        <div class="callout-text ">
+                            <strong>Triệu chứng điển hình:</strong> Nhìn mờ dần, nhìn đôi, nhạy cảm với ánh sáng, khó nhìn ban đêm, màu sắc bị nhạt, thay đổi số kính thường xuyên.
+                        </div>
+                    </div>
+
+                    <h3>Phân loại đục thủy tinh thể</h3>
+                    <ul>
+                        <li><strong>Đục nhân (Nuclear):</strong> Phổ biến ở người cao tuổi, ảnh hưởng đến nhìn xa.</li>
+                        <li><strong>Đục vỏ (Cortical):</strong> Thường gây chói sáng.</li>
+                        <li><strong>Đục sau (Posterior subcapsular):</strong> Tiến triển nhanh, hay gặp ở người tiểu đường.</li>
+                    </ul>
+
+                    <h2>2. Chẩn đoán và phương pháp điều trị</h2>
+                    <p>
+                        Chẩn đoán qua khám lâm sàng và soi đáy mắt. Hiện nay, phẫu thuật là phương pháp điều trị hiệu quả và an toàn nhất.
+                    </p>
+
+                    <h3>Phẫu thuật đục thủy tinh thể</h3>
+                    <ul>
+                        <li><strong>Phaco:</strong> Phương pháp hiện đại, vết mổ nhỏ, thời gian phục hồi nhanh (thường chỉ 15-30 phút).</li>
+                        <li>Thay thủy tinh thể nhân tạo (IOL) đa tiêu cự hoặc tròng đơn tiêu.</li>
+                        <li>Phẫu thuật nội nhãn, ít đau, ít biến chứng.</li>
+                    </ul>
+
+                    <div class="warning-box ">
+                        <div class="callout-icon ">🩺</div>
+                        <div class="callout-text ">
+                            <strong>Lưu ý quan trọng:</strong> Không có thuốc uống hay nhỏ mắt nào chữa khỏi đục thủy tinh thể. Khi thị lực giảm ảnh hưởng đến sinh hoạt hàng ngày (lái xe, đọc sách, xem TV), bạn nên phẫu thuật sớm để tránh biến chứng.
+                        </div>
+                    </div>
+
+                    <h2>3. Phòng ngừa và chăm sóc sau phẫu thuật</h2>
+                    <p>
+                        Bạn có thể làm chậm tiến triển bệnh bằng cách thay đổi lối sống.
+                    </p>
+                    <ul>
+                        <li>Đeo kính râm có lọc UV khi ra ngoài.</li>
+                        <li>Bỏ thuốc lá, kiểm soát đường huyết và huyết áp.</li>
+                        <li>Ăn nhiều rau củ quả giàu vitamin C, E và lutein (cải xanh, cà rốt, cam, kiwi).</li>
+                        <li>Khám mắt định kỳ 6-12 tháng/lần sau 50 tuổi.</li>
+                        <li>Sau phẫu thuật: Tránh dụi mắt, nhỏ thuốc theo chỉ định, đeo kính bảo vệ và tái khám đúng hẹn.</li>
+                    </ul>
+
+                    <p>
+                        Đục thủy tinh thể không phải là “kết thúc” của thị lực. Với phẫu thuật hiện đại, hầu hết người bệnh đều lấy lại thị lực tốt, thậm chí nhiều người không còn cần đeo kính sau mổ. Hãy chủ động khám mắt định kỳ để phát hiện sớm và điều trị kịp thời.
+                    </p>
+                </div>
+
+                <!-- Tags -->
+                <div class="article-tags ">
+                    <span class="tag-label ">Từ khoá:</span>
+                    <a class="tag-item " href="# ">đục thủy tinh thể</a>
+                    <a class="tag-item " href="# ">phẫu thuật phaco</a>
+                    <a class="tag-item " href="# ">mờ mắt người già</a>
+                    <a class="tag-item " href="# ">bệnh mắt cao tuổi</a>
+                    <a class="tag-item " href="# ">thủy tinh thể nhân tạo</a>
+                    <a class="tag-item " href="# ">nhãn khoa</a>
+                </div>
+
+                <!-- ============ COMMENTS ============ -->
+                <section class="comments-section">
+                    <h2 class="section-heading">
+                        Bình luận
+                        <span class="count-badge">14</span>
+                    </h2>
+                    <p class="section-desc">Chia sẻ câu hỏi hoặc kinh nghiệm của bạn về chủ đề này</p>
+
+                    <!-- Form -->
+                    <div class="comment-form-card">
+                        <h3>✍️ Để lại bình luận</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-name">Họ và tên</label>
+                                <input id="c-name" type="text" placeholder="Nguyễn Văn A" />
+                            </div>
+                            <div class="form-group">
+                                <label for="c-email">Email (không hiển thị)</label>
+                                <input id="c-email" type="email" placeholder="email@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-text">Nội dung bình luận</label>
+                            <textarea id="c-text" placeholder="Bạn có câu hỏi hoặc muốn chia sẻ kinh nghiệm của mình?"></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <p class="form-note">* Email của bạn sẽ không được hiển thị công khai.</p>
+                            <button class="btn-submit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                Gửi bình luận
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="comments-sort-bar">
+                        <span class="sort-label">Sắp xếp theo:</span>
+                        <button class="sort-btn active">Mới nhất</button>
+                        <button class="sort-btn">Cũ nhất</button>
+                        <button class="sort-btn">Nhiều lượt thích nhất</button>
+                    </div>
+
+                    <!-- List -->
+                    <div class="comment-list">
+
+                        <!-- Comment 1 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">LH</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">
+                                        Lê Thị Hương
+                                        <span class="verified-badge">✓ Đã xác minh</span>
+                                    </div>
+                                    <div class="comment-time">2 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Bài viết rất hữu ích! Mình đã áp dụng mô hình đĩa thức ăn này được 3 tháng rồi và cảm thấy sức khoẻ cải thiện rõ rệt, đặc biệt là giảm được cảm giác mệt mỏi vào buổi chiều. Cảm ơn bác sĩ đã chia sẻ.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                        <!-- Comment 2 with reply -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-amber">NV</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Nguyễn Văn Bình</div>
+                                    <div class="comment-time">5 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Cho mình hỏi với người bị tiểu đường type 2 thì có cần điều chỉnh gì khác không ạ? Mình đang phân vân giữa việc ăn gạo lứt hay hoàn toàn kiêng tinh bột.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+
+                            <!-- Reply -->
+                            <div class="reply-thread">
+                                <div class="comment-card is-reply">
+                                    <div class="comment-header">
+                                        <div class="comment-avatar avatar-green">BS</div>
+                                        <div class="comment-meta">
+                                            <div class="comment-author">
+                                                BS. Nguyễn Minh Tuấn
+                                                <span class="verified-badge">✓ Tác giả</span>
+                                            </div>
+                                            <div class="comment-time">3 giờ trước</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-text">
+                                        Chào bạn! Với người tiểu đường type 2, không cần kiêng hoàn toàn tinh bột mà nên chọn tinh bột có chỉ số GI thấp như gạo lứt, yến mạch, khoai lang. Điều quan trọng là kiểm soát khẩu phần và kết hợp với rau xanh để làm chậm hấp thu đường. Bạn nên gặp bác
+                                        sĩ chuyên khoa nội tiết để được tư vấn cụ thể theo tình trạng của mình nhé.
+                                    </div>
+                                    <div class="comment-actions">
+                                        <button class="action-btn liked">
+                                            <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 3 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">TM</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Trần Minh Khoa</div>
+                                    <div class="comment-time">1 ngày trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Phần về bữa tối giảm tinh bột rất đúng với kinh nghiệm của mình. Từ khi chuyển sang ăn nhiều rau và cá vào buổi tối, giấc ngủ của mình cải thiện hẳn, không còn cảm giác nặng bụng khó ngủ nữa.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="comments-pagination">
+                        <button class="page-btn wide">‹ Trước</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span>…</span>
+                        <button class="page-btn">8</button>
+                        <button class="page-btn wide">Tiếp ›</button>
+                    </div>
+                </section>
+            </div>
+            <!-- /article-main -->
+
+            <!-- ---- SIDEBAR ---- -->
+            <aside class="article-sidebar ">
+
+                <!-- Most read -->
+                <div class="sidebar-card ">
+                    <div class="sidebar-card-header ">
+                        <span>🔥</span> Đọc nhiều nhất
+                    </div>
+                    <div class="sidebar-list ">
+                        <div class="sidebar-item ">
+                            <div class="sidebar-thumb ">
+                                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=120&q=70 " alt=" " loading="lazy " />
+                            </div>
+                            <div class="sidebar-item-text ">
+                                <div class="sidebar-item-title ">5 dấu hiệu cơ thể đang thiếu vitamin D nghiêm trọng</div>
+                                <div class="sidebar-item-date ">10 tháng 6, 2025</div>
+                            </div>
+                        </div>
+                        <div class="sidebar-item ">
+                            <div class="sidebar-thumb ">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=120&q=70 " alt=" " loading="lazy " />
+                            </div>
+                            <div class="sidebar-item-text ">
+                                <div class="sidebar-item-title ">Tại sao bạn luôn cảm thấy mệt mỏi dù đã ngủ đủ giấc?</div>
+                                <div class="sidebar-item-date ">8 tháng 6, 2025</div>
+                            </div>
+                        </div>
+                        <div class="sidebar-item ">
+                            <div class="sidebar-thumb ">
+                                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=120&q=70 " alt=" " loading="lazy " />
+                            </div>
+                            <div class="sidebar-item-text ">
+                                <div class="sidebar-item-title ">Lợi ích của việc đi bộ 30 phút mỗi sáng với tim mạch</div>
+                                <div class="sidebar-item-date ">5 tháng 6, 2025</div>
+                            </div>
+                        </div>
+                        <div class="sidebar-item ">
+                            <div class="sidebar-thumb ">
+                                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=120&q=70 " alt=" " loading="lazy " />
+                            </div>
+                            <div class="sidebar-item-text ">
+                                <div class="sidebar-item-title ">Cách kiểm soát stress hiệu quả theo khoa học thần kinh</div>
+                                <div class="sidebar-item-date ">2 tháng 6, 2025</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    
+
+    <!-- =============================================
+        FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

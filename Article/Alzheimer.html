@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ===================== MAIN ===================== -->
+    <main>
+        <div class="page-body">
+
+            <!-- ---- ARTICLE COLUMN ---- -->
+            <div class="article-main">
+
+                <!-- Category -->
+                <span class="article-category-tag">Bệnh lý thần kinh</span>
+
+                <!-- Title -->
+                <h1 class="article-title">
+                    Bệnh Alzheimer: Nguyên nhân, triệu chứng và chiến lược phòng ngừa sa sút trí tuệ
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="article-subtitle">
+                    Bệnh Alzheimer là nguyên nhân phổ biến nhất gây sa sút trí tuệ, chiếm 60-80% các trường hợp, ảnh hưởng đến hơn 55 triệu người trên toàn cầu. Phát hiện sớm và can thiệp kịp thời giúp làm chậm tiến triển bệnh, cải thiện chất lượng cuộc sống cho người bệnh
+                    và giảm gánh nặng cho gia đình, xã hội.
+                </p>
+
+                <!-- Meta -->
+                <div class="article-meta-row">
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>                        13 tháng 7, 2025
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 12 phút đọc
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 19.3k lượt xem
+                    </div>
+                </div>
+
+                <!-- Hero image -->
+                <div class="article-hero">
+                    <img src="../Image/Alzheimer.png" alt="Bệnh Alzheimer" loading="lazy" />
+                </div>
+                <p class="article-hero-caption">
+                    Bệnh Alzheimer là nguyên nhân hàng đầu gây sa sút trí tuệ, cần được phát hiện sớm và quản lý toàn diện – Ảnh: Unsplash
+                </p>
+
+                <!-- Body -->
+                <div class="article-body">
+                    <p>
+                        Bệnh Alzheimer là bệnh thoái hóa thần kinh tiến triển, là nguyên nhân phổ biến nhất gây sa sút trí tuệ (dementia) ở người cao tuổi. Theo <strong>Tổ chức Alzheimer Quốc tế (ADI)</strong>, hiện có hơn 55 triệu người trên thế giới
+                        đang sống với bệnh sa sút trí tuệ, và con số này dự kiến sẽ tăng lên 78 triệu vào năm 2030 và 139 triệu vào năm 2050. Đây là một trong những thách thức sức khỏe cộng đồng lớn nhất trong thế kỷ 21.
+                    </p>
+
+                    <h2>1. Bệnh Alzheimer là gì?</h2>
+                    <p>
+                        Alzheimer là bệnh thoái hóa thần kinh tiến triển, đặc trưng bởi sự mất dần các tế bào thần kinh và kết nối synapse trong não, dẫn đến suy giảm trí nhớ, tư duy, hành vi và khả năng sinh hoạt hàng ngày. Bệnh được đặt theo tên của bác sĩ Alois Alzheimer,
+                        người đầu tiên mô tả bệnh vào năm 1906.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">🧬</div>
+                        <div class="callout-text">
+                            <strong>Đặc điểm bệnh lý của Alzheimer:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Mảng β-amyloid:</strong> Các mảng protein bất thường tích tụ giữa các tế bào thần kinh.</li>
+                                <li><strong>Rối sợi thần kinh (Tau tangles):</strong> Protein Tau bị biến đổi và tích tụ bên trong tế bào thần kinh.</li>
+                                <li><strong>Teo não:</strong> Giảm thể tích não, đặc biệt ở vùng hồi hải mã (hippocampus) và vỏ não.</li>
+                                <li><strong>Giảm chất dẫn truyền thần kinh:</strong> Thiếu hụt acetylcholine và các chất dẫn truyền khác.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>2. Triệu chứng và các giai đoạn của bệnh Alzheimer</h2>
+                    <p>
+                        Bệnh Alzheimer tiến triển chậm qua nhiều giai đoạn. Triệu chứng sớm thường là suy giảm trí nhớ nhẹ, sau đó tiến triển đến suy giảm chức năng nghiêm trọng.
+                    </p>
+
+                    <h3>Các giai đoạn của bệnh Alzheimer</h3>
+                    <ul>
+                        <li><strong>Giai đoạn tiền lâm sàng (Preclinical):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Không có triệu chứng rõ ràng.</li>
+                                <li>Có thể phát hiện qua các dấu ấn sinh học (biomarkers).</li>
+                                <li>Kéo dài từ 10-20 năm trước khi có triệu chứng.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Giai đoạn suy giảm nhận thức nhẹ (MCI - Mild Cognitive Impairment):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Hay quên nhiều hơn bình thường.</li>
+                                <li>Khó tìm từ ngữ, khó tập trung.</li>
+                                <li>Vẫn duy trì được sinh hoạt hàng ngày.</li>
+                                <li>Khoảng 15% MCI tiến triển thành Alzheimer mỗi năm.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Giai đoạn Alzheimer nhẹ (Giai đoạn đầu):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Quên các sự kiện gần đây, tên người thân.</li>
+                                <li>Lặp lại câu hỏi, câu chuyện.</li>
+                                <li>Khó lập kế hoạch và giải quyết vấn đề.</li>
+                                <li>Thay đổi tính cách (cáu gắt, lo âu).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Giai đoạn Alzheimer trung bình (Giai đoạn giữa):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Quên cả kỷ niệm xa và gần.</li>
+                                <li>Khó nhận diện người thân.</li>
+                                <li>Khó thực hiện các công việc hàng ngày (tắm, mặc quần áo).</li>
+                                <li>Có thể có ảo giác, hoang tưởng, hành vi bất thường.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Giai đoạn Alzheimer nặng (Giai đoạn cuối):</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Mất khả năng giao tiếp bằng lời nói.</li>
+                                <li>Không tự đi lại được, cần trợ giúp hoàn toàn.</li>
+                                <li>Khó nuốt, dễ bị viêm phổi.</li>
+                                <li>Cần chăm sóc 24/7.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">🔍</div>
+                        <div class="callout-text">
+                            <strong>10 dấu hiệu cảnh báo sớm Alzheimer:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li>Quên các sự kiện gần đây, đặc biệt là thông tin mới.</li>
+                                <li>Khó lập kế hoạch hoặc giải quyết vấn đề.</li>
+                                <li>Khó hoàn thành các công việc quen thuộc tại nhà hoặc nơi làm việc.</li>
+                                <li>Nhầm lẫn về thời gian và địa điểm.</li>
+                                <li>Khó nhận diện hình ảnh hoặc mối quan hệ không gian.</li>
+                                <li>Khó tìm từ ngữ trong nói hoặc viết.</li>
+                                <li>Để đồ đạc thất lạc và không nhớ để ở đâu.</li>
+                                <li>Suy giảm khả năng phán đoán và ra quyết định.</li>
+                                <li>Rút lui khỏi các hoạt động xã hội và sở thích.</li>
+                                <li>Thay đổi tâm trạng và tính cách.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">🚨</div>
+                        <div class="callout-text">
+                            <strong>Phân biệt Alzheimer với lão hóa bình thường:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Lão hóa bình thường:</strong> Thỉnh thoảng quên tên, đôi khi để quên đồ, vẫn tự mình quản lý được.</li>
+                                <li><strong>Alzheimer:</strong> Quên thường xuyên, để đồ ở nơi bất thường, không thể tự quản lý cuộc sống, mất khả năng thực hiện các công việc quen thuộc.</li>
+                                <li>Nếu nghi ngờ, hãy đưa người thân đi khám bác sĩ chuyên khoa thần kinh.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>3. Nguyên nhân và yếu tố nguy cơ</h2>
+                    <p>
+                        Nguyên nhân chính xác của Alzheimer vẫn chưa được hiểu đầy đủ, nhưng các nhà khoa học cho rằng có sự kết hợp của yếu tố di truyền, môi trường và lối sống.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-text">
+                            <strong>Các yếu tố nguy cơ chính:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Tuổi:</strong> Yếu tố nguy cơ lớn nhất, tăng gấp đôi sau mỗi 5 năm sau 65 tuổi.</li>
+                                <li><strong>Di truyền:</strong> Gen APOE-e4 làm tăng nguy cơ, gen đột biến gây Alzheimer gia đình (hiếm).</li>
+                                <li><strong>Giới tính:</strong> Phụ nữ có nguy cơ cao hơn (2/3 người bệnh là nữ).</li>
+                                <li><strong>Bệnh lý tim mạch:</strong> Tăng huyết áp, tiểu đường, rối loạn mỡ máu, béo phì.</li>
+                                <li><strong>Chấn thương đầu:</strong> Chấn thương sọ não nặng hoặc lặp lại.</li>
+                                <li><strong>Yếu tố lối sống:</strong> Lười vận động, hút thuốc, uống rượu, chế độ ăn không lành mạnh.</li>
+                                <li><strong>Yếu tố giáo dục:</strong> Trình độ học vấn thấp, ít hoạt động trí tuệ.</li>
+                                <li><strong>Rối loạn giấc ngủ:</strong> Ngưng thở khi ngủ, thiếu ngủ mạn tính.</li>
+                                <li><strong>Trầm cảm:</strong> Trầm cảm kéo dài ở người cao tuổi.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>4. Chẩn đoán và điều trị</h2>
+                    <p>
+                        Chẩn đoán sớm Alzheimer rất quan trọng để can thiệp kịp thời, làm chậm tiến triển và lập kế hoạch chăm sóc phù hợp.
+                    </p>
+
+                    <h3>4.1 Chẩn đoán</h3>
+                    <ul>
+                        <li><strong>Đánh giá lâm sàng:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Hỏi bệnh sử chi tiết (người bệnh và người thân).</li>
+                                <li>Khám thần kinh toàn diện.</li>
+                                <li>Đánh giá tình trạng tâm thần (MMSE, MoCA).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Xét nghiệm hình ảnh:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>MRI hoặc CT não: Đánh giá teo não, loại trừ nguyên nhân khác.</li>
+                                <li>PET scan: Phát hiện mảng β-amyloid và rối sợi thần kinh.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Xét nghiệm dịch não tủy:</strong> Đo β-amyloid và protein Tau.</li>
+                        <li><strong>Xét nghiệm di truyền:</strong> Gen APOE-e4 (không bắt buộc).</li>
+                        <li><strong>Loại trừ nguyên nhân khác:</strong> Thiếu vitamin B12, suy giáp, trầm cảm, tác dụng phụ thuốc.</li>
+                    </ul>
+
+                    <h3>4.2 Điều trị</h3>
+                    <ul>
+                        <li><strong>Thuốc điều trị triệu chứng:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li><strong>Chất ức chế cholinesterase:</strong> Donepezil, Rivastigmine, Galantamine (giai đoạn nhẹ- trung bình).</li>
+                                <li><strong>Memantine:</strong> Giai đoạn trung bình - nặng.</li>
+                                <li><strong>Kết hợp Donepezil + Memantine:</strong> Cho giai đoạn nặng.</li>
+                                <li>Hiệu quả: cải thiện nhẹ - trung bình, làm chậm tiến triển.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Điều trị triệu chứng hành vi - tâm thần:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Thuốc chống trầm cảm: Sertraline, Citalopram.</li>
+                                <li>Thuốc an thần kinh: Risperidone, Olanzapine (liều thấp, thận trọng).</li>
+                                <li>Thuốc ổn định tâm trạng: Valproate.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Điều trị không dùng thuốc:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Liệu pháp nhận thức - hành vi (CBT).</li>
+                                <li>Kích thích nhận thức (cognitive stimulation).</li>
+                                <li>Liệu pháp âm nhạc, nghệ thuật, thú cưng.</li>
+                                <li>Hoạt động thể chất, vật lý trị liệu.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-text">
+                            <strong>Lưu ý về thuốc điều trị Alzheimer:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li>Thuốc chỉ có tác dụng làm chậm tiến triển, KHÔNG CHỮA KHỎI bệnh.</li>
+                                <li>Hiệu quả khác nhau ở mỗi người.</li>
+                                <li>Cần theo dõi tác dụng phụ (rối loạn tiêu hóa, chóng mặt, chậm nhịp tim).</li>
+                                <li>Thuốc mới (Aducanumab, Lecanemab) đang được nghiên cứu, nhắm vào mảng amyloid.</li>
+                                <li>Không tự ý dùng hoặc ngừng thuốc khi chưa có ý kiến bác sĩ.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>5. Chăm sóc người bệnh Alzheimer</h2>
+                    <p>
+                        Chăm sóc người bệnh Alzheimer là một thách thức lớn cho gia đình. Dưới đây là một số lời khuyên hữu ích:
+                    </p>
+
+                    <ul>
+                        <li><strong>Giao tiếp:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Nói chậm, rõ ràng, đơn giản.</li>
+                                <li>Duy trì giao tiếp bằng mắt và ngôn ngữ cơ thể tích cực.</li>
+                                <li>Kiên nhẫn, không tranh cãi, không sửa chữa lỗi của người bệnh.</li>
+                                <li>Nhắc nhở lịch sự, ân cần.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Môi trường sống:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>An toàn: Loại bỏ thảm trải sàn, lắp tay vịn, thanh nắm, đảm bảo ánh sáng.</li>
+                                <li>Quen thuộc: Giữ đồ đạc ở vị trí cố định, treo ảnh gia đình, đồng hồ lớn.</li>
+                                <li>Ít kích thích: Tránh tiếng ồn lớn, ánh sáng chói.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Chăm sóc sinh hoạt:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Duy trì lịch sinh hoạt đều đặn (ăn, ngủ, tập thể dục).</li>
+                                <li>Chia nhỏ các công việc thành từng bước đơn giản.</li>
+                                <li>Khuyến khích tự lập tối đa.</li>
+                                <li>Chuẩn bị quần áo đơn giản, dễ mặc.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Dinh dưỡng:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Chế độ ăn Địa Trung Hải (nhiều cá, rau, trái cây, ngũ cốc nguyên hạt).</li>
+                                <li>Thức ăn dễ nhai, dễ nuốt, chia nhỏ bữa.</li>
+                                <li>Đảm bảo đủ nước, tránh mất nước.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Hỗ trợ tinh thần:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Dành thời gian bên người bệnh, lắng nghe và thấu hiểu.</li>
+                                <li>Tham gia các hoạt động người bệnh yêu thích.</li>
+                                <li>Gia đình cần chia sẻ gánh nặng, không để một mình chăm sóc.</li>
+                                <li>Tìm kiếm hỗ trợ từ hội người bệnh Alzheimer, chuyên gia tư vấn.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">💡</div>
+                        <div class="callout-text">
+                            <strong>Lời khuyên cho người chăm sóc:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Chăm sóc bản thân:</strong> Người chăm sóc cũng cần nghỉ ngơi, dinh dưỡng, tập thể dục.</li>
+                                <li><strong>Nhờ giúp đỡ:</strong> Đừng ngần ngại nhờ người thân, bạn bè hoặc dịch vụ chăm sóc.</li>
+                                <li><strong>Tham gia nhóm hỗ trợ:</strong> Chia sẻ kinh nghiệm và giảm stress.</li>
+                                <li><strong>Học hỏi:</strong> Tìm hiểu về bệnh để hiểu và đáp ứng tốt hơn.</li>
+                                <li><strong>Kiên nhẫn và yêu thương:</strong> Nhớ rằng người bệnh không cố tình gây khó khăn, đó là do bệnh.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>6. Phòng ngừa Alzheimer - Bảo vệ sức khỏe não bộ</h2>
+                    <p>
+                        Mặc dù không thể ngăn chặn hoàn toàn, nhưng có thể giảm đáng kể nguy cơ Alzheimer bằng các biện pháp lối sống lành mạnh. Khoảng 40% các trường hợp sa sút trí tuệ có thể phòng ngừa hoặc trì hoãn.
+                    </p>
+
+                    <ul>
+                        <li><strong>Hoạt động trí tuệ:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Đọc sách, học ngôn ngữ mới, chơi nhạc cụ.</li>
+                                <li>Giải ô chữ, sudoku, cờ vua.</li>
+                                <li>Tham gia các khóa học, hoạt động trí tuệ.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Vận động thể chất:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Ít nhất 150 phút/tuần vận động vừa phải.</li>
+                                <li>Đi bộ nhanh, bơi lội, đạp xe, khiêu vũ.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Chế độ dinh dưỡng:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Chế độ ăn Địa Trung Hải hoặc MIND (Mediterranean-DASH Intervention for Neurodegenerative Delay).</li>
+                                <li>Nhiều rau xanh, quả mọng, cá, dầu ô-liu, ngũ cốc nguyên hạt.</li>
+                                <li>Hạn chế thịt đỏ, thực phẩm chế biến sẵn, đường, chất béo bão hòa.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Kết nối xã hội:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Duy trì các mối quan hệ xã hội.</li>
+                                <li>Tham gia các hoạt động cộng đồng, tình nguyện.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Quản lý bệnh lý nền:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Kiểm soát huyết áp, đường huyết, mỡ máu.</li>
+                                <li>Điều trị trầm cảm, rối loạn giấc ngủ.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Bỏ thuốc lá và hạn chế rượu bia.</strong></li>
+                        <li><strong>Ngủ đủ giấc:</strong> 7-8 tiếng/đêm, điều trị ngưng thở khi ngủ.</li>
+                        <li><strong>Quản lý stress:</strong> Yoga, thiền, hít thở sâu.</li>
+                    </ul>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">📌</div>
+                        <div class="callout-text">
+                            <strong>Thông điệp quan trọng:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li>Alzheimer không phải là một phần bình thường của lão hóa.</li>
+                                <li>Chẩn đoán sớm giúp can thiệp kịp thời và lập kế hoạch chăm sóc.</li>
+                                <li>Lối sống lành mạnh có thể làm giảm nguy cơ và làm chậm tiến triển.</li>
+                                <li>Người bệnh Alzheimer vẫn xứng đáng được yêu thương, tôn trọng và chăm sóc.</li>
+                                <li>Nghiên cứu về Alzheimer đang tiến bộ nhanh chóng, hứa hẹn những điều trị mới trong tương lai.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p>
+                        Bệnh Alzheimer là một thách thức lớn cho y tế công cộng toàn cầu, nhưng với sự đầu tư nghiên cứu, nâng cao nhận thức và thay đổi lối sống, chúng ta có thể giảm gánh nặng của bệnh và cải thiện cuộc sống cho hàng triệu người bệnh và gia đình của họ. Mỗi
+                        người chúng ta đều có thể đóng góp bằng cách sống lành mạnh, chia sẻ kiến thức và xóa bỏ kỳ thị đối với người bệnh Alzheimer.
+                    </p>
+                </div>
+
+                <!-- Tags -->
+                <div class="article-tags">
+                    <span class="tag-label">Từ khoá:</span>
+                    <a class="tag-item" href="#">Alzheimer</a>
+                    <a class="tag-item" href="#">sa sút trí tuệ</a>
+                    <a class="tag-item" href="#">dementia</a>
+                    <a class="tag-item" href="#">mất trí nhớ</a>
+                    <a class="tag-item" href="#">thoái hóa thần kinh</a>
+                    <a class="tag-item" href="#">chăm sóc Alzheimer</a>
+                    <a class="tag-item" href="#">phòng ngừa Alzheimer</a>
+                </div>
+
+                <!-- ============ COMMENTS ============ -->
+                <section class="comments-section">
+                    <h2 class="section-heading">
+                        Bình luận
+                        <span class="count-badge">14</span>
+                    </h2>
+                    <p class="section-desc">Chia sẻ câu hỏi hoặc kinh nghiệm của bạn về chủ đề này</p>
+
+                    <!-- Form -->
+                    <div class="comment-form-card">
+                        <h3>✍️ Để lại bình luận</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-name">Họ và tên</label>
+                                <input id="c-name" type="text" placeholder="Nguyễn Văn A" />
+                            </div>
+                            <div class="form-group">
+                                <label for="c-email">Email (không hiển thị)</label>
+                                <input id="c-email" type="email" placeholder="email@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-text">Nội dung bình luận</label>
+                            <textarea id="c-text" placeholder="Bạn có câu hỏi hoặc muốn chia sẻ kinh nghiệm của mình?"></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <p class="form-note">* Email của bạn sẽ không được hiển thị công khai.</p>
+                            <button class="btn-submit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                Gửi bình luận
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="comments-sort-bar">
+                        <span class="sort-label">Sắp xếp theo:</span>
+                        <button class="sort-btn active">Mới nhất</button>
+                        <button class="sort-btn">Cũ nhất</button>
+                        <button class="sort-btn">Nhiều lượt thích nhất</button>
+                    </div>
+
+                    <!-- List -->
+                    <div class="comment-list">
+
+                        <!-- Comment 1 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">LH</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">
+                                        Lê Thị Hương
+                                        <span class="verified-badge">✓ Đã xác minh</span>
+                                    </div>
+                                    <div class="comment-time">2 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Bài viết rất hữu ích! Mình đã áp dụng mô hình đĩa thức ăn này được 3 tháng rồi và cảm thấy sức khoẻ cải thiện rõ rệt, đặc biệt là giảm được cảm giác mệt mỏi vào buổi chiều. Cảm ơn bác sĩ đã chia sẻ.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                        <!-- Comment 2 with reply -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-amber">NV</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Nguyễn Văn Bình</div>
+                                    <div class="comment-time">5 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Cho mình hỏi với người bị tiểu đường type 2 thì có cần điều chỉnh gì khác không ạ? Mình đang phân vân giữa việc ăn gạo lứt hay hoàn toàn kiêng tinh bột.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+
+                            <!-- Reply -->
+                            <div class="reply-thread">
+                                <div class="comment-card is-reply">
+                                    <div class="comment-header">
+                                        <div class="comment-avatar avatar-green">BS</div>
+                                        <div class="comment-meta">
+                                            <div class="comment-author">
+                                                BS. Nguyễn Minh Tuấn
+                                                <span class="verified-badge">✓ Tác giả</span>
+                                            </div>
+                                            <div class="comment-time">3 giờ trước</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-text">
+                                        Chào bạn! Với người tiểu đường type 2, không cần kiêng hoàn toàn tinh bột mà nên chọn tinh bột có chỉ số GI thấp như gạo lứt, yến mạch, khoai lang. Điều quan trọng là kiểm soát khẩu phần và kết hợp với rau xanh để làm chậm hấp thu đường. Bạn nên gặp bác
+                                        sĩ chuyên khoa nội tiết để được tư vấn cụ thể theo tình trạng của mình nhé.
+                                    </div>
+                                    <div class="comment-actions">
+                                        <button class="action-btn liked">
+                                            <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 3 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">TM</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Trần Minh Khoa</div>
+                                    <div class="comment-time">1 ngày trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Phần về bữa tối giảm tinh bột rất đúng với kinh nghiệm của mình. Từ khi chuyển sang ăn nhiều rau và cá vào buổi tối, giấc ngủ của mình cải thiện hẳn, không còn cảm giác nặng bụng khó ngủ nữa.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="comments-pagination">
+                        <button class="page-btn wide">‹ Trước</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span>…</span>
+                        <button class="page-btn">8</button>
+                        <button class="page-btn wide">Tiếp ›</button>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- =============================================
+        FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

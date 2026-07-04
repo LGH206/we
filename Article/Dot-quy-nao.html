@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Thói Quen Đơn Giản Giúp Sống Khỏe Mỗi Ngày</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <script src="../JavaScript/Article.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+        HEADER: TOPBAR + NAVBAR
+    ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.php" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.php">Trang chủ</a>
+                    <a href="../TinTucYTe.php">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.php" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                    <a href="../SoCuu.php">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.php" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.php">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- ===================== MAIN ===================== -->
+    <main>
+        <div class="page-body">
+
+            <!-- ---- ARTICLE COLUMN ---- -->
+            <div class="article-main">
+
+                <!-- Category -->
+                <span class="article-category-tag">Thần kinh</span>
+
+                <!-- Title -->
+                <h1 class="article-title">
+                    Đột quỵ não: Dấu hiệu nhận biết sớm, cấp cứu kịp thời và chiến lược phòng ngừa hiệu quả
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="article-subtitle">
+                    Đột quỵ là nguyên nhân hàng đầu gây tử vong và tàn tật trên toàn cầu. Nhận biết sớm các dấu hiệu cảnh báo và cấp cứu trong "giờ vàng" 4.5 giờ giúp giảm thiểu tổn thương não, tăng cơ hội hồi phục và ngăn ngừa di chứng nặng nề.
+                </p>
+
+                <!-- Meta -->
+                <div class="article-meta-row">
+                    <div class="author-info">
+                        
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>                        5 tháng 7, 2025
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 12 phút đọc
+                    </div>
+
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 18.9k lượt xem
+                    </div>
+                </div>
+
+                <!-- Hero image -->
+                <div class="article-hero">
+                    <img src="../Image/dotquynao.png" alt="Đột quỵ não và dấu hiệu nhận biết sớm" loading="lazy" />
+                </div>
+                <p class="article-hero-caption">
+                    Nhận biết sớm dấu hiệu đột quỵ và cấp cứu kịp thời giúp giảm nguy cơ tử vong và di chứng – Ảnh: Unsplash
+                </p>
+
+                <!-- Body -->
+                <div class="article-body">
+                    <p>
+                        Đột quỵ não (còn gọi là tai biến mạch máu não) là tình trạng lưu lượng máu lên não bị gián đoạn đột ngột, khiến các tế bào thần kinh bị tổn thương hoặc chết chỉ trong vài phút. Theo <strong>Tổ chức Y tế Thế giới (WHO)</strong>,
+                        mỗi năm có khoảng 15 triệu người trên toàn thế giới bị đột quỵ, trong đó 5 triệu người tử vong và 5 triệu người để lại di chứng vĩnh viễn. Đây là nguyên nhân hàng đầu gây tử vong và tàn tật tại Việt Nam và nhiều quốc gia.
+                    </p>
+
+                    <h2>1. Đột quỵ là gì?</h2>
+                    <p>
+                        Đột quỵ xảy ra khi dòng máu cung cấp cho não bị cản trở hoặc tắc nghẽn, hoặc khi một mạch máu trong não bị vỡ. Có 3 loại đột quỵ chính:
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">📋</div>
+                        <div class="callout-text">
+                            <strong>Phân loại đột quỵ:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Đột quỵ do thiếu máu cục bộ (Ischemic stroke):</strong> Chiếm 80-85% ca đột quỵ, xảy ra khi mạch máu bị tắc do cục máu đông hoặc mảng xơ vữa.</li>
+                                <li><strong>Đột quỵ do xuất huyết (Hemorrhagic stroke):</strong> Chiếm 10-15% ca đột quỵ, xảy ra khi mạch máu trong não bị vỡ, gây chảy máu trong nhu mô não hoặc khoang dưới nhện.</li>
+                                <li><strong>Cơn thiếu máu não thoáng qua (TIA - Transient Ischemic Attack):</strong> Còn gọi là "đột quỵ mini", các triệu chứng tương tự đột quỵ nhưng tự hồi phục trong vòng 24 giờ, là dấu hiệu cảnh báo nguy cơ đột quỵ thực
+                                    sự trong tương lai.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>2. Dấu hiệu nhận biết sớm - Quy tắc FAST</h2>
+                    <p>
+                        Nhận biết sớm các dấu hiệu đột quỵ là yếu tố quan trọng nhất để cứu sống người bệnh và giảm thiểu di chứng. Hãy nhớ quy tắc <strong>FAST</strong> (Nhanh chóng):
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">🚨</div>
+                        <div class="callout-text">
+                            <strong>Quy tắc FAST - Dấu hiệu nhận biết đột quỵ:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>F (Face - Khuôn mặt):</strong> Khuôn mặt bị méo, lệch sang một bên, đặc biệt khi cười hoặc nhe răng.</li>
+                                <li><strong>A (Arm - Cánh tay):</strong> Một hoặc hai tay bị yếu, không thể giơ lên hoặc giữ được.</li>
+                                <li><strong>S (Speech - Lời nói):</strong> Nói khó, nói ngọng, không nói được, hoặc không hiểu người khác nói.</li>
+                                <li><strong>T (Time - Thời gian):</strong> Nếu có bất kỳ dấu hiệu nào ở trên, hãy gọi cấp cứu ngay lập tức. Thời gian là vàng!</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>Các dấu hiệu khác của đột quỵ</h3>
+                    <ul>
+                        <li><strong>Đột ngột tê hoặc yếu:</strong> Tê hoặc yếu đột ngột ở mặt, tay hoặc chân, đặc biệt ở một bên cơ thể.</li>
+                        <li><strong>Rối loạn thị giác:</strong> Nhìn mờ, nhìn đôi hoặc mất thị lực đột ngột ở một hoặc cả hai mắt.</li>
+                        <li><strong>Rối loạn vận động:</strong> Chóng mặt, mất thăng bằng, khó đi đứng, phối hợp vận động kém.</li>
+                        <li><strong>Đau đầu dữ dội:</strong> Đau đầu đột ngột, dữ dội, khác với đau đầu thông thường.</li>
+                        <li><strong>Buồn nôn và nôn:</strong> Kèm theo các triệu chứng trên, đặc biệt trong đột quỵ xuất huyết.</li>
+                        <li><strong>Rối loạn ý thức:</strong> Lú lẫn, khó hiểu, ngủ gà hoặc bất tỉnh.</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">🚨</div>
+                        <div class="callout-text">
+                            <strong>Hành động ngay khi nghi ngờ đột quỵ:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Gọi cấp cứu ngay lập tức</strong> (115 tại Việt Nam).</li>
+                                <li><strong>Không tự ý cho người bệnh uống thuốc hạ áp</strong> hoặc bất kỳ thuốc gì.</li>
+                                <li><strong>Ghi nhớ thời điểm bắt đầu xuất hiện triệu chứng</strong> - quan trọng cho quyết định điều trị.</li>
+                                <li><strong>Đặt người bệnh nằm nghiêng về phía an toàn</strong> để tránh sặc nếu nôn.</li>
+                                <li><strong>Không cho ăn uống gì</strong> cho đến khi được cấp cứu.</li>
+                                <li><strong>Giữ bình tĩnh</strong> và theo dõi các dấu hiệu sinh tồn.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>3. Nguyên nhân và yếu tố nguy cơ</h2>
+                    <p>
+                        Hiểu rõ các yếu tố nguy cơ giúp phòng ngừa đột quỵ hiệu quả. Nhiều yếu tố nguy cơ có thể kiểm soát được thông qua thay đổi lối sống và điều trị bệnh lý nền.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-text">
+                            <strong>Các yếu tố nguy cơ chính của đột quỵ:</strong>
+                            <ul style="margin:8px 0 0 20px;padding:0;color:var(--n-800);">
+                                <li><strong>Tăng huyết áp:</strong> Yếu tố nguy cơ quan trọng nhất, chiếm 50% các ca đột quỵ.</li>
+                                <li><strong>Rối loạn mỡ máu:</strong> Tăng cholesterol và triglyceride.</li>
+                                <li><strong>Đái tháo đường:</strong> Làm tăng nguy cơ xơ vữa động mạch và cục máu đông.</li>
+                                <li><strong>Hút thuốc lá:</strong> Làm hẹp mạch máu và tăng đông máu.</li>
+                                <li><strong>Béo phì và lối sống ít vận động:</strong> Thiếu hoạt động thể lực.</li>
+                                <li><strong>Uống rượu bia quá mức:</strong> Làm tăng huyết áp và rối loạn đông máu.</li>
+                                <li><strong>Bệnh tim:</strong> Rung nhĩ, bệnh van tim.</li>
+                                <li><strong>Tuổi:</strong> Nguy cơ tăng theo tuổi, đặc biệt sau 55 tuổi.</li>
+                                <li><strong>Tiền sử gia đình:</strong> Có người thân bị đột quỵ.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>4. "Giờ vàng" trong điều trị đột quỵ</h2>
+                    <p>
+                        <strong>"Giờ vàng"</strong> là khoảng thời gian quyết định từ khi xuất hiện triệu chứng đến khi được điều trị. Với đột quỵ thiếu máu cục bộ, thời gian vàng là 4.5 giờ để được điều trị tiêu sợi huyết (thuốc làm tan cục máu đông).
+                        Càng đến sớm, cơ hội hồi phục càng cao.
+                    </p>
+
+                    <ul>
+                        <li><strong>0-60 phút:</strong> Đưa bệnh nhân đến bệnh viện có đơn vị đột quỵ.</li>
+                        <li><strong>0-4.5 giờ:</strong> Có thể điều trị tiêu sợi huyết (thuốc rTPA) cho đột quỵ thiếu máu cục bộ.</li>
+                        <li><strong>0-24 giờ:</strong> Có thể lấy huyết khối cơ học (mechanical thrombectomy) với một số trường hợp.</li>
+                        <li><strong>Mỗi phút trôi qua:</strong> Khoảng 1.9 triệu tế bào thần kinh bị chết.</li>
+                        <li><strong>Mỗi giờ trôi qua:</strong> Tương đương với 3.6 năm lão hóa của não.</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <div class="callout-icon">⏰</div>
+                        <div class="callout-text">
+                            <strong>Ghi nhớ quan trọng:</strong> "Thời gian là não bộ!" - Mỗi phút chậm trễ có thể làm mất đi cơ hội hồi phục của người bệnh. Đừng chờ xem triệu chứng có tự hết hay không. Đừng tự lái xe đến bệnh viện. Hãy gọi cấp cứu ngay!
+                        </div>
+                    </div>
+
+                    <h2>5. Điều trị và phục hồi chức năng sau đột quỵ</h2>
+                    <p>
+                        Sau giai đoạn cấp cứu, việc phục hồi chức năng là rất quan trọng để giúp người bệnh lấy lại các kỹ năng đã mất và cải thiện chất lượng cuộc sống.
+                    </p>
+
+                    <ul>
+                        <li><strong>Điều trị giai đoạn cấp tính:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li>Điều trị tiêu sợi huyết (rTPA) trong 4.5 giờ đầu.</li>
+                                <li>Lấy huyết khối cơ học (mechanical thrombectomy).</li>
+                                <li>Điều trị nguyên nhân (kiểm soát huyết áp, đường huyết, lipid máu).</li>
+                                <li>Chống phù não, phòng ngừa co giật và biến chứng.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Phục hồi chức năng:</strong>
+                            <ul style="margin:6px 0 0 20px;padding:0;color:var(--n-700);">
+                                <li><strong>Vật lý trị liệu:</strong> Phục hồi vận động, đi lại, cân bằng.</li>
+                                <li><strong>Hoạt động trị liệu:</strong> Phục hồi các kỹ năng sinh hoạt hàng ngày.</li>
+                                <li><strong>Ngôn ngữ trị liệu:</strong> Phục hồi nói, hiểu, nuốt.</li>
+                                <li><strong>Tâm lý trị liệu:</strong> Điều trị trầm cảm và lo âu sau đột quỵ.</li>
+                                <li><strong>Dinh dưỡng:</strong> Chế độ ăn phù hợp, hỗ trợ nuốt.</li>
+                                <li><strong>Hỗ trợ từ gia đình và xã hội:</strong> Tạo động lực và môi trường phục hồi.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h2>6. Phòng ngừa đột quỵ</h2>
+                    <p>
+                        Phòng ngừa vẫn là chiến lược tốt nhất để giảm nguy cơ đột quỵ. Khoảng 80% các ca đột quỵ có thể phòng ngừa được thông qua kiểm soát các yếu tố nguy cơ.
+                    </p>
+
+                    <h3>Thay đổi lối sống</h3>
+                    <ul>
+                        <li><strong>Kiểm soát huyết áp:</strong> Duy trì huyết áp
+                            < 130/80 mmHg.</li>
+                                <li><strong>Chế độ ăn lành mạnh:</strong> Chế độ ăn Địa Trung Hải hoặc DASH (nhiều rau quả, ngũ cốc nguyên hạt, ít muối, ít chất béo bão hòa).</li>
+                                <li><strong>Tập thể dục thường xuyên:</strong> Ít nhất 150 phút/tuần với cường độ vừa phải.</li>
+                                <li><strong>Duy trì cân nặng hợp lý:</strong> BMI 18.5-24.9.</li>
+                                <li><strong>Bỏ thuốc lá và hạn chế rượu bia.</strong></li>
+                                <li><strong>Quản lý stress và ngủ đủ giấc.</strong></li>
+                    </ul>
+
+                    <h3>Kiểm soát bệnh lý nền</h3>
+                    <ul>
+                        <li><strong>Kiểm tra huyết áp thường xuyên:</strong> Ít nhất 2 lần/năm.</li>
+                        <li><strong>Xét nghiệm mỡ máu định kỳ:</strong> Ít nhất 1 lần/năm.</li>
+                        <li><strong>Kiểm tra đường huyết:</strong> Đặc biệt nếu có yếu tố nguy cơ.</li>
+                        <li><strong>Điều trị các bệnh lý tim mạch:</strong> Rung nhĩ, bệnh van tim.</li>
+                        <li><strong>Sử dụng thuốc dự phòng:</strong> Aspirin, thuốc chống đông khi có chỉ định.</li>
+                        <li><strong>Khám sức khỏe định kỳ:</strong> ít nhất 1-2 năm/lần.</li>
+                    </ul>
+
+                    <div class="callout-box">
+                        <div class="callout-icon">📌</div>
+                        <div class="callout-text">
+                            <strong>Điều cần nhớ:</strong> Đột quỵ là bệnh có thể phòng ngừa được. Kiểm soát huyết áp, bỏ thuốc lá và thay đổi lối sống lành mạnh là 3 yếu tố quan trọng nhất để giảm nguy cơ đột quỵ. Hãy bắt đầu thay đổi ngay hôm nay để
+                            bảo vệ sức khỏe của chính bạn và người thân.
+                        </div>
+                    </div>
+
+                    <p>
+                        Đột quỵ là bệnh lý nguy hiểm nhưng có thể phòng ngừa và điều trị hiệu quả nếu phát hiện sớm và cấp cứu kịp thời. Nhận biết dấu hiệu đột quỵ qua quy tắc FAST và hành động nhanh chóng có thể cứu sống người bệnh và giảm thiểu di chứng nặng nề. Hãy chia sẻ
+                        kiến thức này với người thân và bạn bè để cùng nhau bảo vệ sức khỏe cộng đồng.
+                    </p>
+                </div>
+
+                <!-- Tags -->
+                <div class="article-tags">
+                    <span class="tag-label">Từ khoá:</span>
+                    <a class="tag-item" href="#">đột quỵ</a>
+                    <a class="tag-item" href="#">tai biến mạch máu não</a>
+                    <a class="tag-item" href="#">dấu hiệu đột quỵ</a>
+                    <a class="tag-item" href="#">FAST</a>
+                    <a class="tag-item" href="#">giờ vàng</a>
+                    <a class="tag-item" href="#">phòng ngừa đột quỵ</a>
+                    <a class="tag-item" href="#">thiếu máu não</a>
+                </div>
+                <!-- ============ COMMENTS ============ -->
+                <section class="comments-section">
+                    <h2 class="section-heading">
+                        Bình luận
+                        <span class="count-badge">14</span>
+                    </h2>
+                    <p class="section-desc">Chia sẻ câu hỏi hoặc kinh nghiệm của bạn về chủ đề này</p>
+
+                    <!-- Form -->
+                    <div class="comment-form-card">
+                        <h3>✍️ Để lại bình luận</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-name">Họ và tên</label>
+                                <input id="c-name" type="text" placeholder="Nguyễn Văn A" />
+                            </div>
+                            <div class="form-group">
+                                <label for="c-email">Email (không hiển thị)</label>
+                                <input id="c-email" type="email" placeholder="email@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-text">Nội dung bình luận</label>
+                            <textarea id="c-text" placeholder="Bạn có câu hỏi hoặc muốn chia sẻ kinh nghiệm của mình?"></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <p class="form-note">* Email của bạn sẽ không được hiển thị công khai.</p>
+                            <button class="btn-submit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                Gửi bình luận
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="comments-sort-bar">
+                        <span class="sort-label">Sắp xếp theo:</span>
+                        <button class="sort-btn active">Mới nhất</button>
+                        <button class="sort-btn">Cũ nhất</button>
+                        <button class="sort-btn">Nhiều lượt thích nhất</button>
+                    </div>
+
+                    <!-- List -->
+                    <div class="comment-list">
+
+                        <!-- Comment 1 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">LH</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">
+                                        Lê Thị Hương
+                                        <span class="verified-badge">✓ Đã xác minh</span>
+                                    </div>
+                                    <div class="comment-time">2 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Bài viết rất hữu ích! Mình đã áp dụng mô hình đĩa thức ăn này được 3 tháng rồi và cảm thấy sức khoẻ cải thiện rõ rệt, đặc biệt là giảm được cảm giác mệt mỏi vào buổi chiều. Cảm ơn bác sĩ đã chia sẻ.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                        <!-- Comment 2 with reply -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-amber">NV</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Nguyễn Văn Bình</div>
+                                    <div class="comment-time">5 giờ trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Cho mình hỏi với người bị tiểu đường type 2 thì có cần điều chỉnh gì khác không ạ? Mình đang phân vân giữa việc ăn gạo lứt hay hoàn toàn kiêng tinh bột.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+
+                            <!-- Reply -->
+                            <div class="reply-thread">
+                                <div class="comment-card is-reply">
+                                    <div class="comment-header">
+                                        <div class="comment-avatar avatar-green">BS</div>
+                                        <div class="comment-meta">
+                                            <div class="comment-author">
+                                                BS. Nguyễn Minh Tuấn
+                                                <span class="verified-badge">✓ Tác giả</span>
+                                            </div>
+                                            <div class="comment-time">3 giờ trước</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-text">
+                                        Chào bạn! Với người tiểu đường type 2, không cần kiêng hoàn toàn tinh bột mà nên chọn tinh bột có chỉ số GI thấp như gạo lứt, yến mạch, khoai lang. Điều quan trọng là kiểm soát khẩu phần và kết hợp với rau xanh để làm chậm hấp thu đường. Bạn nên gặp bác
+                                        sĩ chuyên khoa nội tiết để được tư vấn cụ thể theo tình trạng của mình nhé.
+                                    </div>
+                                    <div class="comment-actions">
+                                        <button class="action-btn liked">
+                                            <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 3 -->
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="comment-avatar avatar-teal">TM</div>
+                                <div class="comment-meta">
+                                    <div class="comment-author">Trần Minh Khoa</div>
+                                    <div class="comment-time">1 ngày trước</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                Phần về bữa tối giảm tinh bột rất đúng với kinh nghiệm của mình. Từ khi chuyển sang ăn nhiều rau và cá vào buổi tối, giấc ngủ của mình cải thiện hẳn, không còn cảm giác nặng bụng khó ngủ nữa.
+                            </div>
+                            <div class="comment-actions">
+                                <button class="action-btn liked">
+                                    <img class="like" src="../assets/heart.png" onclick="toggleLikeComment(this)">28
+                                </button>
+                                <button class="action-btn reply">
+                                    <img class="reply" src="../assets/reply.png" onclick="toggleReplyForm(this)">Trả lời
+                                </button>
+                                <button class="action-btn edit" onclick="startEditComment(this)">
+                                    <img class="edit" src="../assets/edit.png">Sửa
+                                </button>
+                                <button class="action-btn delete" onclick="confirmDeleteComment(this)">
+                                    <img class="delete" src="../assets/delete.png">Xoá
+                                </button>
+                                <button class="action-btn">Báo cáo</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="comments-pagination">
+                        <button class="page-btn wide">‹ Trước</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span>…</span>
+                        <button class="page-btn">8</button>
+                        <button class="page-btn wide">Tiếp ›</button>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+   
+
+    <!-- =============================================
+        FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.php" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.php">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.php">Tình trạng sức khoẻ</a>
+                <a href="../LoiSongKhoe.php">Lối sống khoẻ</a>
+                <a href="../SoCuu.php">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
