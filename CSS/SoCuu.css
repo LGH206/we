@@ -1,0 +1,387 @@
+/* =============================================
+   FIRST AID SECTION CSS (Phần thân trang)
+============================================= */
+.first-aid-page {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #1f2937;
+    background-color: #f8fafc;
+}
+
+.fa-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Hero Section --- */
+.fa-hero {
+    background-color: #007246;
+    /* Màu xanh lá chủ đạo */
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.fa-hero-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.fa-hero-desc {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.fa-search-box {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    padding: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fa-search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #1f2937;
+}
+
+.fa-search-btn {
+    background-color: #005634;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.fa-search-btn:hover {
+    background-color: #004026;
+}
+
+.fa-bg-wrapper {
+    background-color: #f4f7fb;
+    /* Nền xanh nhạt cho toàn bộ khối dưới */
+    padding-bottom: 70px;
+}
+
+/* --- Tình huống phổ biến --- */
+.fa-situations {
+    padding: 50px 20px;
+}
+
+.fa-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.fa-section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.fa-section-subtitle {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+.fa-view-more {
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.fa-view-more:hover {
+    color: #007246;
+}
+
+.fa-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.fa-card {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e5e7eb;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.fa-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.fa-card h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.fa-card p {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* --- Layout chính (Nghiệm pháp Heimlich + Sidebar) --- */
+.fa-detail-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.fa-guide-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.fa-step {
+    display: flex;
+    gap: 24px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    border: 1px solid #e5e7eb;
+}
+
+.fa-step-num {
+    width: 36px;
+    height: 36px;
+    background-color: #007246;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.fa-step-content {
+    flex: 1;
+}
+
+.fa-step-content h3 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.fa-step-content p {
+    font-size: 15px;
+    color: #4b5563;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.fa-img-box {
+    width: 100%;
+    height: 220px;
+    background-color: #e5e7eb;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    & .fa-step-img {
+        width: 100%;
+        height: 220px;
+    }
+}
+
+/* --- Sidebar Cảnh báo --- */
+.fa-warning-box {
+    background-color: #fee2e2;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #dc2626;
+}
+
+.fa-warning-box h3 {
+    color: #dc2626;
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.fa-warning-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fa-warning-box li {
+    font-size: 14.5px;
+    color: #991b1b;
+    margin-bottom: 14px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    line-height: 1.5;
+}
+
+.fa-warning-box li svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.fa-help-box {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+}
+
+.fa-help-box h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.fa-btn-call {
+    width: 100%;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 14px;
+    transition: 0.2s;
+}
+
+.fa-btn-call:hover {
+    background-color: #b91c1c;
+}
+
+.fa-help-box p {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* --- Các hướng dẫn khác --- */
+.fa-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.fa-guide-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    cursor: pointer;
+}
+
+.fa-guide-img {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fa-guide-info {
+    padding: 20px;
+}
+
+.fa-cat {
+    font-size: 12px;
+    font-weight: 700;
+    color: #007246;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.fa-guide-info h3 {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    .fa-detail-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .fa-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .fa-grid-4,
+    .fa-grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .fa-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .fa-hero-title {
+        font-size: 28px;
+    }
+}
+/* Đường viền xanh nổi bật khi thẻ được hover hoặc click chọn */
+.fa-card:hover {
+    border-color: #007246;
+}
+
+/* Thêm hiệu ứng mượt mà khi thay đổi nội dung */
+.fa-main-guide {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

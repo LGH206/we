@@ -1,0 +1,178 @@
+/* =====================================================
+    NAVIGATION BAR (giống trang chủ)
+===================================================== */
+.site-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--background-color);
+  border-bottom: 1px solid var(--p-50);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  height: 56px;
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-shrink: 0;
+  text-decoration: none;
+}
+.navbar-logo-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--main-gradient-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-logo-icon svg { color: white; }
+.navbar-logo-text { display: flex; flex-direction: column; line-height: 1.2; }
+.navbar-logo-text .logo-name { font-size: 0.9rem; font-weight: 700; color: var(--p-600); }
+.navbar-logo-text .logo-tagline { font-size: 0.6rem; color: var(--n-500); }
+.navbar-menu { display: flex; align-items: center; gap: var(--space-xs); flex: 1; }
+.navbar-menu-link {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--n-600);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--border-radius);
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+}
+.navbar-menu-link:hover,
+.navbar-menu-link.is-active { background: var(--p-20); color: var(--p-500); }
+.navbar-actions { display: flex; align-items: center; gap: var(--space-sm); flex-shrink: 0; }
+.navbar-search-btn {
+  background: none; border: none; cursor: pointer;
+  padding: var(--space-xs); color: var(--n-600);
+  border-radius: var(--border-radius); transition: background 0.15s;
+}
+.navbar-search-btn:hover { background: var(--n-50); }
+.btn-login {
+  font-size: 0.8rem; font-weight: 600; color: white;
+  background: var(--main-gradient-color); border: none; cursor: pointer;
+  padding: 6px 14px; border-radius: 99px;
+  display: flex; align-items: center; gap: var(--space-xs);
+  transition: opacity 0.2s;
+}
+.btn-login:hover { opacity: 0.88; }
+
+/* =====================================================
+    HERO TÌM KIẾM CHUYÊN MỤC
+===================================================== */
+.category-hero-section {
+  text-align: center;
+  padding: var(--space-2xl) 0 var(--space-xl);
+}
+
+.category-hero-title {
+  font-family: 'Merriweather', serif;
+  font-size: 2.1rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--p-700);
+  margin-bottom: var(--space-md);
+}
+
+.category-hero-subtitle {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--n-600);
+  max-width: 480px;
+  margin: 0 auto var(--space-xl);
+}
+
+/* Ô tìm kiếm chuyên mục */
+.category-search-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  max-width: 520px;
+  margin: 0 auto;
+  background: var(--background-color);
+  border: 1px solid var(--p-100);
+  border-radius: 99px;
+  padding: 10px 18px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.category-search-bar:focus-within {
+  border-color: var(--p-300);
+  box-shadow: 0 2px 14px rgba(0,0,0,0.08);
+}
+.category-search-bar svg { flex-shrink: 0; color: var(--n-500); }
+.category-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--n-600);
+  background: none;
+}
+.category-search-input::placeholder { color: var(--n-500); }
+
+/* =====================================================
+    SECTION "BỆNH LÝ" — GRID DANH MỤC
+===================================================== */
+.category-grid-section {
+  padding: var(--space-xl) 0 var(--space-2xl);
+}
+
+.category-grid-heading {
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  font-weight: 700;
+  color: var(--p-700);
+  margin-bottom: var(--space-lg);
+}
+
+/* Grid 3 cột x N dòng */
+.category-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+/* Thẻ danh mục bệnh lý */
+.category-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  background: var(--background-color);
+  border: 1px solid var(--p-50);
+  border-radius: var(--border-radius);
+  padding: var(--space-lg);
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+}
+.category-card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+  transform: translateY(-2px);
+  border-color: var(--p-100);
+}
+
+/* Icon vòng tròn của mỗi danh mục */
+.icon {
+  width: 30px;
+}
+
+.category-card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--p-700);
+  margin-bottom: 4px;
+}
+.category-card:hover .category-card-title { color: var(--p-400); }
+
+.category-card-desc {
+  font-size: var(--caption-font-size);
+  line-height: 1.5;
+  color: var(--n-600);
+}

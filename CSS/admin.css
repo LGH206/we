@@ -1,0 +1,23 @@
+@import "admin_profile.css";
+@import "admin_dashboard.css";
+@import "admin_user.css";
+@import "admin__theme.css";
+@import "admin_article.css";
+@import "admin_category.css";
+@import "admin_comment.css";
+@import "responsive.css";
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ul { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; border: 0; background: transparent; color: inherit; }
+input { font: inherit; }
+table { border-collapse: collapse; border-spacing: 0; width: 100%; }
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: var(--p-fs);
+  line-height: var(--p-lh);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}

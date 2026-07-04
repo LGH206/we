@@ -1,0 +1,301 @@
+/* ==========================================================================
+   LoiSongKhoe.css - Stylesheet dành riêng cho Thân Trang Lối Sống Khỏe
+   ========================================================================== */
+
+/* 1. CSS Cho SECTION 1: HERO BANNER */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 620px;
+    background-image: linear-gradient(to right, rgba(2, 28, 20, 0.75) 0%, rgba(2, 28, 20, 0.4) 50%, rgba(0, 0, 0, 0.1) 100%), 
+                      url('https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 540px;
+    color: #FFFFFF;
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: #1A365D;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+    letter-spacing: 0.3px;
+}
+
+.hero-title {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.hero-description {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin-bottom: 36px;
+}
+
+.btn-explore {
+    display: inline-flex;
+    align-items: center;
+    background-color: #006837; /* Màu xanh lá đặc trưng */
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 14px 28px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-explore:hover {
+    background-color: #004d28;
+}
+
+.btn-explore:active {
+    transform: scale(0.98);
+}
+
+.btn-arrow {
+    margin-left: 10px;
+    font-size: 14px;
+    transition: transform 0.2s ease;
+}
+
+.btn-explore:hover .btn-arrow {
+    transform: translateX(4px);
+}
+
+/* 2. CSS Cho SECTION 2: CHỦ ĐỀ QUAN TÂM */
+.topics-section {
+    padding: 80px 0 100px 0;
+    background-color: #FFFFFF;
+}
+
+.topics-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1A202C;
+    margin-bottom: 8px;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    color: #718096;
+}
+
+/* Nút bấm chuyển slide điều hướng */
+.carousel-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #E2E8F0;
+    background-color: #FFFFFF;
+    color: #4A5568;
+    font-size: 20px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+    background-color: #F7FAFC;
+    border-color: #CBD5E0;
+    color: #1A202C;
+}
+
+/* Lưới cấu trúc hiển thị danh sách bài viết */
+.articles-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Hàng 1: 2 Thẻ lớn */
+.featured-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.card-featured {
+    height: 380px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.card-mediterranean {
+    background-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80');
+}
+
+.card-cardio {
+    background-image: url('https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80');
+}
+
+.card-featured-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(10, 25, 30, 0.9) 0%, rgba(10, 25, 30, 0.4) 60%, rgba(0, 0, 0, 0) 100%);
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #FFFFFF;
+}
+
+.tag-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.text-green { color: #4ADE80; }
+.text-lightgreen { color: #A3E635; }
+
+.card-featured-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 12px;
+}
+
+.card-featured-desc {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.link-readmore {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+}
+
+.link-arrow {
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+/* Hàng 2: 3 Thẻ nhỏ tiêu chuẩn */
+.standard-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card-standard {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.img-stress { background-image: url('https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=500&q=80'); }
+.img-sleep { background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=500&q=80'); }
+.img-superfood { background-image: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=500&q=80'); }
+
+.card-body {
+    padding: 24px 24px 20px 24px;
+    flex-grow: 1;
+}
+
+.card-category {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.text-teal { color: #008080; }
+.text-olive { color: #556B2F; }
+.text-darkgreen { color: #006400; }
+
+.card-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1A202C;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-desc {
+    font-size: 13.5px;
+    color: #4A5568;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Phần meta xám xanh dưới đáy các card nhỏ */
+.card-footer {
+    background-color: #F7FAFC;
+    padding: 14px 24px;
+    border-top: 1px solid #EDF2F7;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #718096;
+}

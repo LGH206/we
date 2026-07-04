@@ -1,0 +1,147 @@
+/* =========================================================
+   DASHBOARD — Bảng điều khiển
+   ========================================================= */
+.dashboard { max-width: 1100px; }
+
+.page-head h1 { 
+  font-size: var(--h1-font-size); 
+  line-height: var(--h1-line-height);
+  color: var(--p-500); 
+}
+.page-head p { margin-top: 6px; }
+
+/* ============== STATS ============== */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.stat-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.stat-label {
+  font-size: 0.82rem;
+  color: var(--muted-foreground);
+  line-height: 1.2;
+  min-height: 2.4em;
+}
+.stat-value {
+  margin-top: 6px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+/* ============== CHART ============== */
+.chart-card { padding: 24px; }
+.chart-head {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 16px;
+}
+.chart-head h2 { 
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height); 
+  color: var(--p-500);
+}
+.chart-head p  { margin-top: 4px; max-width: 260px; }
+
+.seg {
+  display: inline-flex;
+  background: var(--p-50);
+  border-radius: 8px;
+  padding: 3px;
+}
+.seg-btn {
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  color: var(--p-500);
+  font-weight: 500;
+}
+.seg-btn.active {
+  background: var(--p-500);
+  color: white;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+.dashboard__chart-wrap { 
+  position: relative; 
+}
+#trafficChart {
+  width: 100%; 
+  height: 240px; 
+  display: block;
+  color: black;
+}
+.chart-axis {
+  display: flex; justify-content: space-between;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: var(--p-500);
+}
+
+/* ============== POST NOW ============== */
+.post-now {
+  background: var(--p-500);
+  color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex; flex-direction: column; gap: 12px;
+  position: relative;
+}
+.post-now h2 { font-size: 1.25rem; color: #fff; }
+.post-sub {
+  font-size: 0.85rem;
+  color: hsl(140, 28%, 85%);
+  margin-bottom: 4px;
+}
+.cta {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: opacity .15s, transform .1s;
+}
+.cta:active { transform: scale(0.99); }
+.cta-light { background: #fff; color: var(--p-600); }
+.cta-light:hover { background: var(--p-20); }
+.cta-dark  { background: var(--p-600); color: #fff; }
+.cta-dark:hover  { background: var(--p-700); }
+
+.post-footer {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 4px;
+  color: hsl(140, 28%, 88%);
+}
+.badge-count {
+  background: hsl(0, 75%, 55%);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+  min-width: 28px;
+  text-align: center;
+}
+
+/* ============== REPORT BUTTON ============== */
+.report-btn {
+  background: var(--p-200);
+  color: var(--p-600);
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 14px;
+  border-radius: 10px;
+  width: 100%;
+  transition: background-color .15s;
+}
+.report-btn:hover { background: var(--p-100); }
+
+

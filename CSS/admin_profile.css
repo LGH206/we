@@ -1,0 +1,202 @@
+
+
+/* =========================================================
+   LAYOUT
+   ========================================================= */
+.layout { display: flex; min-height: 100vh; }
+.main { flex: 1; display: flex; flex-direction: column; }
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+.sidebar {
+  width: 240px;
+  background: white;
+  border-right: 1px solid ;
+  display: flex; flex-direction: column; justify-content: space-between;
+  position: sticky; top: 0; height: 100vh;
+}
+.brand {
+  display: flex; align-items: center; gap: 10px;
+  padding: 0 20px; height: 64px;
+  border-bottom: 1px solid var(--border);
+}
+.brand-logo {
+  width: 32px; height: 32px; border-radius: 8px;
+  background: var(--p-500); color: #fff;
+  display: grid; place-items: center;
+}
+.brand-name { font-weight: 600; color: var(--p-500); }
+
+.nav { padding: 12px; display: flex; flex-direction: column; gap: 4px; }
+.nav-footer { border-top: 1px solid var(--border); }
+.nav-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 12px; border-radius: 8px;
+  font-size: 0.9rem; color: var(--muted-foreground);
+  transition: background-color .15s, color .15s;
+  text-align: left;
+}
+.nav-item:hover { background: var(--muted); }
+.nav-item.active {
+  background: var(--p-20);
+  color: var(--p-500);
+  font-weight: 500;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+.header {
+  height: 64px; padding: 0 32px;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: 0; z-index: 10;
+}
+.site { display: flex; align-items: center; gap: 12px; }
+.admin_icon_img {
+  width: 45px;
+}
+.site-title { color: var(--p-500); font-size: var(--h4-font-size); line-height: 1.2; }
+
+.header-actions { display: flex; align-items: center; gap: 16px; }
+.search { position: relative; }
+.search i {
+  position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+  color: var(--muted-foreground);
+}
+.search input {
+  width: 288px; padding: 8px 12px 8px 36px;
+  border-radius: 999px;
+  background: var(--muted);
+  font-size: 0.875rem;
+  outline: none;
+}
+.search input:focus { box-shadow: 0 0 0 2px var(--ring); }
+
+.icon-btn {
+  position: relative; padding: 8px; border-radius: 50%;
+  color: var(--muted-foreground);
+}
+.icon-btn:hover { background: var(--muted); }
+.icon-btn .dot {
+  position: absolute; top: 6px; right: 6px;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--accent-nebula);
+}
+.avatar-sm {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--p-200);
+  border: 2px solid var(--p-300);
+}
+
+/* =========================================================
+   CONTENT / CARDS
+   ========================================================= */
+.content {
+  padding: 32px;
+  display: flex; flex-direction: column; gap: 24px;
+  max-width: 1024px;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+.card-header { margin-bottom: 24px; }
+.card-header h2 { font-size: 1.4rem; }
+.card-header p { margin-top: 4px; }
+.card-actions { display: flex; justify-content: flex-end; margin-top: 24px; }
+
+/* =========================================================
+   FORM FIELDS
+   ========================================================= */
+.profile-row { display: flex; gap: 24px; }
+.avatar-block { width: 128px; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.change_avatar {
+  position: relative;
+  width: 96px; 
+  height: 96px; 
+  border-radius: 50%;
+  background: var(--p-100);
+  border: 4px solid var(--p-200);
+  display: grid; 
+  place-items: center;
+  color: var(--p-500);
+  font-size: 2rem;
+}
+.avatar-edit {
+  position: absolute; 
+  right: -4px; 
+  bottom: -4px;
+  width: 28px; 
+  height: 28px; border-radius: 50%;
+  background: var(--p-500); 
+  color: #fff;
+  border: 2px solid var(--card);
+  display: grid; 
+  place-items: center;
+  font-size: 0.75rem;
+}
+.avatar-block .caption { text-align: center; }
+
+.grid-2 {
+  flex: 1;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+}
+.span-2 { grid-column: span 2; }
+.form-stack { display: flex; flex-direction: column; gap: 20px; }
+
+.field { display: block; }
+.field > span {
+  display: block; margin-bottom: 6px;
+  font-size: var(--caption-font-size);
+  font-weight: 500; color: var(--foreground);
+}
+.field input {
+  width: 100%; padding: 10px 14px;
+  border: 1px solid var(--border); border-radius: 8px;
+  background: var(--card);
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+.field input:focus {
+  border-color: var(--p-400);
+  box-shadow: 0 0 0 3px hsl(142 35% 65% / 0.3);
+}
+
+.input-wrap { position: relative; }
+.input-wrap input { padding-right: 40px; }
+.toggle-pwd {
+  position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+  color: var(--muted-foreground);
+}
+.toggle-pwd:hover { color: var(--foreground); }
+
+/* Password strength */
+.strength { margin-top: 8px; }
+.strength-bar {
+  height: 4px; border-radius: 999px; background: var(--muted); overflow: hidden;
+}
+.strength-bar > div {
+  height: 100%; width: 0; background: var(--p-400);
+  transition: width .2s;
+}
+#strengthLabel { margin-top: 4px; color: var(--p-500); }
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+.btn {
+  padding: 10px 20px; border-radius: 8px;
+  font-size: 0.875rem; font-weight: 500;
+  transition: background-color .15s;
+}
+.btn-primary { background: var(--p-500); color: #fff; }
+.btn-primary:hover { background: var(--p-600); }
+.btn-dark { background: var(--p-600); color: #fff; }
+.btn-dark:hover { background: var(--p-700); }

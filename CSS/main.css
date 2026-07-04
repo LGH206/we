@@ -1,0 +1,50 @@
+@import "section/header.css";
+@import "section/footer.css";
+@import "section/hero.css";
+@import "section/lastest-news.css";
+@import "section/lifestyle.css";
+@import "theme.css";
+@import "TinhTrangSucKhoe.css";
+@import "BenhLy.css";
+@import "article/article.css";
+@import "DangNhap.css";
+@import "DangKy.css";
+@import "responsive.css";
+@import "animation.css";
+@import "TinTucYTe.css";
+@import "articleTinTuc.css";
+@import "user.css";
+@import "profile.css";
+@import "SoCuu.css";
+@import "styles.css";
+@import "dashboard.css";
+@import "LoiSongKhoe.css";
+@import "article.css";
+
+*, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: var(--p-font-size);
+    line-height: var(--p-line-height);
+    letter-spacing: var(--p-letter-spacing);
+    color: var(--n-600);
+    background-color: var(--background-color);
+  }
+
+  a { 
+    text-decoration: none; 
+    color: inherit; 
+    transition: color 0.2s ease;
+  }
+  a:hover { 
+    color: var(--p-400); 
+  }
+
+  .site-wrapper {
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+  }
+
+    
